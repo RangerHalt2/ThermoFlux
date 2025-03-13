@@ -1,3 +1,5 @@
+// Purpose: This code handles the logic for flammable objects
+// Author: Ryan Lupoli
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -44,7 +46,7 @@ public class FlammableObject : MonoBehaviour
                 // If object is destructable, destroy it
                 if(isDestructable)
                 {
-                    Debug.Log("Object has been burnt up and destroyed!");
+                    Debug.Log(gameObject.name + " has been burnt up and destroyed!");
                     Destroy(this.gameObject);
                 }
                 // Else automatically extinguish the object
@@ -95,7 +97,7 @@ public class FlammableObject : MonoBehaviour
         // Play the fire particles
         fireParticles.Play(); 
 
-        Debug.Log("Object has been lit on fire!");
+        Debug.Log(gameObject.name + " has been lit on fire!");
     }
 
     private void Extinguish()
@@ -122,7 +124,7 @@ public class FlammableObject : MonoBehaviour
             fireSpreadTimer = fireSpreadInterval;
         }
         
-        Debug.Log("Object has been extinguished!");
+        Debug.Log(gameObject.name + " has been extinguished!");
     }
 
     // Function to handle spreading fire to nearby flammable objects
@@ -140,7 +142,7 @@ public class FlammableObject : MonoBehaviour
                 {
                     // Ignite the nearby object
                     flammableObj.Ignite();
-                    Debug.Log("Nearby object has caught fire!");
+                    Debug.Log("Nearby " + gameObject.name + " has caught fire!");
                 }
             }
         }

@@ -1,3 +1,5 @@
+// Purpose: This code handles the logic for the pause menu
+// Author: Ryan Lupoli
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -38,7 +40,7 @@ public class PauseMenu : MonoBehaviour
                 // Lock player's cursor to the center of the screen
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
-                Debug.Log("Disabled the cursor to allow for menu navigation.");
+                Debug.Log("Disabled the cursor to allow for smooth gameplay.");
                 // Resume the game
                 ResumeGame();
                 Debug.Log("Game Un-Paused.");
@@ -49,6 +51,7 @@ public class PauseMenu : MonoBehaviour
                 //Enable the Cursor
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
+                Debug.Log("Enabled the cursor to allow for menu navigation.");
                 // Pause the game
                 PauseGame();
                 Debug.Log("Game Paused.");

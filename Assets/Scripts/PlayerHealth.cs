@@ -1,3 +1,5 @@
+// Purpose: This code handles the player's health
+// Author: Ryan Lupoli
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

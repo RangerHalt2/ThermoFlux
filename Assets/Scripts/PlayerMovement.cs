@@ -1,3 +1,5 @@
+// Purpose: This code handles the Bootstrapper and the storing of Data across Scenes
+// Author: Ryan Lupoli
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

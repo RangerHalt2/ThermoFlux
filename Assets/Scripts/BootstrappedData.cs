@@ -1,3 +1,5 @@
+// Purpose: This code handles the Bootstrapper and the storing of Data across Scenes
+// Author: Ryan Lupoli
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -31,9 +33,30 @@ public class BootstrappedData : MonoBehaviour
 {
     // Add Variables to this script to allow them to be shared across scenes.
 
-
+    [SerializeField] private bool levelOneComplete; // Determines whether level one was completed
+    [SerializeField] private bool levelTwoComplete; // Determines whether level two was completed
+    [SerializeField] private bool levelThreeComplete; // Determines whether level three was completed
 
     public static BootstrappedData Instance {get; private set; } = null;
+    
+    public bool LevelOneComplete
+    {
+        get { return levelOneComplete; }
+        set { levelOneComplete = value; }
+    }
+
+    public bool LevelTwoComplete
+    {
+        get { return levelTwoComplete; }
+        set { levelTwoComplete = value; }
+    }
+
+    public bool LevelThreeComplete
+    {
+        get { return levelThreeComplete; }
+        set { levelThreeComplete = value; }
+    }
+
     void Awake()
     {
         // Check if an instance already exists
@@ -47,5 +70,6 @@ public class BootstrappedData : MonoBehaviour
 
         // Prevent Data from being unloaded
         DontDestroyOnLoad(gameObject);
+        Instance = this; // Assign the singleton instance
     }
 }

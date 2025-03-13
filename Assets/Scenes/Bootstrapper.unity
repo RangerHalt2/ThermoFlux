@@ -132,6 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1646807111}
   - component: {fileID: 1646807114}
+  - component: {fileID: 1646807115}
   m_Layer: 0
   m_Name: Bootstrapped Data
   m_TagString: Untagged
@@ -166,6 +167,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b832c0ad42f92994180b6789d29d275d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelOneComplete: 0
+  levelTwoComplete: 0
+  levelThreeComplete: 0
+--- !u!114 &1646807115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646807110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2628f5cf11d97884eb0031df1dd67b02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerControls: {fileID: -944628639613478452, guid: 6b26d6ed2d7537948aa3e5fe2108e422, type: 3}
+  actionMapName: Gameplay
+  fire: Fire
+  altFire: AltFire
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

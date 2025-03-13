@@ -1,3 +1,5 @@
+// Purpose: This code allows teleporters to function, allowing the player to change scenes by standing at a set location
+// Author: Ryan Lupoli
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

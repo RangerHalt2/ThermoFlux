@@ -1,3 +1,5 @@
+// Purpose: This code controls the behavior of the third person camera
+// Author: Ryan Lupoli
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

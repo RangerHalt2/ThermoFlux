@@ -1,3 +1,5 @@
+// Purpose: This code allows for the changing of scenes
+// Author: Ryan Lupoli
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -68,6 +70,13 @@ public class SceneController : MonoBehaviour
     {
         EnableCursor();
         SceneManager.LoadScene("LoseScreen");
+    }
+
+    // Restarts the current scene (used for respawning)
+    public void RestartCurrentScene()
+    {
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(currentSceneName);
     }
 
     // Closes out of the Game
