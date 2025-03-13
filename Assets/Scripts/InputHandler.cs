@@ -56,7 +56,7 @@ public class InputHandler : MonoBehaviour
         altFireAction.canceled += context => altFireTriggered = false;
     }
 
-    //Set the on enable and on disable for the action map to set them on and off when the game calls for it.
+    //Set the on enable and on disable for the action map to set them on and off when the game calls for it. Basically, Unity needs this and handles it.
     private void OnEnable()
     {
         fireAction.Enable();
