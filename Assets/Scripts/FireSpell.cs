@@ -22,6 +22,10 @@ public class FireSpell : MonoBehaviour
     [SerializeField] private GameObject playerObj; // Reference to the player object to know what direction to fire flames from
     [SerializeField] private GameObject attackRadius; // Reference to the flame spell's collider to handle hit detection
 
+    // Attack Radius Toggle
+    private float toggleInterval = 0.1f; // Interval in seconds between togles for the attack radius
+    private float lastToggleTime; // How much time has passed since the attack radius was last toggled
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +40,10 @@ public class FireSpell : MonoBehaviour
         fireMainModule = _fireParticles.main;
 
         attackRadius.SetActive(false);
+
+        // Initialize the last toggle time
+        lastToggleTime = 0f; 
+        lastToggleTime = 0f; // Initialize the last toggle time
     }
 
     // Update is called once per frame
@@ -50,6 +58,15 @@ public class FireSpell : MonoBehaviour
                 _fireParticles.Play(); 
                 // Enable Fire Spell Hitbox
                 attackRadius.SetActive(true);
+            }
+
+            // Toggle attack radius every 'toggleInterval' seconds
+            if (Time.time - lastToggleTime >= toggleInterval)
+            {
+                // Toggle the active state of the attack radius
+                attackRadius.SetActive(!attackRadius.activeSelf);
+                // Update the last toggle time
+                lastToggleTime = Time.time; 
             }
         }
         else
