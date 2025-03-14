@@ -12,9 +12,15 @@ public class MeltingObject : MonoBehaviour
     [SerializeField] private float meltSpeed; // Determines how quickly the object melts. Functions as a reduction in size per second
     [SerializeField] private Vector3 minScale = new Vector3(0f, 0f, 0f);  // The scale at which the object will be destroyed
 
+    [Header("Particle Settings")]
+    public bool emitsParticles; // Determines whether or not the object emits particles while melting
+    [SerializeField] private ParticleSystem meltingParticlePrefab; // Melting particle prefab to instantiate
+    private ParticleSystem meltingParticles; // Instance of the melting particles
+
     [Header("Melting Duration Settings")]
     [SerializeField] private float residualMeltTime; // Determines how long after the Fire stops collding with the object before it stops melting
     private float meltTimer = 0f; // Keeps track of how much time has passed since the object has started to melt
+    private bool isMeltingTimerActive = false; // Tracks if the residual melt time is still active
     
     [Header("Natural Melting Settings")]
     [SerializeField] private bool meltsNaturally; // Determines if the ice will melt naturally over time (True) or if it requires the player to melt it (False)
@@ -30,6 +36,12 @@ public class MeltingObject : MonoBehaviour
             // Set the natural melting delay timer to the specified meltingDelay
             naturalMeltTimer = meltingDelay; 
         }
+
+        // Ensure particles are stopped initially
+        if (meltingParticles != null)
+        {
+            meltingParticles.Stop();
+        }
     }
 
     // Update is called once per frame
@@ -42,24 +54,67 @@ public class MeltingObject : MonoBehaviour
             naturalMeltTimer -= Time.deltaTime; 
         }
         // Else if the object can melt naturally, and the timer is over
-        else if (!isMelting && meltsNaturally && naturalMeltTimer <= 0f)
+        else if (meltsNaturally && naturalMeltTimer <= 0f && naturalMeltTimer != -1f)
         {
-            // Set isMelting to true
-            isMelting = true;
+            naturalMeltTimer = -1f;
             Debug.Log(gameObject.name + " has started to melt naturally!");
         }
 
-        // If fire is colliding then set is Melting to true
+        // If fire is colliding...
         if(fireColliding)
         {
+            // Reset fireColliding to allow for repeate activation
+            fireColliding = false;
+            // Activate isMelting to start the melting process
             isMelting = true;
+            // Start the residual melting timer
+            isMeltingTimerActive = true;
+            // Reset melt timer when fire collides
+            meltTimer = 0f; 
+        }
+
+        // If residual melt time has elapsed, stop the residual melting
+        if (isMeltingTimerActive && meltTimer > residualMeltTime)
+        {
+            isMeltingTimerActive = false;
+            isMelting = false;
+            Debug.Log(gameObject.name + " has stopped residual melting.");
+        }
+        else
+        {
+            meltTimer += Time.deltaTime; 
         }
 
         // If object is Melting
-        if (isMelting || meltTimer > 0f)
+        if (isMelting || naturalMeltTimer <= 0f)
         {
             // Melt the object
             Melt();
+
+            // Play melting particle effect if not already playing
+            if (meltingParticles == null && emitsParticles)
+            {
+                meltingParticles = Instantiate(meltingParticlePrefab, transform.position, Quaternion.Euler(90f, 0f, 0f));
+                meltingParticles.transform.SetParent(transform);
+            }
+            // Set the particle system's scale to match the parent object
+            if (meltingParticles != null && emitsParticles)
+            {
+                meltingParticles.transform.localScale = transform.localScale;
+                meltingParticles.Play();
+            }
+        }
+        else
+        {
+            // Stop particle effect if not melting anymore
+            if (meltingParticles != null && emitsParticles)
+            {
+                // Stop the Melting Particles
+                meltingParticles.Stop();
+                // Destroy the melting particles
+                Destroy(meltingParticles.gameObject);
+                meltingParticles = null;
+            }
         }
     }
 
