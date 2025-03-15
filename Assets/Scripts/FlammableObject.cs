@@ -92,7 +92,9 @@ public class FlammableObject : MonoBehaviour
         {
             fireParticles = Instantiate(fireParticlePrefab, transform.position, Quaternion.identity);
             // Set the fire particles as a child of the object
-            fireParticles.transform.SetParent(transform); 
+            fireParticles.transform.SetParent(transform);
+            // Update the scale of the fire particles to match the parent
+            fireParticles.transform.localScale = transform.localScale;
         }
         // Play the fire particles
         fireParticles.Play(); 

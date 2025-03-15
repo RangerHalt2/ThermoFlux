@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638768650253460244
-    m_Hash: 2850033417
+      ticks: 638775686072785532
+    m_Hash: 4139210102
   m_LockFileStatus:
     m_FilePath: C:/Users/ryanl/Thermoflux/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638768650253579524
-    m_Hash: 3801349646
+      ticks: 638775700647482153
+    m_Hash: 1555137709
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -453,12 +453,12 @@ m_ResolvedPackages:
   isDeprecated: 0
   deprecationMessage: 
   fingerprint: 
-- packageId: com.unity.inputsystem@1.7.0
+- packageId: com.unity.inputsystem@1.11.2
   testable: 0
   isDirectDependency: 1
-  version: 1.7.0
+  version: 1.11.2
   source: 1
-  resolvedPath: C:\Users\ryanl\Thermoflux\Library\PackageCache\com.unity.inputsystem@1.7.0
+  resolvedPath: C:\Users\ryanl\Thermoflux\Library\PackageCache\com.unity.inputsystem@1.11.2
   assetPath: Packages/com.unity.inputsystem
   name: com.unity.inputsystem
   displayName: Input System
@@ -467,7 +467,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: assets
+  type: 
   description: A new input system which can be used as a more extensible and customizable
     alternative to Unity's classic input system in UnityEngine.Input.
   status: 0
@@ -576,13 +576,13 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638277060810000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/index.html
+  datePublishedTicks: 638648557315530000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.inputsystem@1.11/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.com/Unity-Technologies/InputSystem.git
-    revision: e29989176f3a8473ba30854e4bfae953083eba28
+    revision: c8518694c7fdd2c755755e028e2ec19cdceda19b
     path: 
   unityLifecycle:
     version: 1.7.0
@@ -593,12 +593,12 @@ m_ResolvedPackages:
   isDeprecated: 0
   deprecationMessage: 
   fingerprint: 
-- packageId: com.unity.textmeshpro@3.0.6
+- packageId: com.unity.textmeshpro@3.0.7
   testable: 0
   isDirectDependency: 1
-  version: 3.0.6
+  version: 3.0.7
   source: 1
-  resolvedPath: C:\Users\ryanl\Thermoflux\Library\PackageCache\com.unity.textmeshpro@3.0.6
+  resolvedPath: C:\Users\ryanl\Thermoflux\Library\PackageCache\com.unity.textmeshpro@3.0.7
   assetPath: Packages/com.unity.textmeshpro
   name: com.unity.textmeshpro
   displayName: TextMeshPro
@@ -607,7 +607,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Text Rendering
-  type: asset
+  type: assets
   description: 'TextMeshPro is the ultimate text solution for Unity. It''s the perfect
     replacement for Unity''s UI Text and the legacy Text Mesh.
 
@@ -726,6 +726,7 @@ m_ResolvedPackages:
     - 3.2.0-pre.9
     - 3.2.0-pre.10
     - 3.2.0-pre.11
+    - 3.2.0-pre.12
     - 4.0.0-pre.1
     - 4.0.0-pre.2
     compatible:
@@ -744,6 +745,7 @@ m_ResolvedPackages:
     - 3.2.0-pre.9
     - 3.2.0-pre.10
     - 3.2.0-pre.11
+    - 3.2.0-pre.12
     - 4.0.0-pre.1
     - 4.0.0-pre.2
     recommended: 3.0.9
@@ -774,13 +776,13 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637547111200000000
-  documentationUrl: 
+  datePublishedTicks: 638410382150000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.textmeshpro.git
-    revision: 01e57e3b7de18af9dfe9baaa0a0ff5cc4765c899
+    revision: 5c364f204e10eaec84fcbff640ad4d833774c1ed
     path: 
   unityLifecycle:
     version: 3.0.6
@@ -1084,17 +1086,21 @@ m_ResolvedPackages:
     - 1.7.6
     - 1.7.7
     - 1.7.8
+    - 1.8.0-pre.1
     - 1.8.0
     - 1.9.0
     - 1.9.1
     - 1.9.2
     - 1.9.4
     - 1.9.5
+    - 1.9.6
     compatible:
     - 1.9.4
     - 1.9.5
-    recommended: 1.9.5
-    deprecated: []
+    - 1.9.6
+    recommended: 1.9.6
+    deprecated:
+    - 1.8.0-pre.1
   dependencies:
   - name: com.unity.ugui
     version: 1.0.0

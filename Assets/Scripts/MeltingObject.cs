@@ -36,6 +36,11 @@ public class MeltingObject : MonoBehaviour
             // Set the natural melting delay timer to the specified meltingDelay
             naturalMeltTimer = meltingDelay; 
         }
+        else
+        {
+            // If an object does not melt naturally set the natural meltTimer to 1 so that the object does not start to melt naturally
+            naturalMeltTimer = 1;
+        }
 
         // Ensure particles are stopped initially
         if (meltingParticles != null)
