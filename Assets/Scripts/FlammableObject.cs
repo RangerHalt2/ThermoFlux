@@ -22,7 +22,8 @@ public class FlammableObject : MonoBehaviour
     [SerializeField] private float fireSpreadRadius; // Radius within which the fire can spread to other flammable objects
     [SerializeField] private float fireSpreadInterval; // Interval to check for nearby flammable objects
     private float fireSpreadTimer; // Timer to control fire spread checks
-
+    [HideInInspector] public float iceBuffer; //Timer will prevent it from being lit if it has recently been extinguished
+    [SerializeField] private float iceTimer = 2;
 
     // Start is called before the first frame update
     void Start()
@@ -79,6 +80,9 @@ public class FlammableObject : MonoBehaviour
                 }
             }
         }
+
+        iceBuffer -= Time.deltaTime;
+
     }
 
     // Lights an object on fire
@@ -125,6 +129,8 @@ public class FlammableObject : MonoBehaviour
             // Reset the timer manually
             fireSpreadTimer = fireSpreadInterval;
         }
+
+        iceBuffer = iceTimer;
         
         Debug.Log(gameObject.name + " has been extinguished!");
     }
@@ -140,13 +146,23 @@ public class FlammableObject : MonoBehaviour
             if (collider.CompareTag("Flammable Object"))
             {
                 FlammableObject flammableObj = collider.GetComponent<FlammableObject>();
-                if (flammableObj != null && !flammableObj.isOnFire)
+                if (flammableObj != null && !flammableObj.isOnFire && flammableObj.iceBuffer <= 0)
                 {
                     // Ignite the nearby object
                     flammableObj.Ignite();
                     Debug.Log("Nearby " + gameObject.name + " has caught fire!");
                 }
             }
+        }
+    }
+
+    public void IceHit()
+    {
+        // And if object is on fire 
+        if (isOnFire)
+        {
+            // Extinguish the object
+            Extinguish();
         }
     }
 

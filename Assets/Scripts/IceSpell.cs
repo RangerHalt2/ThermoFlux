@@ -27,7 +27,8 @@ public class IceSpell : MonoBehaviour
     private InputHandler my_inputs;
     private ThirdPersonCam cam; //This actually gets the entire game object but mostly cares about the "ThirdPersonCam" feature.
 
-    
+    private EnemyHealth my_enemy;
+    private FlammableObject my_flammableObj;
 
     private float timer;
 
@@ -44,7 +45,7 @@ public class IceSpell : MonoBehaviour
         timer -= Time.deltaTime;
         if (my_inputs.altFireTriggered && timer <= 0)
         {
-            PlaceIce();
+            ShootIce();
         }
 
     }
@@ -55,15 +56,38 @@ public class IceSpell : MonoBehaviour
      * It checks with an overlap sphere if the object is too close to an unplaceable surface to prevent it from clipping.
      * The ray shoots from the camera and *can* hit the player in the back of the head. This will need to be changed at some point when a firing indicator is added.
      */
-    void PlaceIce()
+    void ShootIce()
     {
         RaycastHit hit;
+        
         Debug.Log("Ice Fire check #1");
         //if the Raycast hits something and that something is not in the ignoreTags array
-        if (Physics.Raycast(cam.transform.position, cam.transform.forward * range, out hit, Mathf.Infinity))
+        if (Physics.Raycast(player.transform.position, cam.transform.forward * range, out hit, Mathf.Infinity))
         {
             Debug.DrawRay(cam.transform.position, cam.transform.forward * range, Color.yellow, 50f);
+            //If the raycast hit a "Hazard" check if it's one marked with health and destructible and then do damage if so
+            if (hit.collider.gameObject.CompareTag("Hazard"))
+            {
+                my_enemy = hit.collider.gameObject.GetComponent<EnemyHealth>();
+                if(my_enemy != null && !my_enemy.immuneToIce)
+                {
+                    my_enemy.TakeDamage(my_enemy.iceDamage);
+                    return;
+                }
+            }
 
+            //If the flammable object is hit by ice, extinguish the fire.
+            if(hit.collider.gameObject.CompareTag("Flammable Object"))
+            {
+                my_flammableObj = hit.collider.gameObject.GetComponent<FlammableObject>();
+                if(my_flammableObj != null)
+                {
+                    my_flammableObj.IceHit();
+                }
+                return;
+            }
+
+            //Default behavrior for placing down the block.
             if (hit.transform.gameObject.tag != "Player")
             {
                 if (Array.IndexOf(ignoreTags, hit.collider.gameObject.tag) != -1) return;
