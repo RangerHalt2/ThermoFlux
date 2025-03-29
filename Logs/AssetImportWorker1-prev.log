@@ -1,0 +1,1638 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.55f1 (9f374180d209) revision 10434369'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 16281 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.55f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/Dillon Dutkus/Documents/GitHub/ThermoFlux
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+58425
+Successfully changed project path to: C:/Users/Dillon Dutkus/Documents/GitHub/ThermoFlux
+C:/Users/Dillon Dutkus/Documents/GitHub/ThermoFlux
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [10780]  Target information:
+
+Player connection [10780]  * "[IP] 192.168.1.245 [Port] 0 [Flags] 2 [Guid] 1858205454 [EditorId] 1858205454 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-APJEC3C) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [10780] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [10780] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+Refreshing native plugins compatible for Editor in 57.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.55f1 (9f374180d209)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Dillon Dutkus/Documents/GitHub/ThermoFlux/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2487)
+    Vendor:   NVIDIA
+    VRAM:     12110 MB
+    Driver:   32.0.15.6603
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56048
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.053720 seconds.
+- Loaded All Assemblies, in  0.991 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.672 seconds
+Domain Reload Profiling: 1655ms
+	BeginReloadAssembly (280ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (93ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (191ms)
+	LoadAllAssembliesAndSetupDomain (390ms)
+		LoadAssemblies (274ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (382ms)
+			TypeCache.Refresh (379ms)
+				TypeCache.ScanAssembly (345ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (673ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (560ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (36ms)
+			SetLoadedEditorAssemblies (12ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (395ms)
+			ProcessInitializeOnLoadMethodAttributes (113ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.003 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.571 seconds
+Domain Reload Profiling: 3559ms
+	BeginReloadAssembly (369ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (91ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (121ms)
+	LoadAllAssembliesAndSetupDomain (1378ms)
+		LoadAssemblies (991ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (609ms)
+			TypeCache.Refresh (510ms)
+				TypeCache.ScanAssembly (467ms)
+			ScanForSourceGeneratedMonoScriptInfo (65ms)
+			ResolveRequiredComponents (30ms)
+	FinalizeReload (1571ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1193ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (30ms)
+			SetLoadedEditorAssemblies (10ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (208ms)
+			ProcessInitializeOnLoadAttributes (746ms)
+			ProcessInitializeOnLoadMethodAttributes (159ms)
+			AfterProcessingInitializeOnLoad (40ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 14.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4985 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (347.9 KB). Loaded Objects now: 5448.
+Memory consumption went from 193.3 MB to 193.0 MB.
+Total: 5.940000 ms (FindLiveObjects: 0.730900 ms CreateObjectMapping: 0.367800 ms MarkObjects: 4.547100 ms  DeleteObjects: 0.292600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 117797.559376 seconds.
+  path: Assets/Art Assets/Player_Model/Player_Model_rigged.fbx
+  artifactKey: Guid(5672ddc8001bbbb44b38791bb6810d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art Assets/Player_Model/Player_Model_rigged.fbx using Guid(5672ddc8001bbbb44b38791bb6810d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '7c44f6822dbca526991f936241d89d2b') in 0.729634 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 215
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  6.485 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 28.350 seconds
+Domain Reload Profiling: 34816ms
+	BeginReloadAssembly (659ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (52ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (193ms)
+	RebuildCommonClasses (399ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (123ms)
+	LoadAllAssembliesAndSetupDomain (5251ms)
+		LoadAssemblies (5515ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (53ms)
+			TypeCache.Refresh (21ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (28351ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1109ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (11ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (213ms)
+			ProcessInitializeOnLoadAttributes (673ms)
+			ProcessInitializeOnLoadMethodAttributes (142ms)
+			AfterProcessingInitializeOnLoad (33ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (47ms)
+Refreshing native plugins compatible for Editor in 16.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4877 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (316.4 KB). Loaded Objects now: 5534.
+Memory consumption went from 187.7 MB to 187.4 MB.
+Total: 8.047000 ms (FindLiveObjects: 0.710500 ms CreateObjectMapping: 0.361400 ms MarkObjects: 6.711800 ms  DeleteObjects: 0.261400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.278 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.484 seconds
+Domain Reload Profiling: 4747ms
+	BeginReloadAssembly (365ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (70ms)
+	RebuildCommonClasses (79ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (84ms)
+	LoadAllAssembliesAndSetupDomain (706ms)
+		LoadAssemblies (873ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (43ms)
+			TypeCache.Refresh (15ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (25ms)
+	FinalizeReload (3485ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1235ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (36ms)
+			SetLoadedEditorAssemblies (11ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (242ms)
+			ProcessInitializeOnLoadAttributes (752ms)
+			ProcessInitializeOnLoadMethodAttributes (156ms)
+			AfterProcessingInitializeOnLoad (37ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (47ms)
+Refreshing native plugins compatible for Editor in 18.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4877 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (316.5 KB). Loaded Objects now: 5538.
+Memory consumption went from 187.6 MB to 187.3 MB.
+Total: 8.041500 ms (FindLiveObjects: 0.858200 ms CreateObjectMapping: 1.073500 ms MarkObjects: 5.939300 ms  DeleteObjects: 0.169200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  6.438 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 43.442 seconds
+Domain Reload Profiling: 49863ms
+	BeginReloadAssembly (563ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (141ms)
+	RebuildCommonClasses (374ms)
+	RebuildNativeTypeToScriptingClass (35ms)
+	initialDomainReloadingComplete (121ms)
+	LoadAllAssembliesAndSetupDomain (5326ms)
+		LoadAssemblies (5585ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (49ms)
+			TypeCache.Refresh (18ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (28ms)
+	FinalizeReload (43443ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1064ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			SetLoadedEditorAssemblies (10ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (228ms)
+			ProcessInitializeOnLoadAttributes (625ms)
+			ProcessInitializeOnLoadMethodAttributes (127ms)
+			AfterProcessingInitializeOnLoad (45ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (42ms)
+Refreshing native plugins compatible for Editor in 17.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4877 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (316.6 KB). Loaded Objects now: 5542.
+Memory consumption went from 187.6 MB to 187.3 MB.
+Total: 19.185400 ms (FindLiveObjects: 1.002200 ms CreateObjectMapping: 1.603400 ms MarkObjects: 16.216400 ms  DeleteObjects: 0.360800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 15415.184520 seconds.
+  path: Assets/Art Assets/Player_Model/whateveridle.fbx
+  artifactKey: Guid(71951d3d518aacb47b09a6f8be670013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art Assets/Player_Model/whateveridle.fbx using Guid(71951d3d518aacb47b09a6f8be670013) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '8e53e041ac0fcf96addb278f2a9e9a3a') in 1.417330 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 199
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.467 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.797 seconds
+Domain Reload Profiling: 7245ms
+	BeginReloadAssembly (518ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (29ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (111ms)
+	RebuildCommonClasses (102ms)
+	RebuildNativeTypeToScriptingClass (37ms)
+	initialDomainReloadingComplete (104ms)
+	LoadAllAssembliesAndSetupDomain (1686ms)
+		LoadAssemblies (1919ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (50ms)
+			TypeCache.Refresh (17ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (29ms)
+	FinalizeReload (4798ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1479ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (42ms)
+			SetLoadedEditorAssemblies (17ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (317ms)
+			ProcessInitializeOnLoadAttributes (897ms)
+			ProcessInitializeOnLoadMethodAttributes (168ms)
+			AfterProcessingInitializeOnLoad (38ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (53ms)
+Refreshing native plugins compatible for Editor in 25.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4877 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (316.5 KB). Loaded Objects now: 5583.
+Memory consumption went from 193.6 MB to 193.3 MB.
+Total: 8.043500 ms (FindLiveObjects: 1.170200 ms CreateObjectMapping: 0.398700 ms MarkObjects: 6.308200 ms  DeleteObjects: 0.164700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.972 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.725 seconds
+Domain Reload Profiling: 6677ms
+	BeginReloadAssembly (483ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (98ms)
+	RebuildCommonClasses (116ms)
+	RebuildNativeTypeToScriptingClass (32ms)
+	initialDomainReloadingComplete (119ms)
+	LoadAllAssembliesAndSetupDomain (1200ms)
+		LoadAssemblies (1398ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (85ms)
+			TypeCache.Refresh (24ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (55ms)
+	FinalizeReload (4726ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1418ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (15ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (221ms)
+			ProcessInitializeOnLoadAttributes (898ms)
+			ProcessInitializeOnLoadMethodAttributes (202ms)
+			AfterProcessingInitializeOnLoad (48ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (60ms)
+Refreshing native plugins compatible for Editor in 39.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4877 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (316.5 KB). Loaded Objects now: 5587.
+Memory consumption went from 193.6 MB to 193.3 MB.
+Total: 9.827300 ms (FindLiveObjects: 1.048300 ms CreateObjectMapping: 0.413000 ms MarkObjects: 8.003900 ms  DeleteObjects: 0.360000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.301 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  7.314 seconds
+Domain Reload Profiling: 9591ms
+	BeginReloadAssembly (665ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (158ms)
+	RebuildCommonClasses (138ms)
+	RebuildNativeTypeToScriptingClass (35ms)
+	initialDomainReloadingComplete (131ms)
+	LoadAllAssembliesAndSetupDomain (1307ms)
+		LoadAssemblies (1618ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (65ms)
+			TypeCache.Refresh (24ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (36ms)
+	FinalizeReload (7315ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2514ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (48ms)
+			SetLoadedEditorAssemblies (25ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (387ms)
+			ProcessInitializeOnLoadAttributes (1745ms)
+			ProcessInitializeOnLoadMethodAttributes (249ms)
+			AfterProcessingInitializeOnLoad (59ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (82ms)
+Refreshing native plugins compatible for Editor in 22.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4877 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (316.5 KB). Loaded Objects now: 5591.
+Memory consumption went from 193.6 MB to 193.3 MB.
+Total: 9.041200 ms (FindLiveObjects: 1.154000 ms CreateObjectMapping: 0.665400 ms MarkObjects: 6.828900 ms  DeleteObjects: 0.387700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.479 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.252 seconds
+Domain Reload Profiling: 4713ms
+	BeginReloadAssembly (385ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (68ms)
+	RebuildCommonClasses (87ms)
+	RebuildNativeTypeToScriptingClass (29ms)
+	initialDomainReloadingComplete (91ms)
+	LoadAllAssembliesAndSetupDomain (869ms)
+		LoadAssemblies (981ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (121ms)
+			TypeCache.Refresh (34ms)
+				TypeCache.ScanAssembly (7ms)
+			ScanForSourceGeneratedMonoScriptInfo (61ms)
+			ResolveRequiredComponents (24ms)
+	FinalizeReload (3252ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1034ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (197ms)
+			ProcessInitializeOnLoadAttributes (626ms)
+			ProcessInitializeOnLoadMethodAttributes (142ms)
+			AfterProcessingInitializeOnLoad (32ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (42ms)
+Refreshing native plugins compatible for Editor in 17.02 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5100 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (316.5 KB). Loaded Objects now: 5818.
+Memory consumption went from 199.3 MB to 199.0 MB.
+Total: 7.292600 ms (FindLiveObjects: 0.744700 ms CreateObjectMapping: 0.357800 ms MarkObjects: 5.959500 ms  DeleteObjects: 0.229100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/FbxAnimCurveKey.cs: 9fbd8256730f9061582d48eb9944b171 -> 
+  custom:scripting/monoscript/fileName/FbxConstraintParent.cs: 567cb2edc39ae3219c9b505daf674f7b -> 
+  custom:scripting/monoscript/fileName/FbxShape.cs: 2a21f02fd9e62c646acad319734f118d -> 
+  custom:scripting/monoscript/fileName/FbxNodeAttribute.cs: ad02766235b43e67881cc4772606f552 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTemplateFbxColor.cs: 67fe6682d5c4e04a833c363e4d758dc1 -> 
+  custom:scripting/monoscript/fileName/FbxExportTimelineAction.cs: e559b4fb29542e203982b9a404316b7b -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/FbxManager.cs: 23552d9ea4b9cd586cf62f846c77ccc9 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurveBase.cs: 9fe9d6e0aecd8db0e60172d04d297415 -> 
+  custom:scripting/monoscript/fileName/FbxBlendShapeChannel.cs: 3a215ea3695097f400752aee08963ccf -> 
+  custom:scripting/precompiled-assembly-types:Autodesk.Fbx.Editor: bae848875a35fe96f09fcc9f4e534600 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTemplateFbxSurfaceMaterial.cs: e1cbaa144cc286681d8503e6027ad7eb -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEDecayType.cs: 52925515d890eaaad1885ac2cab26e28 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementUV.cs: 3768c80af8f548fba07e2c5faa6364cd -> 
+  custom:scripting/precompiled-assembly-types:Autodesk.Fbx: 9052b6edd02b51f5df6448a980c8bf57 -> 
+  custom:scripting/monoscript/fileName/FbxConstraintRotation.cs: 3333049bba08581233d423cbcae9458d -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/FbxIOBase.cs: b7908a419727520f0eb24140c7edaad4 -> 
+  custom:scripting/monoscript/fileName/FbxSkeleton.cs: 5f421fe218c2cb9ba0356a7a8279fbcd -> 
+  custom:scripting/monoscript/fileName/FbxLayer.cs: 7f5bb0bfd9e60d05e9ff383d46ec8267 -> 
+  custom:scripting/monoscript/fileName/FbxFileTexture.cs: 093fe1d8d33acdb09ab59ebb9b725168 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/FbxScene.cs: 71ae3ce294fa1135cc2c4e9db34b0d1f -> 
+  custom:scripting/monoscript/fileName/FbxBindingTableEntry.cs: 605bd69e9b5692d5effddbfc32526f7b -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEWrapMode.cs: 27e00afb727c68841210366fd4f5c513 -> 
+  custom:scripting/monoscript/fileName/FbxBlendShape.cs: a98858c64d72c6e061f0cb0d29151c84 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyFlags.cs: 31b311a0ff82ed3ccc169e76c482eff1 -> 
+  custom:scripting/monoscript/fileName/FbxTimeSpan.cs: 5d2607b0cda668430aeb31b79ceef216 -> 
+  custom:scripting/monoscript/fileName/ExportModelEditorWindow.cs: cf701718ac83fb293467c7c3e1c28063 -> 
+  custom:scripting/monoscript/fileName/IExportData.cs: fe9878291c2fc74de885772c14372b76 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTangent.cs: 2b2abf74c10dcaf3633f4d98533e4487 -> 
+  custom:scripting/monoscript/fileName/ExportModelSettings.cs: 50088f8dc6633493a2439a5a9c1e7481 -> 
+  custom:scripting/monoscript/fileName/FbxSurfacePhong.cs: 813b21c1960d4edd5c5f62353114802e -> 
+  custom:scripting/monoscript/fileName/FbxLayerContainer.cs: b8551e2966ce622b87cc1c0d7efe8675 -> 
+  custom:scripting/monoscript/fileName/FbxSurfaceLambert.cs: 913f4d72375b7f7e78565ef67e10c9da -> 
+  custom:scripting/monoscript/fileName/FbxPrefab.cs: 0d37a0275409adc5d549e4d1fc6d5bf7 -> 
+  custom:scripting/monoscript/fileName/ConvertToPrefabEditorWindow.cs: 3236649dc377dd18cad8e7f8b876ec5b -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateFbxSurfaceMaterial.cs: 21e550ba2ba7280355bc56f25c8e734e -> 
+  custom:scripting/monoscript/fileName/FbxDocument.cs: 0550a92e67733c3dc5a87f70d596a44e -> 
+  custom:scripting/monoscript/fileName/FbxPropertyELightType.cs: 4ac91b0f1a9bbd09fc595f357b2c3c6f -> 
+  custom:scripting/monoscript/fileName/FbxQuaternion.cs: 50f937e4494a3493328884eacd695857 -> 
+  custom:scripting/monoscript/fileName/FbxAMatrix.cs: ceeb6eba84b583e8ed408cffdde01580 -> 
+  custom:scripting/monoscript/fileName/FbxBindingTable.cs: 740dc5c493e5cc9529c43633fb8185b3 -> 
+  custom:scripting/monoscript/fileName/FbxStatus.cs: e0f858a177f1c1fb39ef05202160624e -> 
+  custom:scripting/monoscript/fileName/FbxMesh.cs: acc21884ec9f91bbf3a8d1f8e7820800 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:scripting/monoscript/fileName/Globals.cs: be110017fafd9c73fa3c7cb5418284c9 -> 
+  custom:scripting/monoscript/fileName/FbxConstraint.cs: bef035e770af75152f9736986a060ae9 -> 
+  custom:scripting/monoscript/fileName/ExportSettings.cs: 4fe3228d8cec84cbd2fe7ccb66c3e931 -> 
+  custom:scripting/monoscript/fileName/NativeMethods.cs: 3feaaf1e162570d34e42584823c3cd96 -> 
+  custom:scripting/monoscript/fileName/FbxAxisSystem.cs: 3ba61d9c458d48f1830eeaf919a573ab -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/FbxCluster.cs: da8abc8a471c252ab20f37672a71294e -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementBinormal.cs: 79b92f8d75f3392867b4e08b0bc010bc -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEGateFit.cs: d574bcd3d387155bb8ad22d046aba357 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementMaterial.cs: 8c9dc6eccc3eb760e041679d54fb684e -> 
+  custom:scripting/monoscript/fileName/FbxDocumentInfo.cs: 863cb0899b508f7826edd27548c99530 -> 
+  custom:scripting/monoscript/fileName/FbxSkin.cs: 72472130cbf13c197e5a2956817d0bbe -> 
+  custom:scripting/monoscript/fileName/FbxConstraintAim.cs: 8042fd5ecfe9611849c3efd3eae14f36 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateFbxVector4.cs: abba7e9bde8ed41768aeb11419eadebe -> 
+  custom:scripting/monoscript/fileName/FbxImporter.cs: c3c30d73aea4c9486679b1cb2c42fcc9 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurveDef.cs: 740d8ae75b4a6076bf9e3e485b5b77f1 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurve.cs: 1c6d4e7669f1bc6ab32b5099f00d5d1f -> 
+  custom:scripting/precompiled-assembly-types:Unity.Formats.Fbx.Runtime: 19996a5977c636054d29df884e562556 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurveNode.cs: 045cd34a26302a4340887f5c3df9fa56 -> 
+  custom:scripting/monoscript/fileName/ConvertToPrefabSettings.cs: 51fc9323133a3116f2cf5fdc2eaf37af -> 
+  custom:scripting/monoscript/fileName/FbxNull.cs: 36aaf400046069e6292d17219d1c069c -> 
+  custom:scripting/monoscript/fileName/FbxEntryView.cs: dda744d71a7635018a7cc355b067f8de -> 
+  custom:scripting/monoscript/fileName/FbxImplementation.cs: 7b47a353c3978648ba37a31403bb9735 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTemplateFbxVector4.cs: 33022fe870edf908b370d76dc35c9c8f -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEBlendMode.cs: b3f5b36afebc764d62687b9487a92855 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/FbxCollection.cs: a7719a3c7d0f9755fa5160248c6f774d -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/FbxRotationCurve.cs: b3d987039abb603e65dafcc714be9395 -> 
+  custom:scripting/monoscript/fileName/FbxNurbsCurve.cs: 7351470297bac997ad5edd9cd3f442bd -> 
+  custom:scripting/monoscript/fileName/FbxPropertyChannelPair.cs: 762d796c1a9204bcde8e30ce0bfeb4d9 -> 
+  custom:scripting/monoscript/fileName/FbxGeometry.cs: 48013c33c3d7f63d61eeadad3653c3fa -> 
+  custom:scripting/monoscript/fileName/FbxDataType.cs: 8afa2284a1d3520c6c7b056b41c013dd -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementVertexColor.cs: a848de8bf2124bd81bf8bcb7a2d65b0d -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/FbxDouble4x4.cs: ae149be842cc8e03152b34b334239b73 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyFloat.cs: c363c4af4c6e907f7bd3c82665343894 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementNormal.cs: 26c5093132973342a1cf62e727ceabf9 -> 
+  custom:scripting/monoscript/fileName/FbxIOPluginRegistry.cs: 80f28650270352b658e89584ba53cf78 -> 
+  custom:scripting/monoscript/fileName/FbxConstraintPosition.cs: d2eff2c9ae30cc45f159fb343326a38b -> 
+  custom:scripting/monoscript/fileName/FbxEmitter.cs: d089011a2111ed9ba11a9c8860650eb8 -> 
+  custom:scripting/monoscript/fileName/FbxMatrix.cs: 2c5d11da739bae5ab7a9e6287e3f635f -> 
+  custom:scripting/monoscript/fileName/FbxExporterRepairMissingScripts.cs: 820d40b5e304f02a2207f1df5b1786dd -> 
+  custom:scripting/monoscript/fileName/FbxDoubleTemplates.cs: 1f4bbdb65eab2cdcb62f8165d2d82517 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTemplateFbxVector2.cs: d2cb18b2db40df38e585413819958705 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateInt.cs: 6ef48c5951f82f75d16dff92ec083434 -> 
+  custom:scripting/monoscript/fileName/FbxProperty.cs: 3819dd05a82badd129a7f6e365473927 -> 
+  custom:scripting/monoscript/fileName/FbxSystemUnit.cs: 3295634c7fc9bdf2758f5d5c17ce2c9f -> 
+  custom:scripting/monoscript/fileName/FbxTransform.cs: 23a8d5f81f4b3a51c97bab2fcfe349f0 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyNullELook.cs: b3c41a31e7c05e33d492c05e29faefd0 -> 
+  custom:scripting/monoscript/fileName/FbxBindingTableBase.cs: b215adae3ec7fbfda953323d2a2d2314 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateFbxColor.cs: 5152d886d8a25c3888aae80f96bce43d -> 
+  custom:scripting/monoscript/fileName/FbxIOSettings.cs: 3fd153d39b55fff27e36563685561a58 -> 
+  custom:scripting/monoscript/fileName/FbxMarker.cs: f0c12d9017c19e89cf779f137b396c51 -> 
+  custom:scripting/monoscript/fileName/ExportEmptyFbx.cs: cd15797793c8de7703f841d592f40745 -> 
+  custom:scripting/precompiled-assembly-types:FbxBuildTestAssets: a1536c7a48b28f2607f21a00135121bd -> 
+  custom:scripting/monoscript/fileName/FbxExporter.cs: 14d203fdccc1574fb517ce4360deed0b -> 
+  custom:scripting/monoscript/fileName/FbxPropertyInt.cs: 6df0f2671e699b6498dcabcaa8c11ccd -> 
+  custom:scripting/monoscript/fileName/FbxSubDeformer.cs: f5160f8ddaa4b846839699b92041e395 -> 
+  custom:scripting/monoscript/fileName/FbxSurfaceMaterial.cs: eb900b126346156d69160840468ae69c -> 
+  custom:scripting/monoscript/fileName/FbxNode.cs: 19ee172d8b678ec052a7c50adc93089f -> 
+  custom:scripting/monoscript/fileName/FbxPropertyDouble.cs: 86532092f8e5ac4165190f00bc6ddac1 -> 
+  custom:scripting/monoscript/fileName/FbxLimits.cs: 88b1e072f91c043e0a42a1ace2ad849c -> 
+  custom:scripting/monoscript/fileName/FbxPropertyDouble3.cs: 7214a26730fd8b30e98740c4804cff61 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEProjectionType.cs: 1f2afeb1b2c72f62924f8d131875efd5 -> 
+  custom:scripting/monoscript/fileName/FbxTexture.cs: f97a3797113512f7d0d907cbda6684fc -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/FbxPose.cs: 88c58779797f89edb2d34cfb8d39c646 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEInheritType.cs: d98edf98fb0d376c66dfc7407ff7569f -> 
+  custom:scripting/monoscript/fileName/FbxConstraintScale.cs: bceae67b357d03a6f01e0d2a41c8fe70 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElement.cs: dab154f20ea89abf2af8fdd1c43afd0e -> 
+  custom:scripting/monoscript/fileName/ConvertToNestedPrefab.cs: 442c41c99487f072ce4f79d90127da06 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEntryView.cs: 44e13baac7c841e4a620a4c82f1c75fd -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEAreaLightShape.cs: 07528d7283f9e29a60acbba21cbbc01e -> 
+  custom:scripting/monoscript/fileName/FbxGlobalSettings.cs: 5a71ade068c99f9827828d54891eac38 -> 
+  custom:scripting/monoscript/fileName/CameraVisitor.cs: 48db874b39f8e385ca58be5a45f5fa5a -> 
+  custom:scripting/monoscript/fileName/FbxConnection.cs: c29cd84f9c806c9ea605731e79167951 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyString.cs: d0a70ad46a27988a0de613fe0dfe1101 -> 
+  custom:scripting/monoscript/fileName/FbxGeometryBase.cs: b80921b904337d64836aab1315c4d8e6 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurveFilterUnroll.cs: ca0ada5a99f9d147676f2f2da1ce17d5 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyMarkerELook.cs: 1d1de918f87923247ec760d3faf16ac8 -> 
+  custom:scripting/precompiled-assembly-types:Unity.Formats.Fbx.Editor: a14cc3e66589f99065686359f1ab8c42 -> 
+  custom:scripting/monoscript/fileName/FbxExportPresetSelectorReceiver.cs: 933e0be0fa35b1c35e22280b93f58ee2 -> 
+  custom:scripting/monoscript/fileName/FbxLight.cs: 5def5fa0c94426100af916b97b3b7028 -> 
+  custom:scripting/monoscript/fileName/FbxAnimLayer.cs: a33542128507b1a9774126b009d92729 -> 
+  custom:scripting/monoscript/fileName/FbxEuler.cs: 78ce073ba7cd774c97fd3fec848d1d22 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArray.cs: f198dec82146e3d89a7d025f49bcd332 -> 
+  custom:scripting/monoscript/fileName/FbxTime.cs: 7ff870fb104aeff8c3e2fd6db612200f -> 
+  custom:scripting/monoscript/fileName/FbxAnimStack.cs: cd827408506b52689ab211c452254bdf -> 
+  custom:scripting/monoscript/fileName/FbxObject.cs: 22901937c83410c82a079ff7fceb58dc -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateFbxVector2.cs: 5c3a6f20f8c80779ca7828c92f33194b -> 
+  custom:scripting/monoscript/fileName/FbxSharpProgressCallback.cs: 8eff72a266de0b6f575a84b2ebe1f086 -> 
+  custom:scripting/monoscript/fileName/FbxIOFileHeaderInfo.cs: 2f533e3b2e35800afb9637e46763a4d2 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyBool.cs: b6e61da9a36971e93e14e86c261e72ce -> 
+  custom:scripting/monoscript/fileName/FbxDeformer.cs: eaf4846ef3982ac5d1a664b2ad250993 -> 
+  custom:scripting/monoscript/fileName/InstallIntegration.cs: d9c189ac718e03ccb133c538d8fe3ebc -> 
+  custom:scripting/monoscript/fileName/CustomExtensions.cs: 4dd2d579b175e1cfed48fcf67b4a834f -> 
+  custom:scripting/monoscript/fileName/FbxCamera.cs: ff6f9ac7210e395dab3784e2d0c7fb91 -> 
+  custom:scripting/monoscript/fileName/FbxSemanticEntryView.cs: cfd002bcde442a3b5e643bb8a652b3f6 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.454 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.589 seconds
+Domain Reload Profiling: 5024ms
+	BeginReloadAssembly (431ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (71ms)
+	RebuildCommonClasses (100ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (88ms)
+	LoadAllAssembliesAndSetupDomain (785ms)
+		LoadAssemblies (1015ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (48ms)
+			TypeCache.Refresh (17ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (26ms)
+	FinalizeReload (3590ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1058ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (199ms)
+			ProcessInitializeOnLoadAttributes (659ms)
+			ProcessInitializeOnLoadMethodAttributes (136ms)
+			AfterProcessingInitializeOnLoad (29ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (38ms)
+Refreshing native plugins compatible for Editor in 16.46 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5100 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (316.6 KB). Loaded Objects now: 5822.
+Memory consumption went from 199.3 MB to 199.0 MB.
+Total: 6.619500 ms (FindLiveObjects: 0.674200 ms CreateObjectMapping: 0.323400 ms MarkObjects: 5.443200 ms  DeleteObjects: 0.177300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/FbxAnimCurveKey.cs: 9fbd8256730f9061582d48eb9944b171 -> 
+  custom:scripting/monoscript/fileName/FbxConstraintParent.cs: 567cb2edc39ae3219c9b505daf674f7b -> 
+  custom:scripting/monoscript/fileName/FbxShape.cs: 2a21f02fd9e62c646acad319734f118d -> 
+  custom:scripting/monoscript/fileName/FbxNodeAttribute.cs: ad02766235b43e67881cc4772606f552 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTemplateFbxColor.cs: 67fe6682d5c4e04a833c363e4d758dc1 -> 
+  custom:scripting/monoscript/fileName/FbxExportTimelineAction.cs: e559b4fb29542e203982b9a404316b7b -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/FbxManager.cs: 23552d9ea4b9cd586cf62f846c77ccc9 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurveBase.cs: 9fe9d6e0aecd8db0e60172d04d297415 -> 
+  custom:scripting/monoscript/fileName/FbxBlendShapeChannel.cs: 3a215ea3695097f400752aee08963ccf -> 
+  custom:scripting/precompiled-assembly-types:Autodesk.Fbx.Editor: bae848875a35fe96f09fcc9f4e534600 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTemplateFbxSurfaceMaterial.cs: e1cbaa144cc286681d8503e6027ad7eb -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEDecayType.cs: 52925515d890eaaad1885ac2cab26e28 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementUV.cs: 3768c80af8f548fba07e2c5faa6364cd -> 
+  custom:scripting/precompiled-assembly-types:Autodesk.Fbx: 9052b6edd02b51f5df6448a980c8bf57 -> 
+  custom:scripting/monoscript/fileName/FbxConstraintRotation.cs: 3333049bba08581233d423cbcae9458d -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/FbxIOBase.cs: b7908a419727520f0eb24140c7edaad4 -> 
+  custom:scripting/monoscript/fileName/FbxSkeleton.cs: 5f421fe218c2cb9ba0356a7a8279fbcd -> 
+  custom:scripting/monoscript/fileName/FbxLayer.cs: 7f5bb0bfd9e60d05e9ff383d46ec8267 -> 
+  custom:scripting/monoscript/fileName/FbxFileTexture.cs: 093fe1d8d33acdb09ab59ebb9b725168 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/FbxScene.cs: 71ae3ce294fa1135cc2c4e9db34b0d1f -> 
+  custom:scripting/monoscript/fileName/FbxBindingTableEntry.cs: 605bd69e9b5692d5effddbfc32526f7b -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEWrapMode.cs: 27e00afb727c68841210366fd4f5c513 -> 
+  custom:scripting/monoscript/fileName/FbxBlendShape.cs: a98858c64d72c6e061f0cb0d29151c84 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyFlags.cs: 31b311a0ff82ed3ccc169e76c482eff1 -> 
+  custom:scripting/monoscript/fileName/FbxTimeSpan.cs: 5d2607b0cda668430aeb31b79ceef216 -> 
+  custom:scripting/monoscript/fileName/ExportModelEditorWindow.cs: cf701718ac83fb293467c7c3e1c28063 -> 
+  custom:scripting/monoscript/fileName/IExportData.cs: fe9878291c2fc74de885772c14372b76 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTangent.cs: 2b2abf74c10dcaf3633f4d98533e4487 -> 
+  custom:scripting/monoscript/fileName/ExportModelSettings.cs: 50088f8dc6633493a2439a5a9c1e7481 -> 
+  custom:scripting/monoscript/fileName/FbxSurfacePhong.cs: 813b21c1960d4edd5c5f62353114802e -> 
+  custom:scripting/monoscript/fileName/FbxLayerContainer.cs: b8551e2966ce622b87cc1c0d7efe8675 -> 
+  custom:scripting/monoscript/fileName/FbxSurfaceLambert.cs: 913f4d72375b7f7e78565ef67e10c9da -> 
+  custom:scripting/monoscript/fileName/FbxPrefab.cs: 0d37a0275409adc5d549e4d1fc6d5bf7 -> 
+  custom:scripting/monoscript/fileName/ConvertToPrefabEditorWindow.cs: 3236649dc377dd18cad8e7f8b876ec5b -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateFbxSurfaceMaterial.cs: 21e550ba2ba7280355bc56f25c8e734e -> 
+  custom:scripting/monoscript/fileName/FbxDocument.cs: 0550a92e67733c3dc5a87f70d596a44e -> 
+  custom:scripting/monoscript/fileName/FbxPropertyELightType.cs: 4ac91b0f1a9bbd09fc595f357b2c3c6f -> 
+  custom:scripting/monoscript/fileName/FbxQuaternion.cs: 50f937e4494a3493328884eacd695857 -> 
+  custom:scripting/monoscript/fileName/FbxAMatrix.cs: ceeb6eba84b583e8ed408cffdde01580 -> 
+  custom:scripting/monoscript/fileName/FbxBindingTable.cs: 740dc5c493e5cc9529c43633fb8185b3 -> 
+  custom:scripting/monoscript/fileName/FbxStatus.cs: e0f858a177f1c1fb39ef05202160624e -> 
+  custom:scripting/monoscript/fileName/FbxMesh.cs: acc21884ec9f91bbf3a8d1f8e7820800 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:scripting/monoscript/fileName/Globals.cs: be110017fafd9c73fa3c7cb5418284c9 -> 
+  custom:scripting/monoscript/fileName/FbxConstraint.cs: bef035e770af75152f9736986a060ae9 -> 
+  custom:scripting/monoscript/fileName/ExportSettings.cs: 4fe3228d8cec84cbd2fe7ccb66c3e931 -> 
+  custom:scripting/monoscript/fileName/NativeMethods.cs: 3feaaf1e162570d34e42584823c3cd96 -> 
+  custom:scripting/monoscript/fileName/FbxAxisSystem.cs: 3ba61d9c458d48f1830eeaf919a573ab -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/FbxCluster.cs: da8abc8a471c252ab20f37672a71294e -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementBinormal.cs: 79b92f8d75f3392867b4e08b0bc010bc -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEGateFit.cs: d574bcd3d387155bb8ad22d046aba357 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementMaterial.cs: 8c9dc6eccc3eb760e041679d54fb684e -> 
+  custom:scripting/monoscript/fileName/FbxDocumentInfo.cs: 863cb0899b508f7826edd27548c99530 -> 
+  custom:scripting/monoscript/fileName/FbxSkin.cs: 72472130cbf13c197e5a2956817d0bbe -> 
+  custom:scripting/monoscript/fileName/FbxConstraintAim.cs: 8042fd5ecfe9611849c3efd3eae14f36 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateFbxVector4.cs: abba7e9bde8ed41768aeb11419eadebe -> 
+  custom:scripting/monoscript/fileName/FbxImporter.cs: c3c30d73aea4c9486679b1cb2c42fcc9 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurveDef.cs: 740d8ae75b4a6076bf9e3e485b5b77f1 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurve.cs: 1c6d4e7669f1bc6ab32b5099f00d5d1f -> 
+  custom:scripting/precompiled-assembly-types:Unity.Formats.Fbx.Runtime: 19996a5977c636054d29df884e562556 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurveNode.cs: 045cd34a26302a4340887f5c3df9fa56 -> 
+  custom:scripting/monoscript/fileName/ConvertToPrefabSettings.cs: 51fc9323133a3116f2cf5fdc2eaf37af -> 
+  custom:scripting/monoscript/fileName/FbxNull.cs: 36aaf400046069e6292d17219d1c069c -> 
+  custom:scripting/monoscript/fileName/FbxEntryView.cs: dda744d71a7635018a7cc355b067f8de -> 
+  custom:scripting/monoscript/fileName/FbxImplementation.cs: 7b47a353c3978648ba37a31403bb9735 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTemplateFbxVector4.cs: 33022fe870edf908b370d76dc35c9c8f -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEBlendMode.cs: b3f5b36afebc764d62687b9487a92855 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/FbxCollection.cs: a7719a3c7d0f9755fa5160248c6f774d -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/FbxRotationCurve.cs: b3d987039abb603e65dafcc714be9395 -> 
+  custom:scripting/monoscript/fileName/FbxNurbsCurve.cs: 7351470297bac997ad5edd9cd3f442bd -> 
+  custom:scripting/monoscript/fileName/FbxPropertyChannelPair.cs: 762d796c1a9204bcde8e30ce0bfeb4d9 -> 
+  custom:scripting/monoscript/fileName/FbxGeometry.cs: 48013c33c3d7f63d61eeadad3653c3fa -> 
+  custom:scripting/monoscript/fileName/FbxDataType.cs: 8afa2284a1d3520c6c7b056b41c013dd -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementVertexColor.cs: a848de8bf2124bd81bf8bcb7a2d65b0d -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/FbxDouble4x4.cs: ae149be842cc8e03152b34b334239b73 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyFloat.cs: c363c4af4c6e907f7bd3c82665343894 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementNormal.cs: 26c5093132973342a1cf62e727ceabf9 -> 
+  custom:scripting/monoscript/fileName/FbxIOPluginRegistry.cs: 80f28650270352b658e89584ba53cf78 -> 
+  custom:scripting/monoscript/fileName/FbxConstraintPosition.cs: d2eff2c9ae30cc45f159fb343326a38b -> 
+  custom:scripting/monoscript/fileName/FbxEmitter.cs: d089011a2111ed9ba11a9c8860650eb8 -> 
+  custom:scripting/monoscript/fileName/FbxMatrix.cs: 2c5d11da739bae5ab7a9e6287e3f635f -> 
+  custom:scripting/monoscript/fileName/FbxExporterRepairMissingScripts.cs: 820d40b5e304f02a2207f1df5b1786dd -> 
+  custom:scripting/monoscript/fileName/FbxDoubleTemplates.cs: 1f4bbdb65eab2cdcb62f8165d2d82517 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTemplateFbxVector2.cs: d2cb18b2db40df38e585413819958705 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateInt.cs: 6ef48c5951f82f75d16dff92ec083434 -> 
+  custom:scripting/monoscript/fileName/FbxProperty.cs: 3819dd05a82badd129a7f6e365473927 -> 
+  custom:scripting/monoscript/fileName/FbxSystemUnit.cs: 3295634c7fc9bdf2758f5d5c17ce2c9f -> 
+  custom:scripting/monoscript/fileName/FbxTransform.cs: 23a8d5f81f4b3a51c97bab2fcfe349f0 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyNullELook.cs: b3c41a31e7c05e33d492c05e29faefd0 -> 
+  custom:scripting/monoscript/fileName/FbxBindingTableBase.cs: b215adae3ec7fbfda953323d2a2d2314 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateFbxColor.cs: 5152d886d8a25c3888aae80f96bce43d -> 
+  custom:scripting/monoscript/fileName/FbxIOSettings.cs: 3fd153d39b55fff27e36563685561a58 -> 
+  custom:scripting/monoscript/fileName/FbxMarker.cs: f0c12d9017c19e89cf779f137b396c51 -> 
+  custom:scripting/monoscript/fileName/ExportEmptyFbx.cs: cd15797793c8de7703f841d592f40745 -> 
+  custom:scripting/precompiled-assembly-types:FbxBuildTestAssets: a1536c7a48b28f2607f21a00135121bd -> 
+  custom:scripting/monoscript/fileName/FbxExporter.cs: 14d203fdccc1574fb517ce4360deed0b -> 
+  custom:scripting/monoscript/fileName/FbxPropertyInt.cs: 6df0f2671e699b6498dcabcaa8c11ccd -> 
+  custom:scripting/monoscript/fileName/FbxSubDeformer.cs: f5160f8ddaa4b846839699b92041e395 -> 
+  custom:scripting/monoscript/fileName/FbxSurfaceMaterial.cs: eb900b126346156d69160840468ae69c -> 
+  custom:scripting/monoscript/fileName/FbxNode.cs: 19ee172d8b678ec052a7c50adc93089f -> 
+  custom:scripting/monoscript/fileName/FbxPropertyDouble.cs: 86532092f8e5ac4165190f00bc6ddac1 -> 
+  custom:scripting/monoscript/fileName/FbxLimits.cs: 88b1e072f91c043e0a42a1ace2ad849c -> 
+  custom:scripting/monoscript/fileName/FbxPropertyDouble3.cs: 7214a26730fd8b30e98740c4804cff61 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEProjectionType.cs: 1f2afeb1b2c72f62924f8d131875efd5 -> 
+  custom:scripting/monoscript/fileName/FbxTexture.cs: f97a3797113512f7d0d907cbda6684fc -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/FbxPose.cs: 88c58779797f89edb2d34cfb8d39c646 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEInheritType.cs: d98edf98fb0d376c66dfc7407ff7569f -> 
+  custom:scripting/monoscript/fileName/FbxConstraintScale.cs: bceae67b357d03a6f01e0d2a41c8fe70 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElement.cs: dab154f20ea89abf2af8fdd1c43afd0e -> 
+  custom:scripting/monoscript/fileName/ConvertToNestedPrefab.cs: 442c41c99487f072ce4f79d90127da06 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEntryView.cs: 44e13baac7c841e4a620a4c82f1c75fd -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEAreaLightShape.cs: 07528d7283f9e29a60acbba21cbbc01e -> 
+  custom:scripting/monoscript/fileName/FbxGlobalSettings.cs: 5a71ade068c99f9827828d54891eac38 -> 
+  custom:scripting/monoscript/fileName/CameraVisitor.cs: 48db874b39f8e385ca58be5a45f5fa5a -> 
+  custom:scripting/monoscript/fileName/FbxConnection.cs: c29cd84f9c806c9ea605731e79167951 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyString.cs: d0a70ad46a27988a0de613fe0dfe1101 -> 
+  custom:scripting/monoscript/fileName/FbxGeometryBase.cs: b80921b904337d64836aab1315c4d8e6 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurveFilterUnroll.cs: ca0ada5a99f9d147676f2f2da1ce17d5 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyMarkerELook.cs: 1d1de918f87923247ec760d3faf16ac8 -> 
+  custom:scripting/precompiled-assembly-types:Unity.Formats.Fbx.Editor: a14cc3e66589f99065686359f1ab8c42 -> 
+  custom:scripting/monoscript/fileName/FbxExportPresetSelectorReceiver.cs: 933e0be0fa35b1c35e22280b93f58ee2 -> 
+  custom:scripting/monoscript/fileName/FbxLight.cs: 5def5fa0c94426100af916b97b3b7028 -> 
+  custom:scripting/monoscript/fileName/FbxAnimLayer.cs: a33542128507b1a9774126b009d92729 -> 
+  custom:scripting/monoscript/fileName/FbxEuler.cs: 78ce073ba7cd774c97fd3fec848d1d22 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArray.cs: f198dec82146e3d89a7d025f49bcd332 -> 
+  custom:scripting/monoscript/fileName/FbxTime.cs: 7ff870fb104aeff8c3e2fd6db612200f -> 
+  custom:scripting/monoscript/fileName/FbxAnimStack.cs: cd827408506b52689ab211c452254bdf -> 
+  custom:scripting/monoscript/fileName/FbxObject.cs: 22901937c83410c82a079ff7fceb58dc -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateFbxVector2.cs: 5c3a6f20f8c80779ca7828c92f33194b -> 
+  custom:scripting/monoscript/fileName/FbxSharpProgressCallback.cs: 8eff72a266de0b6f575a84b2ebe1f086 -> 
+  custom:scripting/monoscript/fileName/FbxIOFileHeaderInfo.cs: 2f533e3b2e35800afb9637e46763a4d2 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyBool.cs: b6e61da9a36971e93e14e86c261e72ce -> 
+  custom:scripting/monoscript/fileName/FbxDeformer.cs: eaf4846ef3982ac5d1a664b2ad250993 -> 
+  custom:scripting/monoscript/fileName/InstallIntegration.cs: d9c189ac718e03ccb133c538d8fe3ebc -> 
+  custom:scripting/monoscript/fileName/CustomExtensions.cs: 4dd2d579b175e1cfed48fcf67b4a834f -> 
+  custom:scripting/monoscript/fileName/FbxCamera.cs: ff6f9ac7210e395dab3784e2d0c7fb91 -> 
+  custom:scripting/monoscript/fileName/FbxSemanticEntryView.cs: cfd002bcde442a3b5e643bb8a652b3f6 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.397 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.959 seconds
+Domain Reload Profiling: 5340ms
+	BeginReloadAssembly (388ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (75ms)
+	RebuildCommonClasses (89ms)
+	RebuildNativeTypeToScriptingClass (31ms)
+	initialDomainReloadingComplete (94ms)
+	LoadAllAssembliesAndSetupDomain (777ms)
+		LoadAssemblies (954ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (47ms)
+			TypeCache.Refresh (17ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (25ms)
+	FinalizeReload (3960ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1347ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (36ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (271ms)
+			ProcessInitializeOnLoadAttributes (814ms)
+			ProcessInitializeOnLoadMethodAttributes (176ms)
+			AfterProcessingInitializeOnLoad (41ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (55ms)
+Refreshing native plugins compatible for Editor in 24.63 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5100 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (316.2 KB). Loaded Objects now: 5826.
+Memory consumption went from 199.3 MB to 199.0 MB.
+Total: 7.864900 ms (FindLiveObjects: 0.839400 ms CreateObjectMapping: 0.555900 ms MarkObjects: 6.045900 ms  DeleteObjects: 0.421200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/FbxAnimCurveKey.cs: 9fbd8256730f9061582d48eb9944b171 -> 
+  custom:scripting/monoscript/fileName/FbxConstraintParent.cs: 567cb2edc39ae3219c9b505daf674f7b -> 
+  custom:scripting/monoscript/fileName/FbxShape.cs: 2a21f02fd9e62c646acad319734f118d -> 
+  custom:scripting/monoscript/fileName/FbxNodeAttribute.cs: ad02766235b43e67881cc4772606f552 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTemplateFbxColor.cs: 67fe6682d5c4e04a833c363e4d758dc1 -> 
+  custom:scripting/monoscript/fileName/FbxExportTimelineAction.cs: e559b4fb29542e203982b9a404316b7b -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/FbxManager.cs: 23552d9ea4b9cd586cf62f846c77ccc9 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurveBase.cs: 9fe9d6e0aecd8db0e60172d04d297415 -> 
+  custom:scripting/monoscript/fileName/FbxBlendShapeChannel.cs: 3a215ea3695097f400752aee08963ccf -> 
+  custom:scripting/precompiled-assembly-types:Autodesk.Fbx.Editor: bae848875a35fe96f09fcc9f4e534600 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTemplateFbxSurfaceMaterial.cs: e1cbaa144cc286681d8503e6027ad7eb -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEDecayType.cs: 52925515d890eaaad1885ac2cab26e28 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementUV.cs: 3768c80af8f548fba07e2c5faa6364cd -> 
+  custom:scripting/precompiled-assembly-types:Autodesk.Fbx: 9052b6edd02b51f5df6448a980c8bf57 -> 
+  custom:scripting/monoscript/fileName/FbxConstraintRotation.cs: 3333049bba08581233d423cbcae9458d -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/FbxIOBase.cs: b7908a419727520f0eb24140c7edaad4 -> 
+  custom:scripting/monoscript/fileName/FbxSkeleton.cs: 5f421fe218c2cb9ba0356a7a8279fbcd -> 
+  custom:scripting/monoscript/fileName/FbxLayer.cs: 7f5bb0bfd9e60d05e9ff383d46ec8267 -> 
+  custom:scripting/monoscript/fileName/FbxFileTexture.cs: 093fe1d8d33acdb09ab59ebb9b725168 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/FbxScene.cs: 71ae3ce294fa1135cc2c4e9db34b0d1f -> 
+  custom:scripting/monoscript/fileName/FbxBindingTableEntry.cs: 605bd69e9b5692d5effddbfc32526f7b -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEWrapMode.cs: 27e00afb727c68841210366fd4f5c513 -> 
+  custom:scripting/monoscript/fileName/FbxBlendShape.cs: a98858c64d72c6e061f0cb0d29151c84 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyFlags.cs: 31b311a0ff82ed3ccc169e76c482eff1 -> 
+  custom:scripting/monoscript/fileName/FbxTimeSpan.cs: 5d2607b0cda668430aeb31b79ceef216 -> 
+  custom:scripting/monoscript/fileName/ExportModelEditorWindow.cs: cf701718ac83fb293467c7c3e1c28063 -> 
+  custom:scripting/monoscript/fileName/IExportData.cs: fe9878291c2fc74de885772c14372b76 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTangent.cs: 2b2abf74c10dcaf3633f4d98533e4487 -> 
+  custom:scripting/monoscript/fileName/ExportModelSettings.cs: 50088f8dc6633493a2439a5a9c1e7481 -> 
+  custom:scripting/monoscript/fileName/FbxSurfacePhong.cs: 813b21c1960d4edd5c5f62353114802e -> 
+  custom:scripting/monoscript/fileName/FbxLayerContainer.cs: b8551e2966ce622b87cc1c0d7efe8675 -> 
+  custom:scripting/monoscript/fileName/FbxSurfaceLambert.cs: 913f4d72375b7f7e78565ef67e10c9da -> 
+  custom:scripting/monoscript/fileName/FbxPrefab.cs: 0d37a0275409adc5d549e4d1fc6d5bf7 -> 
+  custom:scripting/monoscript/fileName/ConvertToPrefabEditorWindow.cs: 3236649dc377dd18cad8e7f8b876ec5b -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateFbxSurfaceMaterial.cs: 21e550ba2ba7280355bc56f25c8e734e -> 
+  custom:scripting/monoscript/fileName/FbxDocument.cs: 0550a92e67733c3dc5a87f70d596a44e -> 
+  custom:scripting/monoscript/fileName/FbxPropertyELightType.cs: 4ac91b0f1a9bbd09fc595f357b2c3c6f -> 
+  custom:scripting/monoscript/fileName/FbxQuaternion.cs: 50f937e4494a3493328884eacd695857 -> 
+  custom:scripting/monoscript/fileName/FbxAMatrix.cs: ceeb6eba84b583e8ed408cffdde01580 -> 
+  custom:scripting/monoscript/fileName/FbxBindingTable.cs: 740dc5c493e5cc9529c43633fb8185b3 -> 
+  custom:scripting/monoscript/fileName/FbxStatus.cs: e0f858a177f1c1fb39ef05202160624e -> 
+  custom:scripting/monoscript/fileName/FbxMesh.cs: acc21884ec9f91bbf3a8d1f8e7820800 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:scripting/monoscript/fileName/Globals.cs: be110017fafd9c73fa3c7cb5418284c9 -> 
+  custom:scripting/monoscript/fileName/FbxConstraint.cs: bef035e770af75152f9736986a060ae9 -> 
+  custom:scripting/monoscript/fileName/ExportSettings.cs: 4fe3228d8cec84cbd2fe7ccb66c3e931 -> 
+  custom:scripting/monoscript/fileName/NativeMethods.cs: 3feaaf1e162570d34e42584823c3cd96 -> 
+  custom:scripting/monoscript/fileName/FbxAxisSystem.cs: 3ba61d9c458d48f1830eeaf919a573ab -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/FbxCluster.cs: da8abc8a471c252ab20f37672a71294e -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementBinormal.cs: 79b92f8d75f3392867b4e08b0bc010bc -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEGateFit.cs: d574bcd3d387155bb8ad22d046aba357 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementMaterial.cs: 8c9dc6eccc3eb760e041679d54fb684e -> 
+  custom:scripting/monoscript/fileName/FbxDocumentInfo.cs: 863cb0899b508f7826edd27548c99530 -> 
+  custom:scripting/monoscript/fileName/FbxSkin.cs: 72472130cbf13c197e5a2956817d0bbe -> 
+  custom:scripting/monoscript/fileName/FbxConstraintAim.cs: 8042fd5ecfe9611849c3efd3eae14f36 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateFbxVector4.cs: abba7e9bde8ed41768aeb11419eadebe -> 
+  custom:scripting/monoscript/fileName/FbxImporter.cs: c3c30d73aea4c9486679b1cb2c42fcc9 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurveDef.cs: 740d8ae75b4a6076bf9e3e485b5b77f1 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurve.cs: 1c6d4e7669f1bc6ab32b5099f00d5d1f -> 
+  custom:scripting/precompiled-assembly-types:Unity.Formats.Fbx.Runtime: 19996a5977c636054d29df884e562556 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurveNode.cs: 045cd34a26302a4340887f5c3df9fa56 -> 
+  custom:scripting/monoscript/fileName/ConvertToPrefabSettings.cs: 51fc9323133a3116f2cf5fdc2eaf37af -> 
+  custom:scripting/monoscript/fileName/FbxNull.cs: 36aaf400046069e6292d17219d1c069c -> 
+  custom:scripting/monoscript/fileName/FbxEntryView.cs: dda744d71a7635018a7cc355b067f8de -> 
+  custom:scripting/monoscript/fileName/FbxImplementation.cs: 7b47a353c3978648ba37a31403bb9735 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTemplateFbxVector4.cs: 33022fe870edf908b370d76dc35c9c8f -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEBlendMode.cs: b3f5b36afebc764d62687b9487a92855 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/FbxCollection.cs: a7719a3c7d0f9755fa5160248c6f774d -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/FbxRotationCurve.cs: b3d987039abb603e65dafcc714be9395 -> 
+  custom:scripting/monoscript/fileName/FbxNurbsCurve.cs: 7351470297bac997ad5edd9cd3f442bd -> 
+  custom:scripting/monoscript/fileName/FbxPropertyChannelPair.cs: 762d796c1a9204bcde8e30ce0bfeb4d9 -> 
+  custom:scripting/monoscript/fileName/FbxGeometry.cs: 48013c33c3d7f63d61eeadad3653c3fa -> 
+  custom:scripting/monoscript/fileName/FbxDataType.cs: 8afa2284a1d3520c6c7b056b41c013dd -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementVertexColor.cs: a848de8bf2124bd81bf8bcb7a2d65b0d -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/FbxDouble4x4.cs: ae149be842cc8e03152b34b334239b73 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyFloat.cs: c363c4af4c6e907f7bd3c82665343894 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementNormal.cs: 26c5093132973342a1cf62e727ceabf9 -> 
+  custom:scripting/monoscript/fileName/FbxIOPluginRegistry.cs: 80f28650270352b658e89584ba53cf78 -> 
+  custom:scripting/monoscript/fileName/FbxConstraintPosition.cs: d2eff2c9ae30cc45f159fb343326a38b -> 
+  custom:scripting/monoscript/fileName/FbxEmitter.cs: d089011a2111ed9ba11a9c8860650eb8 -> 
+  custom:scripting/monoscript/fileName/FbxMatrix.cs: 2c5d11da739bae5ab7a9e6287e3f635f -> 
+  custom:scripting/monoscript/fileName/FbxExporterRepairMissingScripts.cs: 820d40b5e304f02a2207f1df5b1786dd -> 
+  custom:scripting/monoscript/fileName/FbxDoubleTemplates.cs: 1f4bbdb65eab2cdcb62f8165d2d82517 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTemplateFbxVector2.cs: d2cb18b2db40df38e585413819958705 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateInt.cs: 6ef48c5951f82f75d16dff92ec083434 -> 
+  custom:scripting/monoscript/fileName/FbxProperty.cs: 3819dd05a82badd129a7f6e365473927 -> 
+  custom:scripting/monoscript/fileName/FbxSystemUnit.cs: 3295634c7fc9bdf2758f5d5c17ce2c9f -> 
+  custom:scripting/monoscript/fileName/FbxTransform.cs: 23a8d5f81f4b3a51c97bab2fcfe349f0 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyNullELook.cs: b3c41a31e7c05e33d492c05e29faefd0 -> 
+  custom:scripting/monoscript/fileName/FbxBindingTableBase.cs: b215adae3ec7fbfda953323d2a2d2314 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateFbxColor.cs: 5152d886d8a25c3888aae80f96bce43d -> 
+  custom:scripting/monoscript/fileName/FbxIOSettings.cs: 3fd153d39b55fff27e36563685561a58 -> 
+  custom:scripting/monoscript/fileName/FbxMarker.cs: f0c12d9017c19e89cf779f137b396c51 -> 
+  custom:scripting/monoscript/fileName/ExportEmptyFbx.cs: cd15797793c8de7703f841d592f40745 -> 
+  custom:scripting/precompiled-assembly-types:FbxBuildTestAssets: a1536c7a48b28f2607f21a00135121bd -> 
+  custom:scripting/monoscript/fileName/FbxExporter.cs: 14d203fdccc1574fb517ce4360deed0b -> 
+  custom:scripting/monoscript/fileName/FbxPropertyInt.cs: 6df0f2671e699b6498dcabcaa8c11ccd -> 
+  custom:scripting/monoscript/fileName/FbxSubDeformer.cs: f5160f8ddaa4b846839699b92041e395 -> 
+  custom:scripting/monoscript/fileName/FbxSurfaceMaterial.cs: eb900b126346156d69160840468ae69c -> 
+  custom:scripting/monoscript/fileName/FbxNode.cs: 19ee172d8b678ec052a7c50adc93089f -> 
+  custom:scripting/monoscript/fileName/FbxPropertyDouble.cs: 86532092f8e5ac4165190f00bc6ddac1 -> 
+  custom:scripting/monoscript/fileName/FbxLimits.cs: 88b1e072f91c043e0a42a1ace2ad849c -> 
+  custom:scripting/monoscript/fileName/FbxPropertyDouble3.cs: 7214a26730fd8b30e98740c4804cff61 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEProjectionType.cs: 1f2afeb1b2c72f62924f8d131875efd5 -> 
+  custom:scripting/monoscript/fileName/FbxTexture.cs: f97a3797113512f7d0d907cbda6684fc -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/FbxPose.cs: 88c58779797f89edb2d34cfb8d39c646 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEInheritType.cs: d98edf98fb0d376c66dfc7407ff7569f -> 
+  custom:scripting/monoscript/fileName/FbxConstraintScale.cs: bceae67b357d03a6f01e0d2a41c8fe70 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElement.cs: dab154f20ea89abf2af8fdd1c43afd0e -> 
+  custom:scripting/monoscript/fileName/ConvertToNestedPrefab.cs: 442c41c99487f072ce4f79d90127da06 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEntryView.cs: 44e13baac7c841e4a620a4c82f1c75fd -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEAreaLightShape.cs: 07528d7283f9e29a60acbba21cbbc01e -> 
+  custom:scripting/monoscript/fileName/FbxGlobalSettings.cs: 5a71ade068c99f9827828d54891eac38 -> 
+  custom:scripting/monoscript/fileName/CameraVisitor.cs: 48db874b39f8e385ca58be5a45f5fa5a -> 
+  custom:scripting/monoscript/fileName/FbxConnection.cs: c29cd84f9c806c9ea605731e79167951 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyString.cs: d0a70ad46a27988a0de613fe0dfe1101 -> 
+  custom:scripting/monoscript/fileName/FbxGeometryBase.cs: b80921b904337d64836aab1315c4d8e6 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurveFilterUnroll.cs: ca0ada5a99f9d147676f2f2da1ce17d5 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyMarkerELook.cs: 1d1de918f87923247ec760d3faf16ac8 -> 
+  custom:scripting/precompiled-assembly-types:Unity.Formats.Fbx.Editor: a14cc3e66589f99065686359f1ab8c42 -> 
+  custom:scripting/monoscript/fileName/FbxExportPresetSelectorReceiver.cs: 933e0be0fa35b1c35e22280b93f58ee2 -> 
+  custom:scripting/monoscript/fileName/FbxLight.cs: 5def5fa0c94426100af916b97b3b7028 -> 
+  custom:scripting/monoscript/fileName/FbxAnimLayer.cs: a33542128507b1a9774126b009d92729 -> 
+  custom:scripting/monoscript/fileName/FbxEuler.cs: 78ce073ba7cd774c97fd3fec848d1d22 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArray.cs: f198dec82146e3d89a7d025f49bcd332 -> 
+  custom:scripting/monoscript/fileName/FbxTime.cs: 7ff870fb104aeff8c3e2fd6db612200f -> 
+  custom:scripting/monoscript/fileName/FbxAnimStack.cs: cd827408506b52689ab211c452254bdf -> 
+  custom:scripting/monoscript/fileName/FbxObject.cs: 22901937c83410c82a079ff7fceb58dc -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateFbxVector2.cs: 5c3a6f20f8c80779ca7828c92f33194b -> 
+  custom:scripting/monoscript/fileName/FbxSharpProgressCallback.cs: 8eff72a266de0b6f575a84b2ebe1f086 -> 
+  custom:scripting/monoscript/fileName/FbxIOFileHeaderInfo.cs: 2f533e3b2e35800afb9637e46763a4d2 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyBool.cs: b6e61da9a36971e93e14e86c261e72ce -> 
+  custom:scripting/monoscript/fileName/FbxDeformer.cs: eaf4846ef3982ac5d1a664b2ad250993 -> 
+  custom:scripting/monoscript/fileName/InstallIntegration.cs: d9c189ac718e03ccb133c538d8fe3ebc -> 
+  custom:scripting/monoscript/fileName/CustomExtensions.cs: 4dd2d579b175e1cfed48fcf67b4a834f -> 
+  custom:scripting/monoscript/fileName/FbxCamera.cs: ff6f9ac7210e395dab3784e2d0c7fb91 -> 
+  custom:scripting/monoscript/fileName/FbxSemanticEntryView.cs: cfd002bcde442a3b5e643bb8a652b3f6 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.602 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.607 seconds
+Domain Reload Profiling: 6191ms
+	BeginReloadAssembly (605ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (293ms)
+	RebuildCommonClasses (90ms)
+	RebuildNativeTypeToScriptingClass (31ms)
+	initialDomainReloadingComplete (87ms)
+	LoadAllAssembliesAndSetupDomain (770ms)
+		LoadAssemblies (934ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (50ms)
+			TypeCache.Refresh (18ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (4608ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1840ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (37ms)
+			SetLoadedEditorAssemblies (12ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (282ms)
+			ProcessInitializeOnLoadAttributes (1223ms)
+			ProcessInitializeOnLoadMethodAttributes (238ms)
+			AfterProcessingInitializeOnLoad (48ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (78ms)
+Refreshing native plugins compatible for Editor in 40.54 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5100 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (316.1 KB). Loaded Objects now: 5830.
+Memory consumption went from 199.3 MB to 199.0 MB.
+Total: 20.008500 ms (FindLiveObjects: 1.253300 ms CreateObjectMapping: 0.849400 ms MarkObjects: 17.369900 ms  DeleteObjects: 0.534100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/FbxAnimCurveKey.cs: 9fbd8256730f9061582d48eb9944b171 -> 
+  custom:scripting/monoscript/fileName/FbxConstraintParent.cs: 567cb2edc39ae3219c9b505daf674f7b -> 
+  custom:scripting/monoscript/fileName/FbxShape.cs: 2a21f02fd9e62c646acad319734f118d -> 
+  custom:scripting/monoscript/fileName/FbxNodeAttribute.cs: ad02766235b43e67881cc4772606f552 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTemplateFbxColor.cs: 67fe6682d5c4e04a833c363e4d758dc1 -> 
+  custom:scripting/monoscript/fileName/FbxExportTimelineAction.cs: e559b4fb29542e203982b9a404316b7b -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/FbxManager.cs: 23552d9ea4b9cd586cf62f846c77ccc9 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurveBase.cs: 9fe9d6e0aecd8db0e60172d04d297415 -> 
+  custom:scripting/monoscript/fileName/FbxBlendShapeChannel.cs: 3a215ea3695097f400752aee08963ccf -> 
+  custom:scripting/precompiled-assembly-types:Autodesk.Fbx.Editor: bae848875a35fe96f09fcc9f4e534600 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTemplateFbxSurfaceMaterial.cs: e1cbaa144cc286681d8503e6027ad7eb -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEDecayType.cs: 52925515d890eaaad1885ac2cab26e28 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementUV.cs: 3768c80af8f548fba07e2c5faa6364cd -> 
+  custom:scripting/precompiled-assembly-types:Autodesk.Fbx: 9052b6edd02b51f5df6448a980c8bf57 -> 
+  custom:scripting/monoscript/fileName/FbxConstraintRotation.cs: 3333049bba08581233d423cbcae9458d -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/FbxIOBase.cs: b7908a419727520f0eb24140c7edaad4 -> 
+  custom:scripting/monoscript/fileName/FbxSkeleton.cs: 5f421fe218c2cb9ba0356a7a8279fbcd -> 
+  custom:scripting/monoscript/fileName/FbxLayer.cs: 7f5bb0bfd9e60d05e9ff383d46ec8267 -> 
+  custom:scripting/monoscript/fileName/FbxFileTexture.cs: 093fe1d8d33acdb09ab59ebb9b725168 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/FbxScene.cs: 71ae3ce294fa1135cc2c4e9db34b0d1f -> 
+  custom:scripting/monoscript/fileName/FbxBindingTableEntry.cs: 605bd69e9b5692d5effddbfc32526f7b -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEWrapMode.cs: 27e00afb727c68841210366fd4f5c513 -> 
+  custom:scripting/monoscript/fileName/FbxBlendShape.cs: a98858c64d72c6e061f0cb0d29151c84 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyFlags.cs: 31b311a0ff82ed3ccc169e76c482eff1 -> 
+  custom:scripting/monoscript/fileName/FbxTimeSpan.cs: 5d2607b0cda668430aeb31b79ceef216 -> 
+  custom:scripting/monoscript/fileName/ExportModelEditorWindow.cs: cf701718ac83fb293467c7c3e1c28063 -> 
+  custom:scripting/monoscript/fileName/IExportData.cs: fe9878291c2fc74de885772c14372b76 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTangent.cs: 2b2abf74c10dcaf3633f4d98533e4487 -> 
+  custom:scripting/monoscript/fileName/ExportModelSettings.cs: 50088f8dc6633493a2439a5a9c1e7481 -> 
+  custom:scripting/monoscript/fileName/FbxSurfacePhong.cs: 813b21c1960d4edd5c5f62353114802e -> 
+  custom:scripting/monoscript/fileName/FbxLayerContainer.cs: b8551e2966ce622b87cc1c0d7efe8675 -> 
+  custom:scripting/monoscript/fileName/FbxSurfaceLambert.cs: 913f4d72375b7f7e78565ef67e10c9da -> 
+  custom:scripting/monoscript/fileName/FbxPrefab.cs: 0d37a0275409adc5d549e4d1fc6d5bf7 -> 
+  custom:scripting/monoscript/fileName/ConvertToPrefabEditorWindow.cs: 3236649dc377dd18cad8e7f8b876ec5b -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateFbxSurfaceMaterial.cs: 21e550ba2ba7280355bc56f25c8e734e -> 
+  custom:scripting/monoscript/fileName/FbxDocument.cs: 0550a92e67733c3dc5a87f70d596a44e -> 
+  custom:scripting/monoscript/fileName/FbxPropertyELightType.cs: 4ac91b0f1a9bbd09fc595f357b2c3c6f -> 
+  custom:scripting/monoscript/fileName/FbxQuaternion.cs: 50f937e4494a3493328884eacd695857 -> 
+  custom:scripting/monoscript/fileName/FbxAMatrix.cs: ceeb6eba84b583e8ed408cffdde01580 -> 
+  custom:scripting/monoscript/fileName/FbxBindingTable.cs: 740dc5c493e5cc9529c43633fb8185b3 -> 
+  custom:scripting/monoscript/fileName/FbxStatus.cs: e0f858a177f1c1fb39ef05202160624e -> 
+  custom:scripting/monoscript/fileName/FbxMesh.cs: acc21884ec9f91bbf3a8d1f8e7820800 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:scripting/monoscript/fileName/Globals.cs: be110017fafd9c73fa3c7cb5418284c9 -> 
+  custom:scripting/monoscript/fileName/FbxConstraint.cs: bef035e770af75152f9736986a060ae9 -> 
+  custom:scripting/monoscript/fileName/ExportSettings.cs: 4fe3228d8cec84cbd2fe7ccb66c3e931 -> 
+  custom:scripting/monoscript/fileName/NativeMethods.cs: 3feaaf1e162570d34e42584823c3cd96 -> 
+  custom:scripting/monoscript/fileName/FbxAxisSystem.cs: 3ba61d9c458d48f1830eeaf919a573ab -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/FbxCluster.cs: da8abc8a471c252ab20f37672a71294e -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementBinormal.cs: 79b92f8d75f3392867b4e08b0bc010bc -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEGateFit.cs: d574bcd3d387155bb8ad22d046aba357 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementMaterial.cs: 8c9dc6eccc3eb760e041679d54fb684e -> 
+  custom:scripting/monoscript/fileName/FbxDocumentInfo.cs: 863cb0899b508f7826edd27548c99530 -> 
+  custom:scripting/monoscript/fileName/FbxSkin.cs: 72472130cbf13c197e5a2956817d0bbe -> 
+  custom:scripting/monoscript/fileName/FbxConstraintAim.cs: 8042fd5ecfe9611849c3efd3eae14f36 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateFbxVector4.cs: abba7e9bde8ed41768aeb11419eadebe -> 
+  custom:scripting/monoscript/fileName/FbxImporter.cs: c3c30d73aea4c9486679b1cb2c42fcc9 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurveDef.cs: 740d8ae75b4a6076bf9e3e485b5b77f1 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurve.cs: 1c6d4e7669f1bc6ab32b5099f00d5d1f -> 
+  custom:scripting/precompiled-assembly-types:Unity.Formats.Fbx.Runtime: 19996a5977c636054d29df884e562556 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurveNode.cs: 045cd34a26302a4340887f5c3df9fa56 -> 
+  custom:scripting/monoscript/fileName/ConvertToPrefabSettings.cs: 51fc9323133a3116f2cf5fdc2eaf37af -> 
+  custom:scripting/monoscript/fileName/FbxNull.cs: 36aaf400046069e6292d17219d1c069c -> 
+  custom:scripting/monoscript/fileName/FbxEntryView.cs: dda744d71a7635018a7cc355b067f8de -> 
+  custom:scripting/monoscript/fileName/FbxImplementation.cs: 7b47a353c3978648ba37a31403bb9735 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTemplateFbxVector4.cs: 33022fe870edf908b370d76dc35c9c8f -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEBlendMode.cs: b3f5b36afebc764d62687b9487a92855 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/FbxCollection.cs: a7719a3c7d0f9755fa5160248c6f774d -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/FbxRotationCurve.cs: b3d987039abb603e65dafcc714be9395 -> 
+  custom:scripting/monoscript/fileName/FbxNurbsCurve.cs: 7351470297bac997ad5edd9cd3f442bd -> 
+  custom:scripting/monoscript/fileName/FbxPropertyChannelPair.cs: 762d796c1a9204bcde8e30ce0bfeb4d9 -> 
+  custom:scripting/monoscript/fileName/FbxGeometry.cs: 48013c33c3d7f63d61eeadad3653c3fa -> 
+  custom:scripting/monoscript/fileName/FbxDataType.cs: 8afa2284a1d3520c6c7b056b41c013dd -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementVertexColor.cs: a848de8bf2124bd81bf8bcb7a2d65b0d -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/FbxDouble4x4.cs: ae149be842cc8e03152b34b334239b73 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyFloat.cs: c363c4af4c6e907f7bd3c82665343894 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementNormal.cs: 26c5093132973342a1cf62e727ceabf9 -> 
+  custom:scripting/monoscript/fileName/FbxIOPluginRegistry.cs: 80f28650270352b658e89584ba53cf78 -> 
+  custom:scripting/monoscript/fileName/FbxConstraintPosition.cs: d2eff2c9ae30cc45f159fb343326a38b -> 
+  custom:scripting/monoscript/fileName/FbxEmitter.cs: d089011a2111ed9ba11a9c8860650eb8 -> 
+  custom:scripting/monoscript/fileName/FbxMatrix.cs: 2c5d11da739bae5ab7a9e6287e3f635f -> 
+  custom:scripting/monoscript/fileName/FbxExporterRepairMissingScripts.cs: 820d40b5e304f02a2207f1df5b1786dd -> 
+  custom:scripting/monoscript/fileName/FbxDoubleTemplates.cs: 1f4bbdb65eab2cdcb62f8165d2d82517 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTemplateFbxVector2.cs: d2cb18b2db40df38e585413819958705 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateInt.cs: 6ef48c5951f82f75d16dff92ec083434 -> 
+  custom:scripting/monoscript/fileName/FbxProperty.cs: 3819dd05a82badd129a7f6e365473927 -> 
+  custom:scripting/monoscript/fileName/FbxSystemUnit.cs: 3295634c7fc9bdf2758f5d5c17ce2c9f -> 
+  custom:scripting/monoscript/fileName/FbxTransform.cs: 23a8d5f81f4b3a51c97bab2fcfe349f0 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyNullELook.cs: b3c41a31e7c05e33d492c05e29faefd0 -> 
+  custom:scripting/monoscript/fileName/FbxBindingTableBase.cs: b215adae3ec7fbfda953323d2a2d2314 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateFbxColor.cs: 5152d886d8a25c3888aae80f96bce43d -> 
+  custom:scripting/monoscript/fileName/FbxIOSettings.cs: 3fd153d39b55fff27e36563685561a58 -> 
+  custom:scripting/monoscript/fileName/FbxMarker.cs: f0c12d9017c19e89cf779f137b396c51 -> 
+  custom:scripting/monoscript/fileName/ExportEmptyFbx.cs: cd15797793c8de7703f841d592f40745 -> 
+  custom:scripting/precompiled-assembly-types:FbxBuildTestAssets: a1536c7a48b28f2607f21a00135121bd -> 
+  custom:scripting/monoscript/fileName/FbxExporter.cs: 14d203fdccc1574fb517ce4360deed0b -> 
+  custom:scripting/monoscript/fileName/FbxPropertyInt.cs: 6df0f2671e699b6498dcabcaa8c11ccd -> 
+  custom:scripting/monoscript/fileName/FbxSubDeformer.cs: f5160f8ddaa4b846839699b92041e395 -> 
+  custom:scripting/monoscript/fileName/FbxSurfaceMaterial.cs: eb900b126346156d69160840468ae69c -> 
+  custom:scripting/monoscript/fileName/FbxNode.cs: 19ee172d8b678ec052a7c50adc93089f -> 
+  custom:scripting/monoscript/fileName/FbxPropertyDouble.cs: 86532092f8e5ac4165190f00bc6ddac1 -> 
+  custom:scripting/monoscript/fileName/FbxLimits.cs: 88b1e072f91c043e0a42a1ace2ad849c -> 
+  custom:scripting/monoscript/fileName/FbxPropertyDouble3.cs: 7214a26730fd8b30e98740c4804cff61 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEProjectionType.cs: 1f2afeb1b2c72f62924f8d131875efd5 -> 
+  custom:scripting/monoscript/fileName/FbxTexture.cs: f97a3797113512f7d0d907cbda6684fc -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/FbxPose.cs: 88c58779797f89edb2d34cfb8d39c646 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEInheritType.cs: d98edf98fb0d376c66dfc7407ff7569f -> 
+  custom:scripting/monoscript/fileName/FbxConstraintScale.cs: bceae67b357d03a6f01e0d2a41c8fe70 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElement.cs: dab154f20ea89abf2af8fdd1c43afd0e -> 
+  custom:scripting/monoscript/fileName/ConvertToNestedPrefab.cs: 442c41c99487f072ce4f79d90127da06 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEntryView.cs: 44e13baac7c841e4a620a4c82f1c75fd -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEAreaLightShape.cs: 07528d7283f9e29a60acbba21cbbc01e -> 
+  custom:scripting/monoscript/fileName/FbxGlobalSettings.cs: 5a71ade068c99f9827828d54891eac38 -> 
+  custom:scripting/monoscript/fileName/CameraVisitor.cs: 48db874b39f8e385ca58be5a45f5fa5a -> 
+  custom:scripting/monoscript/fileName/FbxConnection.cs: c29cd84f9c806c9ea605731e79167951 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyString.cs: d0a70ad46a27988a0de613fe0dfe1101 -> 
+  custom:scripting/monoscript/fileName/FbxGeometryBase.cs: b80921b904337d64836aab1315c4d8e6 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurveFilterUnroll.cs: ca0ada5a99f9d147676f2f2da1ce17d5 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyMarkerELook.cs: 1d1de918f87923247ec760d3faf16ac8 -> 
+  custom:scripting/precompiled-assembly-types:Unity.Formats.Fbx.Editor: a14cc3e66589f99065686359f1ab8c42 -> 
+  custom:scripting/monoscript/fileName/FbxExportPresetSelectorReceiver.cs: 933e0be0fa35b1c35e22280b93f58ee2 -> 
+  custom:scripting/monoscript/fileName/FbxLight.cs: 5def5fa0c94426100af916b97b3b7028 -> 
+  custom:scripting/monoscript/fileName/FbxAnimLayer.cs: a33542128507b1a9774126b009d92729 -> 
+  custom:scripting/monoscript/fileName/FbxEuler.cs: 78ce073ba7cd774c97fd3fec848d1d22 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArray.cs: f198dec82146e3d89a7d025f49bcd332 -> 
+  custom:scripting/monoscript/fileName/FbxTime.cs: 7ff870fb104aeff8c3e2fd6db612200f -> 
+  custom:scripting/monoscript/fileName/FbxAnimStack.cs: cd827408506b52689ab211c452254bdf -> 
+  custom:scripting/monoscript/fileName/FbxObject.cs: 22901937c83410c82a079ff7fceb58dc -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateFbxVector2.cs: 5c3a6f20f8c80779ca7828c92f33194b -> 
+  custom:scripting/monoscript/fileName/FbxSharpProgressCallback.cs: 8eff72a266de0b6f575a84b2ebe1f086 -> 
+  custom:scripting/monoscript/fileName/FbxIOFileHeaderInfo.cs: 2f533e3b2e35800afb9637e46763a4d2 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyBool.cs: b6e61da9a36971e93e14e86c261e72ce -> 
+  custom:scripting/monoscript/fileName/FbxDeformer.cs: eaf4846ef3982ac5d1a664b2ad250993 -> 
+  custom:scripting/monoscript/fileName/InstallIntegration.cs: d9c189ac718e03ccb133c538d8fe3ebc -> 
+  custom:scripting/monoscript/fileName/CustomExtensions.cs: 4dd2d579b175e1cfed48fcf67b4a834f -> 
+  custom:scripting/monoscript/fileName/FbxCamera.cs: ff6f9ac7210e395dab3784e2d0c7fb91 -> 
+  custom:scripting/monoscript/fileName/FbxSemanticEntryView.cs: cfd002bcde442a3b5e643bb8a652b3f6 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.339 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.450 seconds
+Domain Reload Profiling: 4774ms
+	BeginReloadAssembly (359ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (67ms)
+	RebuildCommonClasses (87ms)
+	RebuildNativeTypeToScriptingClass (34ms)
+	initialDomainReloadingComplete (88ms)
+	LoadAllAssembliesAndSetupDomain (755ms)
+		LoadAssemblies (918ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (48ms)
+			TypeCache.Refresh (17ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (26ms)
+	FinalizeReload (3451ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1216ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (33ms)
+			SetLoadedEditorAssemblies (10ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (238ms)
+			ProcessInitializeOnLoadAttributes (736ms)
+			ProcessInitializeOnLoadMethodAttributes (162ms)
+			AfterProcessingInitializeOnLoad (37ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (48ms)
+Refreshing native plugins compatible for Editor in 22.45 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5100 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (316.6 KB). Loaded Objects now: 5834.
+Memory consumption went from 199.3 MB to 199.0 MB.
+Total: 8.403600 ms (FindLiveObjects: 0.838700 ms CreateObjectMapping: 0.409900 ms MarkObjects: 6.937200 ms  DeleteObjects: 0.215500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/FbxAnimCurveKey.cs: 9fbd8256730f9061582d48eb9944b171 -> 
+  custom:scripting/monoscript/fileName/FbxConstraintParent.cs: 567cb2edc39ae3219c9b505daf674f7b -> 
+  custom:scripting/monoscript/fileName/FbxShape.cs: 2a21f02fd9e62c646acad319734f118d -> 
+  custom:scripting/monoscript/fileName/FbxNodeAttribute.cs: ad02766235b43e67881cc4772606f552 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTemplateFbxColor.cs: 67fe6682d5c4e04a833c363e4d758dc1 -> 
+  custom:scripting/monoscript/fileName/FbxExportTimelineAction.cs: e559b4fb29542e203982b9a404316b7b -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/FbxManager.cs: 23552d9ea4b9cd586cf62f846c77ccc9 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurveBase.cs: 9fe9d6e0aecd8db0e60172d04d297415 -> 
+  custom:scripting/monoscript/fileName/FbxBlendShapeChannel.cs: 3a215ea3695097f400752aee08963ccf -> 
+  custom:scripting/precompiled-assembly-types:Autodesk.Fbx.Editor: bae848875a35fe96f09fcc9f4e534600 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTemplateFbxSurfaceMaterial.cs: e1cbaa144cc286681d8503e6027ad7eb -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEDecayType.cs: 52925515d890eaaad1885ac2cab26e28 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementUV.cs: 3768c80af8f548fba07e2c5faa6364cd -> 
+  custom:scripting/precompiled-assembly-types:Autodesk.Fbx: 9052b6edd02b51f5df6448a980c8bf57 -> 
+  custom:scripting/monoscript/fileName/FbxConstraintRotation.cs: 3333049bba08581233d423cbcae9458d -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/FbxIOBase.cs: b7908a419727520f0eb24140c7edaad4 -> 
+  custom:scripting/monoscript/fileName/FbxSkeleton.cs: 5f421fe218c2cb9ba0356a7a8279fbcd -> 
+  custom:scripting/monoscript/fileName/FbxLayer.cs: 7f5bb0bfd9e60d05e9ff383d46ec8267 -> 
+  custom:scripting/monoscript/fileName/FbxFileTexture.cs: 093fe1d8d33acdb09ab59ebb9b725168 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/FbxScene.cs: 71ae3ce294fa1135cc2c4e9db34b0d1f -> 
+  custom:scripting/monoscript/fileName/FbxBindingTableEntry.cs: 605bd69e9b5692d5effddbfc32526f7b -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEWrapMode.cs: 27e00afb727c68841210366fd4f5c513 -> 
+  custom:scripting/monoscript/fileName/FbxBlendShape.cs: a98858c64d72c6e061f0cb0d29151c84 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyFlags.cs: 31b311a0ff82ed3ccc169e76c482eff1 -> 
+  custom:scripting/monoscript/fileName/FbxTimeSpan.cs: 5d2607b0cda668430aeb31b79ceef216 -> 
+  custom:scripting/monoscript/fileName/ExportModelEditorWindow.cs: cf701718ac83fb293467c7c3e1c28063 -> 
+  custom:scripting/monoscript/fileName/IExportData.cs: fe9878291c2fc74de885772c14372b76 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTangent.cs: 2b2abf74c10dcaf3633f4d98533e4487 -> 
+  custom:scripting/monoscript/fileName/ExportModelSettings.cs: 50088f8dc6633493a2439a5a9c1e7481 -> 
+  custom:scripting/monoscript/fileName/FbxSurfacePhong.cs: 813b21c1960d4edd5c5f62353114802e -> 
+  custom:scripting/monoscript/fileName/FbxLayerContainer.cs: b8551e2966ce622b87cc1c0d7efe8675 -> 
+  custom:scripting/monoscript/fileName/FbxSurfaceLambert.cs: 913f4d72375b7f7e78565ef67e10c9da -> 
+  custom:scripting/monoscript/fileName/FbxPrefab.cs: 0d37a0275409adc5d549e4d1fc6d5bf7 -> 
+  custom:scripting/monoscript/fileName/ConvertToPrefabEditorWindow.cs: 3236649dc377dd18cad8e7f8b876ec5b -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateFbxSurfaceMaterial.cs: 21e550ba2ba7280355bc56f25c8e734e -> 
+  custom:scripting/monoscript/fileName/FbxDocument.cs: 0550a92e67733c3dc5a87f70d596a44e -> 
+  custom:scripting/monoscript/fileName/FbxPropertyELightType.cs: 4ac91b0f1a9bbd09fc595f357b2c3c6f -> 
+  custom:scripting/monoscript/fileName/FbxQuaternion.cs: 50f937e4494a3493328884eacd695857 -> 
+  custom:scripting/monoscript/fileName/FbxAMatrix.cs: ceeb6eba84b583e8ed408cffdde01580 -> 
+  custom:scripting/monoscript/fileName/FbxBindingTable.cs: 740dc5c493e5cc9529c43633fb8185b3 -> 
+  custom:scripting/monoscript/fileName/FbxStatus.cs: e0f858a177f1c1fb39ef05202160624e -> 
+  custom:scripting/monoscript/fileName/FbxMesh.cs: acc21884ec9f91bbf3a8d1f8e7820800 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:scripting/monoscript/fileName/Globals.cs: be110017fafd9c73fa3c7cb5418284c9 -> 
+  custom:scripting/monoscript/fileName/FbxConstraint.cs: bef035e770af75152f9736986a060ae9 -> 
+  custom:scripting/monoscript/fileName/ExportSettings.cs: 4fe3228d8cec84cbd2fe7ccb66c3e931 -> 
+  custom:scripting/monoscript/fileName/NativeMethods.cs: 3feaaf1e162570d34e42584823c3cd96 -> 
+  custom:scripting/monoscript/fileName/FbxAxisSystem.cs: 3ba61d9c458d48f1830eeaf919a573ab -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/FbxCluster.cs: da8abc8a471c252ab20f37672a71294e -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementBinormal.cs: 79b92f8d75f3392867b4e08b0bc010bc -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEGateFit.cs: d574bcd3d387155bb8ad22d046aba357 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementMaterial.cs: 8c9dc6eccc3eb760e041679d54fb684e -> 
+  custom:scripting/monoscript/fileName/FbxDocumentInfo.cs: 863cb0899b508f7826edd27548c99530 -> 
+  custom:scripting/monoscript/fileName/FbxSkin.cs: 72472130cbf13c197e5a2956817d0bbe -> 
+  custom:scripting/monoscript/fileName/FbxConstraintAim.cs: 8042fd5ecfe9611849c3efd3eae14f36 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateFbxVector4.cs: abba7e9bde8ed41768aeb11419eadebe -> 
+  custom:scripting/monoscript/fileName/FbxImporter.cs: c3c30d73aea4c9486679b1cb2c42fcc9 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurveDef.cs: 740d8ae75b4a6076bf9e3e485b5b77f1 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurve.cs: 1c6d4e7669f1bc6ab32b5099f00d5d1f -> 
+  custom:scripting/precompiled-assembly-types:Unity.Formats.Fbx.Runtime: 19996a5977c636054d29df884e562556 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurveNode.cs: 045cd34a26302a4340887f5c3df9fa56 -> 
+  custom:scripting/monoscript/fileName/ConvertToPrefabSettings.cs: 51fc9323133a3116f2cf5fdc2eaf37af -> 
+  custom:scripting/monoscript/fileName/FbxNull.cs: 36aaf400046069e6292d17219d1c069c -> 
+  custom:scripting/monoscript/fileName/FbxEntryView.cs: dda744d71a7635018a7cc355b067f8de -> 
+  custom:scripting/monoscript/fileName/FbxImplementation.cs: 7b47a353c3978648ba37a31403bb9735 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTemplateFbxVector4.cs: 33022fe870edf908b370d76dc35c9c8f -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEBlendMode.cs: b3f5b36afebc764d62687b9487a92855 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/FbxCollection.cs: a7719a3c7d0f9755fa5160248c6f774d -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/FbxRotationCurve.cs: b3d987039abb603e65dafcc714be9395 -> 
+  custom:scripting/monoscript/fileName/FbxNurbsCurve.cs: 7351470297bac997ad5edd9cd3f442bd -> 
+  custom:scripting/monoscript/fileName/FbxPropertyChannelPair.cs: 762d796c1a9204bcde8e30ce0bfeb4d9 -> 
+  custom:scripting/monoscript/fileName/FbxGeometry.cs: 48013c33c3d7f63d61eeadad3653c3fa -> 
+  custom:scripting/monoscript/fileName/FbxDataType.cs: 8afa2284a1d3520c6c7b056b41c013dd -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementVertexColor.cs: a848de8bf2124bd81bf8bcb7a2d65b0d -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/FbxDouble4x4.cs: ae149be842cc8e03152b34b334239b73 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyFloat.cs: c363c4af4c6e907f7bd3c82665343894 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementNormal.cs: 26c5093132973342a1cf62e727ceabf9 -> 
+  custom:scripting/monoscript/fileName/FbxIOPluginRegistry.cs: 80f28650270352b658e89584ba53cf78 -> 
+  custom:scripting/monoscript/fileName/FbxConstraintPosition.cs: d2eff2c9ae30cc45f159fb343326a38b -> 
+  custom:scripting/monoscript/fileName/FbxEmitter.cs: d089011a2111ed9ba11a9c8860650eb8 -> 
+  custom:scripting/monoscript/fileName/FbxMatrix.cs: 2c5d11da739bae5ab7a9e6287e3f635f -> 
+  custom:scripting/monoscript/fileName/FbxExporterRepairMissingScripts.cs: 820d40b5e304f02a2207f1df5b1786dd -> 
+  custom:scripting/monoscript/fileName/FbxDoubleTemplates.cs: 1f4bbdb65eab2cdcb62f8165d2d82517 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementTemplateFbxVector2.cs: d2cb18b2db40df38e585413819958705 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateInt.cs: 6ef48c5951f82f75d16dff92ec083434 -> 
+  custom:scripting/monoscript/fileName/FbxProperty.cs: 3819dd05a82badd129a7f6e365473927 -> 
+  custom:scripting/monoscript/fileName/FbxSystemUnit.cs: 3295634c7fc9bdf2758f5d5c17ce2c9f -> 
+  custom:scripting/monoscript/fileName/FbxTransform.cs: 23a8d5f81f4b3a51c97bab2fcfe349f0 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyNullELook.cs: b3c41a31e7c05e33d492c05e29faefd0 -> 
+  custom:scripting/monoscript/fileName/FbxBindingTableBase.cs: b215adae3ec7fbfda953323d2a2d2314 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateFbxColor.cs: 5152d886d8a25c3888aae80f96bce43d -> 
+  custom:scripting/monoscript/fileName/FbxIOSettings.cs: 3fd153d39b55fff27e36563685561a58 -> 
+  custom:scripting/monoscript/fileName/FbxMarker.cs: f0c12d9017c19e89cf779f137b396c51 -> 
+  custom:scripting/monoscript/fileName/ExportEmptyFbx.cs: cd15797793c8de7703f841d592f40745 -> 
+  custom:scripting/precompiled-assembly-types:FbxBuildTestAssets: a1536c7a48b28f2607f21a00135121bd -> 
+  custom:scripting/monoscript/fileName/FbxExporter.cs: 14d203fdccc1574fb517ce4360deed0b -> 
+  custom:scripting/monoscript/fileName/FbxPropertyInt.cs: 6df0f2671e699b6498dcabcaa8c11ccd -> 
+  custom:scripting/monoscript/fileName/FbxSubDeformer.cs: f5160f8ddaa4b846839699b92041e395 -> 
+  custom:scripting/monoscript/fileName/FbxSurfaceMaterial.cs: eb900b126346156d69160840468ae69c -> 
+  custom:scripting/monoscript/fileName/FbxNode.cs: 19ee172d8b678ec052a7c50adc93089f -> 
+  custom:scripting/monoscript/fileName/FbxPropertyDouble.cs: 86532092f8e5ac4165190f00bc6ddac1 -> 
+  custom:scripting/monoscript/fileName/FbxLimits.cs: 88b1e072f91c043e0a42a1ace2ad849c -> 
+  custom:scripting/monoscript/fileName/FbxPropertyDouble3.cs: 7214a26730fd8b30e98740c4804cff61 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEProjectionType.cs: 1f2afeb1b2c72f62924f8d131875efd5 -> 
+  custom:scripting/monoscript/fileName/FbxTexture.cs: f97a3797113512f7d0d907cbda6684fc -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/FbxPose.cs: 88c58779797f89edb2d34cfb8d39c646 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEInheritType.cs: d98edf98fb0d376c66dfc7407ff7569f -> 
+  custom:scripting/monoscript/fileName/FbxConstraintScale.cs: bceae67b357d03a6f01e0d2a41c8fe70 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElement.cs: dab154f20ea89abf2af8fdd1c43afd0e -> 
+  custom:scripting/monoscript/fileName/ConvertToNestedPrefab.cs: 442c41c99487f072ce4f79d90127da06 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEntryView.cs: 44e13baac7c841e4a620a4c82f1c75fd -> 
+  custom:scripting/monoscript/fileName/FbxPropertyEAreaLightShape.cs: 07528d7283f9e29a60acbba21cbbc01e -> 
+  custom:scripting/monoscript/fileName/FbxGlobalSettings.cs: 5a71ade068c99f9827828d54891eac38 -> 
+  custom:scripting/monoscript/fileName/CameraVisitor.cs: 48db874b39f8e385ca58be5a45f5fa5a -> 
+  custom:scripting/monoscript/fileName/FbxConnection.cs: c29cd84f9c806c9ea605731e79167951 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyString.cs: d0a70ad46a27988a0de613fe0dfe1101 -> 
+  custom:scripting/monoscript/fileName/FbxGeometryBase.cs: b80921b904337d64836aab1315c4d8e6 -> 
+  custom:scripting/monoscript/fileName/FbxAnimCurveFilterUnroll.cs: ca0ada5a99f9d147676f2f2da1ce17d5 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyMarkerELook.cs: 1d1de918f87923247ec760d3faf16ac8 -> 
+  custom:scripting/precompiled-assembly-types:Unity.Formats.Fbx.Editor: a14cc3e66589f99065686359f1ab8c42 -> 
+  custom:scripting/monoscript/fileName/FbxExportPresetSelectorReceiver.cs: 933e0be0fa35b1c35e22280b93f58ee2 -> 
+  custom:scripting/monoscript/fileName/FbxLight.cs: 5def5fa0c94426100af916b97b3b7028 -> 
+  custom:scripting/monoscript/fileName/FbxAnimLayer.cs: a33542128507b1a9774126b009d92729 -> 
+  custom:scripting/monoscript/fileName/FbxEuler.cs: 78ce073ba7cd774c97fd3fec848d1d22 -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArray.cs: f198dec82146e3d89a7d025f49bcd332 -> 
+  custom:scripting/monoscript/fileName/FbxTime.cs: 7ff870fb104aeff8c3e2fd6db612200f -> 
+  custom:scripting/monoscript/fileName/FbxAnimStack.cs: cd827408506b52689ab211c452254bdf -> 
+  custom:scripting/monoscript/fileName/FbxObject.cs: 22901937c83410c82a079ff7fceb58dc -> 
+  custom:scripting/monoscript/fileName/FbxLayerElementArrayTemplateFbxVector2.cs: 5c3a6f20f8c80779ca7828c92f33194b -> 
+  custom:scripting/monoscript/fileName/FbxSharpProgressCallback.cs: 8eff72a266de0b6f575a84b2ebe1f086 -> 
+  custom:scripting/monoscript/fileName/FbxIOFileHeaderInfo.cs: 2f533e3b2e35800afb9637e46763a4d2 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FbxPropertyBool.cs: b6e61da9a36971e93e14e86c261e72ce -> 
+  custom:scripting/monoscript/fileName/FbxDeformer.cs: eaf4846ef3982ac5d1a664b2ad250993 -> 
+  custom:scripting/monoscript/fileName/InstallIntegration.cs: d9c189ac718e03ccb133c538d8fe3ebc -> 
+  custom:scripting/monoscript/fileName/CustomExtensions.cs: 4dd2d579b175e1cfed48fcf67b4a834f -> 
+  custom:scripting/monoscript/fileName/FbxCamera.cs: ff6f9ac7210e395dab3784e2d0c7fb91 -> 
+  custom:scripting/monoscript/fileName/FbxSemanticEntryView.cs: cfd002bcde442a3b5e643bb8a652b3f6 -> 
