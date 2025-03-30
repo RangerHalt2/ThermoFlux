@@ -1,0 +1,22 @@
+print "Starting maya loading and fbx conversion \n";
+	
+if (`file -q -exists "C:/Users/Victor/DOWNLO~1/TH05D5~1/Assets/ARTASS~1/ETHAN-~1/Pipes/Pipes.mb"`)
+{		
+	file -o "C:/Users/Victor/DOWNLO~1/TH05D5~1/Assets/ARTASS~1/ETHAN-~1/Pipes/Pipes.mb";
+	FBXExportEmbeddedTextures -v false;
+	// FBXExportHardEdges -v true;
+	FBXExportApplyConstantKeyReducer -v false;
+	FBXExportShowUI -v false;
+
+	print "Before fbx export\n";
+	FBXExport -f "C:/Users/Victor/DOWNLO~1/TH05D5~1/Temp/ExportedFBXFile.fbx";
+	print "after fbx export\n";
+}
+else
+	print "Could not open Maya file.";
+
+sysFile -delete "C:/Users/Victor/DOWNLO~1/TH05D5~1/Temp/CommandPipe";
+
+$donepipeKill = `fopen "C:/Users/Victor/DOWNLO~1/TH05D5~1/Temp/SyncPipeKill" "w"`;
+fwrite $donepipeKill "Done";
+fclose $donepipeKill;
