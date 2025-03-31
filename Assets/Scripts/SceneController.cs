@@ -72,6 +72,13 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("LoseScreen");
     }
 
+    // Loads the Beta Level
+    public void BetaLevel()
+    {
+        EnableCursor();
+        SceneManager.LoadScene("SampleScene");
+    }
+
     // Restarts the current scene (used for respawning)
     public void RestartCurrentScene()
     {

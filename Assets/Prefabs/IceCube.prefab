@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9171255987857759002}
   m_Layer: 8
   m_Name: Ice Cube Trigger
-  m_TagString: Untagged
+  m_TagString: Ice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,7 +39,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5550823835955523222}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 44f20ffa47700a34e8ccdfa37b42f249, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -123,11 +123,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c08f7d1ab820a6541aacf4d42eddaa4f, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f9badf42500fe045b776990d24ffcff, type: 3}
       propertyPath: m_Name
-      value: IceCube (1)
+      value: IceCube
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2f9badf42500fe045b776990d24ffcff, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2f9badf42500fe045b776990d24ffcff, type: 3}
+      propertyPath: m_TagString
+      value: Ice
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -142,6 +146,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2f9badf42500fe045b776990d24ffcff, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3142612285712834478}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2f9badf42500fe045b776990d24ffcff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 994975925089309011}
   m_SourcePrefab: {fileID: 100100000, guid: 2f9badf42500fe045b776990d24ffcff, type: 3}
 --- !u!4 &8284272987176481362 stripped
 Transform:
@@ -160,7 +167,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8772016807079110888}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 44f20ffa47700a34e8ccdfa37b42f249, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -189,10 +196,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMelting: 0
   fireColliding: 0
-  meltSpeed: 0.1
+  meltSpeed: 2
   minScale: {x: 0.2, y: 0.2, z: 0.2}
   emitsParticles: 1
   meltingParticlePrefab: {fileID: 7939775021113232162, guid: 824c82c9bed275a4eb76714d8f141dca, type: 3}
   residualMeltTime: 2
   meltsNaturally: 1
   meltingDelay: 2
+--- !u!65 &994975925089309011
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8772016807079110888}
+  m_Material: {fileID: 13400000, guid: 44f20ffa47700a34e8ccdfa37b42f249, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.010023056, y: 0.0100636715, z: 0.010052183}
+  m_Center: {x: 0.000014633173, y: -0.0000009045473, z: -0.000032461954}

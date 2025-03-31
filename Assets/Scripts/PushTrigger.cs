@@ -10,6 +10,13 @@ public class PushTrigger : MonoBehaviour
     [SerializeField] private float pushForce; // The amount of force applied to an object which enters a push trigger
     [SerializeField] private Vector3 pushDirection; // Determines the direction force will be applied. Put a positive or negative 1 for the respecrive axis you would like to push along
 
+    public float cooldown;
+    private float timer;
+    
+    private void Update(){
+        timer -= Time.deltaTime;
+    }
+
     // While an object is in the trigger
     private void OnTriggerStay(Collider other)
     {
@@ -24,6 +31,8 @@ public class PushTrigger : MonoBehaviour
             {
                 // Apply constant force to the object in the pushDirection
                 playerRb.AddForce(pushDirection.normalized * pushForce, ForceMode.Force);
+                timer = cooldown;
+                Debug.Log("Added force");
             }
         }
     }

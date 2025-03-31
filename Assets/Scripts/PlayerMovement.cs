@@ -45,8 +45,14 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Misc.")]
     [SerializeField] private Transform orientation; // Handles the player's current orientation
+    [SerializeField] private float iceSpeed; // Handles speed when touching ice
+    
 
     Vector3 moveDirection; // Determines the direction the player is moving in
+
+    private bool touchingIce; // Determines if player is touching ice
+
+    private float iceMod; // Ice stuff
 
     Rigidbody rb; // Reference to the player's rigidbody
 
@@ -198,10 +204,13 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
+        iceMod = touchingIce ? iceSpeed:1f;
+
+
         // If the player is grounded
         if(grounded)
         {
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * iceMod, ForceMode.Force);
         }
         // If the player is airborne
         else if(!grounded)
@@ -277,5 +286,19 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 GetSlopeMoveDirection()
     {
         return Vector3.ProjectOnPlane(moveDirection, slopeHit.normal).normalized;
+    }
+
+    // Checks to see if player is touching ice
+    private void OnTriggerEnter(Collider collider){
+        if(collider.CompareTag("Ice")){
+            touchingIce = true;
+        }
+    }
+
+    // Checks to see if player is NOT touching ice
+    private void OnTriggerExit(Collider collider){
+        if(collider.CompareTag("Ice")){
+            touchingIce = false;
+        }
     }
 }

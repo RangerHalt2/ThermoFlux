@@ -98,7 +98,7 @@ public class IceSpell : MonoBehaviour
                 {
                     if (Array.IndexOf(ignoreTags, cols[i].tag) != -1)
                     {
-                        Destroy(obj);
+                        //Destroy(obj);
                         return;
                     }
                 }
