@@ -1,0 +1,495 @@
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1743391223870533, "dur":32491, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1743391223903032, "dur":1202, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1743391223904329, "dur":448, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1743391223908131, "dur":54, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1743391223904802, "dur":5362, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1743391223910165, "dur":365489, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1743391224275658, "dur":421, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1743391224276095, "dur":81, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1743391224276385, "dur":2181, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1743391223904931, "dur":5239, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1743391223910173, "dur":6111, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1743391223958206, "dur":856, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
+,{ "pid":12345, "tid":1, "ts":1743391223959068, "dur":161, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1743391223959259, "dur":361, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1743391223959066, "dur":1580, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1743391223962173, "dur":1088, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1743391223963680, "dur":304172, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1743391224274059, "dur":194, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1743391224274058, "dur":197, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1743391224274281, "dur":1332, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1743391223904966, "dur":5214, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743391223910183, "dur":1070, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743391223911253, "dur":5093, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743391223916364, "dur":58, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.43f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1743391223916348, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1743391223916423, "dur":143, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743391223932550, "dur":3214, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1743391223935829, "dur":145, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743391223936240, "dur":2679, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743391223938984, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743391223939135, "dur":2768, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743391223942023, "dur":3362, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743391223950147, "dur":62, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743391223945613, "dur":4608, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743391223950287, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743391223950371, "dur":6212, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743391223956643, "dur":1724, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743391223958392, "dur":4110, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743391223962623, "dur":6376, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743391223969099, "dur":275, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743391223969395, "dur":6771, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743391223976228, "dur":186, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743391223976446, "dur":9463, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743391223985973, "dur":208, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743391223986203, "dur":5578, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743391223991843, "dur":331, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743391223992276, "dur":7255, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743391223999596, "dur":186, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743391223999848, "dur":9458, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743391224009372, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743391224022284, "dur":6379, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743391224009465, "dur":19253, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743391224028811, "dur":1518, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743391224030364, "dur":66256, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743391224115882, "dur":14261, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743391224096732, "dur":33424, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":2, "ts":1743391224130249, "dur":8946, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1743391224139256, "dur":12332, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/level3.resS" }}
+,{ "pid":12345, "tid":2, "ts":1743391224151664, "dur":13757, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/level0.resS" }}
+,{ "pid":12345, "tid":2, "ts":1743391224165499, "dur":110177, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743391223904957, "dur":5218, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743391223910178, "dur":1293, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743391223911471, "dur":4855, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743391223916329, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":3, "ts":1743391223916405, "dur":141, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743391223944419, "dur":1797, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":3, "ts":1743391223946298, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743391223946410, "dur":4178, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743391223950652, "dur":230, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743391223950904, "dur":8015, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743391223958975, "dur":360, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743391223959358, "dur":3495, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743391223962910, "dur":233, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743391223963218, "dur":6737, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743391223970026, "dur":161, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743391223970213, "dur":4445, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743391223974728, "dur":1038, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743391223975791, "dur":8600, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743391223984455, "dur":796, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743391223985366, "dur":6912, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743391223992336, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743391223992443, "dur":7565, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743391224000069, "dur":269, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743391224000360, "dur":13995, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743391224014427, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743391224014578, "dur":17428, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743391224073984, "dur":9108, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743391224032210, "dur":50899, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/sharedassets8.assets" }}
+,{ "pid":12345, "tid":3, "ts":1743391224112661, "dur":18093, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743391224083237, "dur":47595, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":3, "ts":1743391224133593, "dur":26661, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/level6.resS" }}
+,{ "pid":12345, "tid":3, "ts":1743391224160312, "dur":115339, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743391223904999, "dur":5187, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743391223910188, "dur":1056, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743391223911244, "dur":5192, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743391223916439, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1743391223916510, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743391223965092, "dur":65, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743391223959545, "dur":6019, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1743391223965646, "dur":184, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743391223965853, "dur":5115, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743391223971052, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743391223971229, "dur":5426, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743391223976742, "dur":187, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743391223977016, "dur":7557, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743391223984638, "dur":613, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743391223985357, "dur":7634, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743391223993055, "dur":319, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743391224004415, "dur":86, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743391223993421, "dur":11093, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743391224004598, "dur":566, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743391224005175, "dur":140, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743391224020240, "dur":7680, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743391224005319, "dur":22614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743391224028000, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743391224073642, "dur":482, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743391224028080, "dur":46066, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743391224074253, "dur":6977, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/sharedassets6.assets" }}
+,{ "pid":12345, "tid":4, "ts":1743391224112855, "dur":16947, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743391224081320, "dur":48495, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/sharedassets3.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1743391224130127, "dur":2299, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":4, "ts":1743391224132505, "dur":13798, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/level7.resS" }}
+,{ "pid":12345, "tid":4, "ts":1743391224167875, "dur":280, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743391224146374, "dur":21805, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/level10" }}
+,{ "pid":12345, "tid":4, "ts":1743391224168331, "dur":107331, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223905027, "dur":5165, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223910194, "dur":1368, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223911563, "dur":4752, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223916336, "dur":82, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.43f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\mconfig\\config.xml" }}
+,{ "pid":12345, "tid":5, "ts":1743391223916318, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":5, "ts":1743391223916420, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223920811, "dur":68, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223918837, "dur":2052, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":5, "ts":1743391223920990, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1743391223921042, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223921902, "dur":2162, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1743391223924129, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":5, "ts":1743391223924193, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223925383, "dur":1537, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":5, "ts":1743391223927001, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1743391223927143, "dur":2420, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1743391223929618, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Temp\\StagingArea\\WindowsPlayer.exe" }}
+,{ "pid":12345, "tid":5, "ts":1743391223929617, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux.exe" }}
+,{ "pid":12345, "tid":5, "ts":1743391223929729, "dur":4073, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux.exe" }}
+,{ "pid":12345, "tid":5, "ts":1743391223934350, "dur":204, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223935616, "dur":4495, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743391223940169, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223940261, "dur":2078, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743391223942400, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223947457, "dur":1047, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223942534, "dur":6193, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743391223948781, "dur":312, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223953213, "dur":72, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223949120, "dur":4176, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743391223953372, "dur":252, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223953660, "dur":7055, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743391223960778, "dur":861, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Logan\\Documents\\Unity\\ThermoFlux\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743391223960777, "dur":863, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743391223961641, "dur":134, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223961785, "dur":122, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223967772, "dur":158, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223961911, "dur":6099, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743391223968089, "dur":166, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223968277, "dur":4040, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743391223972380, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223972597, "dur":62, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223972662, "dur":6424, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743391223979143, "dur":117, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223979284, "dur":9065, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743391223988420, "dur":445, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223999191, "dur":94, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223988887, "dur":10412, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743391223999433, "dur":348, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391224013068, "dur":933, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391223999833, "dur":14191, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743391224014118, "dur":597, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391224020760, "dur":7729, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391224014738, "dur":13766, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743391224028636, "dur":1693, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391224030355, "dur":64411, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743391224107152, "dur":23719, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391224094905, "dur":36018, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/sharedassets10.assets" }}
+,{ "pid":12345, "tid":5, "ts":1743391224131046, "dur":7132, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/level8.resS" }}
+,{ "pid":12345, "tid":5, "ts":1743391224138261, "dur":7950, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/level4.resS" }}
+,{ "pid":12345, "tid":5, "ts":1743391224146277, "dur":187, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743391224146478, "dur":16097, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/level10.resS" }}
+,{ "pid":12345, "tid":5, "ts":1743391224162649, "dur":113003, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743391223905067, "dur":5129, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743391223910198, "dur":1448, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743391223911646, "dur":4663, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743391223916329, "dur":80, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.43f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":6, "ts":1743391223916312, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":6, "ts":1743391223916411, "dur":167, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743391223944853, "dur":5125, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":6, "ts":1743391223950049, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743391223950159, "dur":4096, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743391223954352, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743391223961781, "dur":117, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743391223954462, "dur":7449, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/Unity.InputSystem.ForUI.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743391223962018, "dur":117, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743391223962194, "dur":130, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743391223967908, "dur":60, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743391223962358, "dur":5678, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743391223968103, "dur":156, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743391223968282, "dur":3767, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743391223972108, "dur":213, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743391223972342, "dur":7543, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743391223979951, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743391223980055, "dur":15888, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743391223996448, "dur":486, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743391224005210, "dur":120, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743391223997047, "dur":8339, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743391224005456, "dur":243, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743391224005720, "dur":70195, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743391224076006, "dur":23241, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/sharedassets5.assets" }}
+,{ "pid":12345, "tid":6, "ts":1743391224099312, "dur":30439, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743391224129757, "dur":6218, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":6, "ts":1743391224136048, "dur":11928, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/level5.resS" }}
+,{ "pid":12345, "tid":6, "ts":1743391224150929, "dur":12499, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/level1.resS" }}
+,{ "pid":12345, "tid":6, "ts":1743391224163488, "dur":112169, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743391223905091, "dur":5109, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743391223910202, "dur":1132, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743391223911335, "dur":5003, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743391223916341, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1743391223916404, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743391223947286, "dur":1180, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743391223943559, "dur":5229, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1743391223948879, "dur":322, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743391223949244, "dur":66, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743391223949328, "dur":3877, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743391223953262, "dur":350, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743391223953642, "dur":8047, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743391223961758, "dur":845, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743391223962966, "dur":90, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743391223963060, "dur":6765, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743391223969891, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743391223970064, "dur":4582, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743391223974725, "dur":1259, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743391223976006, "dur":8306, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743391223984383, "dur":870, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743391223985351, "dur":11797, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743391223997223, "dur":1420, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743391223998665, "dur":9530, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743391224008254, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743391224020526, "dur":7949, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743391224008332, "dur":20163, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743391224028627, "dur":467, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743391224029095, "dur":2097, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743391224034567, "dur":2730, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743391224098553, "dur":551, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743391224037305, "dur":61818, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743391224099210, "dur":32752, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1743391224132218, "dur":7510, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/level8" }}
+,{ "pid":12345, "tid":7, "ts":1743391224139852, "dur":18514, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/level3" }}
+,{ "pid":12345, "tid":7, "ts":1743391224158510, "dur":19565, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1743391224178320, "dur":97344, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391223905121, "dur":5104, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391223910228, "dur":1329, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391223911558, "dur":4762, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391223916324, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":8, "ts":1743391223916396, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391223918631, "dur":2051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":8, "ts":1743391223921906, "dur":1796, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1743391223923755, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1743391223923809, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391223923997, "dur":2107, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1743391223926377, "dur":3034, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1743391223929563, "dur":52, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.43f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743391223929560, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743391223929793, "dur":6324, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743391223936171, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391223936324, "dur":3220, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743391223939671, "dur":2831, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743391223942558, "dur":134, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391223942712, "dur":4185, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743391223946961, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391223952473, "dur":368, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391223947107, "dur":5790, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743391223952967, "dur":240, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391223953218, "dur":75, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391223953297, "dur":7277, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743391223960629, "dur":227, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391223960901, "dur":3331, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/Unity.RenderPipelines.Universal.Config.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743391223964308, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391223964410, "dur":6407, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743391223970878, "dur":156, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391223971057, "dur":6429, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743391223977537, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391223977653, "dur":9905, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743391223987625, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391223987745, "dur":6927, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743391223994766, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391224004447, "dur":254, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391223994883, "dur":10045, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743391224005421, "dur":280, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391224018909, "dur":8822, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391224005725, "dur":22128, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743391224028028, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391224028109, "dur":49931, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743391224112584, "dur":20733, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391224078299, "dur":55031, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/sharedassets4.assets" }}
+,{ "pid":12345, "tid":8, "ts":1743391224133477, "dur":18798, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/level7" }}
+,{ "pid":12345, "tid":8, "ts":1743391224167767, "dur":283, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743391224152553, "dur":15516, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/level0" }}
+,{ "pid":12345, "tid":8, "ts":1743391224168142, "dur":107531, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743391223905144, "dur":5100, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743391223910247, "dur":1076, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743391223911324, "dur":5008, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743391223916345, "dur":118, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.43f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\web.config" }}
+,{ "pid":12345, "tid":9, "ts":1743391223916335, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":9, "ts":1743391223916466, "dur":135, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743391223963046, "dur":198, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743391223958585, "dur":4671, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":9, "ts":1743391223963329, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743391223972537, "dur":115, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743391223963433, "dur":9231, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743391223972731, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743391223972814, "dur":4471, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743391223977349, "dur":279, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743391223977648, "dur":8206, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743391223985917, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743391223986006, "dur":5638, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743391223991716, "dur":378, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743391223992118, "dur":7341, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743391223999526, "dur":254, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743391223999840, "dur":6466, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743391224006393, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743391224022804, "dur":6161, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743391224006483, "dur":22496, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743391224029050, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.43f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityPlayer.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743391224029048, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743391224029114, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743391224029185, "dur":65267, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743391224115811, "dur":14454, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743391224094536, "dur":35770, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/sharedassets10.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1743391224130567, "dur":15193, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/level9" }}
+,{ "pid":12345, "tid":9, "ts":1743391224145837, "dur":12898, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/level2" }}
+,{ "pid":12345, "tid":9, "ts":1743391224158803, "dur":9561, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":9, "ts":1743391224168452, "dur":107219, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391223905192, "dur":5071, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391223910266, "dur":1589, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391223911856, "dur":4441, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391223916310, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391223916397, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391223918145, "dur":2561, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/app.info" }}
+,{ "pid":12345, "tid":10, "ts":1743391223920710, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.43f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\web.config" }}
+,{ "pid":12345, "tid":10, "ts":1743391223920708, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":10, "ts":1743391223920847, "dur":74, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391223921915, "dur":2386, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":10, "ts":1743391223924374, "dur":50, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.43f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\web.config" }}
+,{ "pid":12345, "tid":10, "ts":1743391223924371, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":10, "ts":1743391223924712, "dur":1498, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":10, "ts":1743391223926265, "dur":51, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.43f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\machine.config" }}
+,{ "pid":12345, "tid":10, "ts":1743391223926262, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":10, "ts":1743391223926470, "dur":2478, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":10, "ts":1743391223930783, "dur":4038, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743391223934896, "dur":238, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391223935276, "dur":3880, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743391223939282, "dur":89, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391223939375, "dur":2278, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743391223941771, "dur":3371, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743391223945215, "dur":254, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391223945547, "dur":4418, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743391223950056, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391223950162, "dur":5457, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743391223955668, "dur":783, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391223956499, "dur":5179, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743391223961768, "dur":363, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391223962192, "dur":124, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391223962359, "dur":4277, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743391223966777, "dur":406, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391223972498, "dur":138, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391223967223, "dur":5425, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743391223972822, "dur":117, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391223972962, "dur":7066, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743391223980087, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391223980221, "dur":7817, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743391223988111, "dur":461, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391223988779, "dur":9612, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743391223998457, "dur":1129, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391223999623, "dur":16575, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743391224016278, "dur":896, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391224017186, "dur":10487, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391224034302, "dur":723, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391224027683, "dur":7361, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743391224035147, "dur":94, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391224035245, "dur":59494, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/sharedassets7.assets.resS" }}
+,{ "pid":12345, "tid":10, "ts":1743391224112716, "dur":17695, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391224094903, "dur":35557, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":10, "ts":1743391224130619, "dur":7789, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/level9.resS" }}
+,{ "pid":12345, "tid":10, "ts":1743391224138487, "dur":20666, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/level4" }}
+,{ "pid":12345, "tid":10, "ts":1743391224178371, "dur":954, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743391224159246, "dur":20180, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":10, "ts":1743391224179631, "dur":96037, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223905228, "dur":5134, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223910365, "dur":1302, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223911667, "dur":4636, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223916631, "dur":175, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Logan\\Documents\\Unity\\ThermoFlux\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223916808, "dur":129, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Logan\\Documents\\Unity\\ThermoFlux\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223916938, "dur":694, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Logan\\Documents\\Unity\\ThermoFlux\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223917634, "dur":885, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Logan\\Documents\\Unity\\ThermoFlux\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Universal.Runtime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223918520, "dur":446, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Logan\\Documents\\Unity\\ThermoFlux\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Burst.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223918968, "dur":704, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Logan\\Documents\\Unity\\ThermoFlux\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223919673, "dur":351, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Logan\\Documents\\Unity\\ThermoFlux\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223920026, "dur":140, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Logan\\Documents\\Unity\\ThermoFlux\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Universal.Config.Runtime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223920168, "dur":509, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Logan\\Documents\\Unity\\ThermoFlux\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223920679, "dur":119, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Logan\\Documents\\Unity\\ThermoFlux\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223920799, "dur":231, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Logan\\Documents\\Unity\\ThermoFlux\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223921032, "dur":1281, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Logan\\Documents\\Unity\\ThermoFlux\\Library\\Bee\\PlayerScriptAssemblies\\Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223922314, "dur":149, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Logan\\Documents\\Unity\\ThermoFlux\\Library\\Bee\\PlayerScriptAssemblies\\Unity.InputSystem.ForUI.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223922465, "dur":162, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Logan\\Documents\\Unity\\ThermoFlux\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223922628, "dur":926, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Logan\\Documents\\Unity\\ThermoFlux\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223923555, "dur":859, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Logan\\Documents\\Unity\\ThermoFlux\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223924415, "dur":161, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Logan\\Documents\\Unity\\ThermoFlux\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Universal.Shaders.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223924578, "dur":171, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Logan\\Documents\\Unity\\ThermoFlux\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223924751, "dur":375, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Logan\\Documents\\Unity\\ThermoFlux\\Library\\Bee\\PlayerScriptAssemblies\\Cinemachine.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223916306, "dur":9007, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
+,{ "pid":12345, "tid":11, "ts":1743391223925314, "dur":151, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223926228, "dur":60, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\AsyncPluginsFromLinker\\x86_64\\lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223926226, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223927062, "dur":1569, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223928633, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":11, "ts":1743391223928700, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223929090, "dur":1405, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":11, "ts":1743391223930647, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":11, "ts":1743391223930718, "dur":1012, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223932029, "dur":2878, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":11, "ts":1743391223934973, "dur":325, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223935308, "dur":101, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223935458, "dur":3569, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223939162, "dur":2229, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223941512, "dur":2058, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223943638, "dur":428, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223947422, "dur":1069, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223944087, "dur":4517, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223948691, "dur":403, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223954326, "dur":64, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223949117, "dur":5334, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223954530, "dur":908, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223955460, "dur":7625, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223963149, "dur":120, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223963287, "dur":6672, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223970020, "dur":165, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223970208, "dur":2967, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223973248, "dur":314, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223979850, "dur":53, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223973584, "dur":6404, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223980055, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223980128, "dur":9142, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223989327, "dur":193, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223989532, "dur":55, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223989591, "dur":6925, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391223996574, "dur":1654, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223998241, "dur":53, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391223998298, "dur":9196, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391224007549, "dur":356, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391224007927, "dur":19789, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391224027795, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391224091459, "dur":142, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391224027924, "dur":63691, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743391224091757, "dur":92, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391224115194, "dur":14565, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391224091854, "dur":37920, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/sharedassets10.resource" }}
+,{ "pid":12345, "tid":11, "ts":1743391224129854, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743391224129971, "dur":4366, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":11, "ts":1743391224134444, "dur":6957, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/level6" }}
+,{ "pid":12345, "tid":11, "ts":1743391224141488, "dur":9981, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/level2.resS" }}
+,{ "pid":12345, "tid":11, "ts":1743391224151623, "dur":27892, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/level1" }}
+,{ "pid":12345, "tid":11, "ts":1743391224179568, "dur":96087, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743391223905267, "dur":5122, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743391223910390, "dur":6054, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743391223916445, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":12, "ts":1743391223916536, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743391223978130, "dur":71, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743391223973969, "dur":4306, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":12, "ts":1743391223978347, "dur":415, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743391223978785, "dur":10045, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743391223989292, "dur":523, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743391223989837, "dur":12526, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743391224002443, "dur":485, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743391224016933, "dur":10720, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743391224002949, "dur":25625, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743391224029376, "dur":9033, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/sharedassets9.assets" }}
+,{ "pid":12345, "tid":12, "ts":1743391224038527, "dur":51996, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/sharedassets7.assets" }}
+,{ "pid":12345, "tid":12, "ts":1743391224099513, "dur":28746, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743391224090689, "dur":37596, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":12, "ts":1743391224128721, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743391224128820, "dur":1396, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":12, "ts":1743391224135355, "dur":192, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743391224130289, "dur":5865, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/resources.assets" }}
+,{ "pid":12345, "tid":12, "ts":1743391224136255, "dur":26686, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Logan/Documents/Unity/ThermBuild/Thermoflux_Data/level5" }}
+,{ "pid":12345, "tid":12, "ts":1743391224162985, "dur":112675, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1743391224282724, "dur":1852, "ph":"X", "name": "ProfilerWriteOutput" }
+,
