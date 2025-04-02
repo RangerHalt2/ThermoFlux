@@ -2,6 +2,7 @@
 // Author: Ryan Lupoli
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -22,6 +23,14 @@ public class FireSpell : MonoBehaviour
     [SerializeField] private GameObject playerObj; // Reference to the player object to know what direction to fire flames from
     [SerializeField] private GameObject attackRadius; // Reference to the flame spell's collider to handle hit detection
 
+    // Attack Radius Toggle
+    private float toggleInterval = 0.1f; // Interval in seconds between togles for the attack radius
+    private float lastToggleTime; // How much time has passed since the attack radius was last toggled
+
+    private SpellSounds sound;
+    private float timer;
+    private float audioCoodlown = 2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +45,13 @@ public class FireSpell : MonoBehaviour
         fireMainModule = _fireParticles.main;
 
         attackRadius.SetActive(false);
+
+        // Initialize the last toggle time
+        lastToggleTime = 0f; 
+        lastToggleTime = 0f; // Initialize the last toggle time
+
+        sound = GameObject.FindAnyObjectByType<SpellSounds>();
+       
     }
 
     // Update is called once per frame
@@ -50,6 +66,20 @@ public class FireSpell : MonoBehaviour
                 _fireParticles.Play(); 
                 // Enable Fire Spell Hitbox
                 attackRadius.SetActive(true);
+                if(timer < 0)
+                {
+                    sound.FireSound();
+                    timer = audioCoodlown;
+                }
+            }
+
+            // Toggle attack radius every 'toggleInterval' seconds
+            if (Time.time - lastToggleTime >= toggleInterval)
+            {
+                // Toggle the active state of the attack radius
+                attackRadius.SetActive(!attackRadius.activeSelf);
+                // Update the last toggle time
+                lastToggleTime = Time.time; 
             }
         }
         else
@@ -66,6 +96,7 @@ public class FireSpell : MonoBehaviour
         AdjustParticleAngle();
         // Adjust current angle of attack radius
         AdjustAttackRadiusAngle();
+        timer -= Time.deltaTime;
     }
 
     // Adjusts the angle of the particle system to align with the player and camera

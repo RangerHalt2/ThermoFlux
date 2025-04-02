@@ -33,6 +33,7 @@ public class BootstrappedData : MonoBehaviour
 {
     // Add Variables to this script to allow them to be shared across scenes.
 
+    [Header("Level Completion")]
     [SerializeField] private bool levelOneComplete; // Determines whether level one was completed
     [SerializeField] private bool levelTwoComplete; // Determines whether level two was completed
     [SerializeField] private bool levelThreeComplete; // Determines whether level three was completed
