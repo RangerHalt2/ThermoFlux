@@ -35,12 +35,15 @@ public class IceSpell : MonoBehaviour
     private float audioTimer;
     private float audioCoodlown = 2;
 
+    private Animator pcAnim;
+
     //Gets the inputs and the camera
     private void Start()
     {
         my_inputs = GameObject.FindAnyObjectByType<InputHandler>();
         cam = GameObject.FindAnyObjectByType<ThirdPersonCam>();
         sound = GameObject.FindAnyObjectByType<SpellSounds>();
+        pcAnim = GetComponentInChildren<Animator>();
     }
 
     //If the trigger is pressed it calls the place ice fire.
@@ -57,6 +60,16 @@ public class IceSpell : MonoBehaviour
             }
         }
         audioTimer -= Time.deltaTime;
+
+        //tells the animator if the trigger is pressed.
+        if(my_inputs.altFireTriggered || my_inputs.fireTriggered)
+        {
+            pcAnim.SetBool("isCasting", true);
+        }
+        else
+        {
+            pcAnim.SetBool("isCasting", false);
+        }
     }
 
     /*Author: Logan Baysinger.

@@ -52,7 +52,11 @@ public class PlayerMovement : MonoBehaviour
 
     private bool touchingIce; // Determines if player is touching ice
 
+    private Animator pcAnim;
+
     private float iceMod; // Ice stuff
+
+    private bool walkInput { set; get; }
 
     Rigidbody rb; // Reference to the player's rigidbody
 
@@ -82,12 +86,16 @@ public class PlayerMovement : MonoBehaviour
         crouchAction = playerControls.actions["Gameplay/Crouch"];
         sprintAction = playerControls.actions["Gameplay/Sprint"];
 
+        moveAction.performed += context => walkInput = true;
+        moveAction.canceled += context => walkInput = false;
+
         // Enable input actions
         moveAction.Enable();
         jumpAction.Enable();
         crouchAction.Enable();
         sprintAction.Enable();
 
+        pcAnim = GetComponentInChildren<Animator>();
 
         // Set the player's ability to jump to true
         canJump = true;
@@ -113,6 +121,21 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.drag = 0;
         }
+
+        Debug.Log(pcAnim.GetParameter(0).name);
+        Debug.Log("isRunning is " + pcAnim.GetBool(0));
+        Debug.Log("Walk Input should be" + walkInput);
+
+        //Sets the bool for the parameters to tell the animator the player is walking
+        if (walkInput)
+        {
+            pcAnim.SetBool("isRunning", true);
+        }
+        else
+        {
+            pcAnim.SetBool("isRunning", false);
+        }
+
     }
 
     private void FixedUpdate()
