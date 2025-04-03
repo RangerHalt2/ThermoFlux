@@ -4,7 +4,7 @@ using UnityEngine;
 namespace UnityEditor.ShaderGraph
 {
     [Title("Input", "Scene", "Fog")]
-    class FogNode : CodeFunctionNode, IMayRequireTransform
+    class FogNode : CodeFunctionNode
     {
         public FogNode()
         {
@@ -31,7 +31,5 @@ namespace UnityEditor.ShaderGraph
 }
 ";
         }
-
-        public NeededTransform[] RequiresTransform(ShaderStageCapability stageCapability = ShaderStageCapability.All) => new[] { NeededTransform.ObjectToWorld };
     }
 }

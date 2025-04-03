@@ -76,7 +76,7 @@ public class SceneController : MonoBehaviour
     public void BetaLevel()
     {
         EnableCursor();
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Himeys Level");
     }
 
     // Restarts the current scene (used for respawning)
