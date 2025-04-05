@@ -55,10 +55,13 @@ public class IceSpell : MonoBehaviour
             ShootIce();
             if(audioTimer <= 0)
             {
-                sound.IceSound();
-                audioTimer = audioCoodlown;
+                if (sound != null)
+                {
+                    sound.IceSound();
+                    audioTimer = audioCoodlown;
+                }
+                }
             }
-        }
         audioTimer -= Time.deltaTime;
 
         //tells the animator if the trigger is pressed.
@@ -84,7 +87,7 @@ public class IceSpell : MonoBehaviour
         
         Debug.Log("Ice Fire check #1");
         //if the Raycast hits something and that something is not in the ignoreTags array
-        if (Physics.Raycast(player.transform.position, cam.transform.forward * range, out hit, Mathf.Infinity))
+        if (Physics.Raycast(cam.transform.position, cam.transform.forward * range, out hit, Mathf.Infinity))
         {
             Debug.DrawRay(cam.transform.position, cam.transform.forward * range, Color.yellow, 50f);
             //If the raycast hit a "Hazard" check if it's one marked with health and destructible and then do damage if so
@@ -125,11 +128,12 @@ public class IceSpell : MonoBehaviour
                     }
                 }
                 timer = ShotCooldown;
+                //Debug.DrawRay(cam.transform.position, cam.transform.forward * range, Color.yellow, 10f);
             }
         }
         else
         { //Debug code, this does not display in game.
-            Debug.DrawRay(cam.transform.position, cam.transform.forward * range, Color.yellow, 10f);
+            //Debug.DrawRay(cam.transform.position, cam.transform.forward * range, Color.yellow, 10f);
             Debug.Log("Ice Fire did not hit");
         }
     }
