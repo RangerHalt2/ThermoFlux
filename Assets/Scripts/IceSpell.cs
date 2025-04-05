@@ -17,6 +17,7 @@ public class IceSpell : MonoBehaviour
 
     [Header("Ice to Place")]
     [SerializeField] private GameObject ice;
+    [SerializeField] private ParticleSystem iceParticles;
 
     [Header("Misc Assignments")]
     [SerializeField] private Transform player; //LB: Not currently used, but probably will be used to shoot the laser from the player
@@ -64,6 +65,15 @@ public class IceSpell : MonoBehaviour
             }
         audioTimer -= Time.deltaTime;
 
+        if (my_inputs.altFireTriggered)
+        {
+            if (!iceParticles.isPlaying)
+            {
+                iceParticles.Play();
+                Debug.Log("Start Playing Ice Particles");
+            }
+        }
+
         //tells the animator if the trigger is pressed.
         if(my_inputs.altFireTriggered || my_inputs.fireTriggered)
         {
@@ -72,6 +82,11 @@ public class IceSpell : MonoBehaviour
         else
         {
             pcAnim.SetBool("isCasting", false);
+            if (iceParticles.isPlaying)
+            {
+                iceParticles.Stop();
+                Debug.Log("Stop Playing Ice Particles");
+            }
         }
     }
 
