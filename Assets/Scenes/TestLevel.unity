@@ -927,6 +927,7 @@ MonoBehaviour:
   range: 50
   ShotCooldown: 0.2
   ice: {fileID: 7600124550667861628, guid: cd4b08af33be7c64fafb10b660245d71, type: 3}
+  iceParticles: {fileID: 0}
   player: {fileID: 510307916}
   ignoreTags: []
 --- !u!136 &510307921
@@ -1830,7 +1831,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!199 &877150376
 ParticleSystemRenderer:
   serializedVersion: 6
