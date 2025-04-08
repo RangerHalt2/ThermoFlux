@@ -14,6 +14,7 @@ public class IceSpell : MonoBehaviour
     [Header("Shooting Settings")]
     [SerializeField] private float range = 50;
     [SerializeField] private float ShotCooldown = 0.2f;
+    [SerializeField] private float growthMulti = 1.1f;
 
     [Header("Ice to Place")]
     [SerializeField] private GameObject ice;
@@ -36,7 +37,14 @@ public class IceSpell : MonoBehaviour
     private float audioTimer;
     private float audioCoodlown = 2;
 
+    private float growTimer;
+    private float growCooldown = 0.5f;
+
     private Animator pcAnim;
+
+    private GameObject obj;
+
+    private bool canPlaceIce;
 
     //Gets the inputs and the camera
     private void Start()
@@ -51,9 +59,11 @@ public class IceSpell : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
+        growTimer -= Time.deltaTime;
         if (my_inputs.altFireTriggered && timer <= 0)
         {
-            ShootIce();
+            if(canPlaceIce)
+                ShootIce();
             if(audioTimer <= 0)
             {
                 if (sound != null)
@@ -61,8 +71,15 @@ public class IceSpell : MonoBehaviour
                     sound.IceSound();
                     audioTimer = audioCoodlown;
                 }
-                }
             }
+        }
+
+        if(my_inputs.altFireTriggered && !canPlaceIce)
+        {
+            if(growTimer <= 0)
+                ScaleIce();
+        }
+
         audioTimer -= Time.deltaTime;
 
         if (my_inputs.altFireTriggered)
@@ -72,6 +89,10 @@ public class IceSpell : MonoBehaviour
                 iceParticles.Play();
                 Debug.Log("Start Playing Ice Particles");
             }
+        }
+        else
+        {
+            canPlaceIce = true;
         }
 
         //tells the animator if the trigger is pressed.
@@ -89,6 +110,15 @@ public class IceSpell : MonoBehaviour
             }
         }
     }
+
+    //Increases the Scale of the ice object most recently placed while the button is held down.
+    void ScaleIce()
+    {
+        Transform currTrans = obj.transform;
+        currTrans.localScale = new Vector3(currTrans.localScale.x * growthMulti, currTrans.localScale.y * growthMulti, currTrans.localScale.z * growthMulti);
+        growTimer = growCooldown;
+    }
+
 
     /*Author: Logan Baysinger.
      * Function: This function fires a raycast and checks for collisions. It checks the array ignoreTags which is defined in the editor in Unity.
@@ -132,7 +162,7 @@ public class IceSpell : MonoBehaviour
             {
                 if (Array.IndexOf(ignoreTags, hit.collider.gameObject.tag) != -1) return;
                 Debug.Log("Ice Fire did hit");
-                GameObject obj = Instantiate(ice, hit.point, ice.transform.rotation);
+                obj = Instantiate(ice, hit.point, ice.transform.rotation);
                 Collider[] cols = Physics.OverlapSphere(obj.transform.position, 1f);
                 for (int i = 0; i < cols.Length; i++)
                 {
@@ -143,6 +173,7 @@ public class IceSpell : MonoBehaviour
                     }
                 }
                 timer = ShotCooldown;
+                canPlaceIce = false;
                 //Debug.DrawRay(cam.transform.position, cam.transform.forward * range, Color.yellow, 10f);
             }
         }
