@@ -9,7 +9,9 @@ public class Steam : MonoBehaviour
     [SerializeField] private float speedMulti = 1.2f;
     [SerializeField] private int[] layersToIgnore;
     [SerializeField] private int steamLayer;
-    [SerializeField] private ParticleSystem iceParticles;
+    [SerializeField] private ParticleSystem steamParticles;
+
+    [SerializeField] private float yToDespawn;
 
     private Rigidbody rb;
 
@@ -24,12 +26,18 @@ public class Steam : MonoBehaviour
         {
             Physics.IgnoreLayerCollision(layersToIgnore[i], steamLayer);
         }
+        if(steamParticles != null)
+            steamParticles.Play(); //they should never stop playing.
     }
 
     private void Update()
     {
         rb.AddForce(gameObject.transform.up *  speedMulti, ForceMode.Force);
         timer -= Time.deltaTime;
+
+
+        if (gameObject.transform.position.y > yToDespawn)
+            Destroy(gameObject);
     }
 
     //There's some gravity shenanigans that require the object being pushed by steam to have a little boost
