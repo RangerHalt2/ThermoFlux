@@ -11,6 +11,8 @@ public class MeltingObject : MonoBehaviour
     [SerializeField] private bool fireColliding;
     [SerializeField] private float meltSpeed; // Determines how quickly the object melts. Functions as a reduction in size per second
     [SerializeField] private Vector3 minScale = new Vector3(0f, 0f, 0f);  // The scale at which the object will be destroyed
+    [SerializeField] private float vaporizationTime; // How long fire needs to make contact with an object before it vaporizes
+    private float vaporizationTimer = 0f; // How long fire has made contact with an object. Used for vaporization
 
     [Header("Particle Settings")]
     public bool emitsParticles; // Determines whether or not the object emits particles while melting
@@ -27,6 +29,9 @@ public class MeltingObject : MonoBehaviour
     [SerializeField] private float meltingDelay; // Determines how long before the object will begin to naturally melt
     private float naturalMeltTimer = 0f; // Timer to track time before the object starts melting naturally
 
+    [Header("Misc")]
+    public bool canBePushed; // Determines if the object can be pushed by a push trigger
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +57,7 @@ public class MeltingObject : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        Debug.Log("vaporization timer: " + vaporizationTimer);
         // If the object can melt naturally, and the natural melt timer is not 0
         if (meltsNaturally && naturalMeltTimer > 0f)
         {
@@ -121,6 +127,14 @@ public class MeltingObject : MonoBehaviour
                 meltingParticles = null;
             }
         }
+
+        // If enough time has passed to vaporize the object
+        if (vaporizationTimer >= vaporizationTime)
+        {
+            // Destroy the object
+            RestartPipes();
+            Destroy(gameObject);
+        }
     }
 
     private void Melt()
@@ -135,6 +149,7 @@ public class MeltingObject : MonoBehaviour
         else if (transform.localScale.x <= minScale.x || transform.localScale.y <= minScale.y || transform.localScale.z <= minScale.z)
         {
             // Destroy the object
+            RestartPipes();
             Destroy(gameObject);
             Debug.Log(gameObject.name + " has melted completely and been destroyed!");
         }
@@ -152,4 +167,30 @@ public class MeltingObject : MonoBehaviour
             meltTimer = 0;
         }
     }
+
+    private void OnTriggerStay(Collider other)
+    {
+        // Check if the object that stays in the collider has the "Fire" tag
+        if (other.CompareTag("Fire"))
+        {
+            // Increment vaporizationTimer
+            vaporizationTimer += Time.deltaTime;
+        }
+    }
+
+    //Very simply this creates a small collider checker and grabs all the colliders in it's area, checking if it's touching a pipe that it needs to turn back on.
+    private void RestartPipes()
+    {
+        Collider[] cols = Physics.OverlapSphere(gameObject.transform.position, 3);
+        foreach (Collider col in cols)
+        {
+            FreezePipe pipe = col.gameObject.GetComponent<FreezePipe>();
+            if(pipe != null)
+            {
+                pipe.TurnOn();
+            }
+        }
+    }
+
+
 }

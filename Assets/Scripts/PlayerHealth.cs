@@ -102,8 +102,20 @@ public class PlayerHealth : MonoBehaviour
     {
         Debug.Log("Player took damage!");
 
+        Collider[] cols = Physics.OverlapSphere(gameObject.transform.position, 3);
+        bool isHazard = false;
+        foreach (Collider col in cols)
+        {
+            if (col.CompareTag("Hazard"))
+                isHazard = true;
+        }
+        if (!isHazard)
+        {
+            isTakingDamage = false;
+            return;
+        }
         // Do not deal damage if player health is set to -1
-        if(currentHealth > 0)
+        if (currentHealth > 0)
         {
             // Reduce the player's current health
             currentHealth -= damagePerSecond * Time.deltaTime;
@@ -169,6 +181,24 @@ public class PlayerHealth : MonoBehaviour
         bgm.Stop();
         spellSFX.Stop();
     }
+
+    private void OnTriggerStay(Collider other)
+    {
+        PushTrigger steam = other.GetComponent<PushTrigger>();
+        if (steam != null && !steam.isOn)
+        {
+            isTakingDamage = false;
+        }
+        if(steam != null && steam.isOn)
+        {
+            if (other.CompareTag("Hazard"))
+            {
+                isTakingDamage = true;
+            }
+        }
+    }
+
+
 
     private void OnTriggerEnter (Collider other)
     {

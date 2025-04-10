@@ -114,6 +114,7 @@ public class IceSpell : MonoBehaviour
     //Increases the Scale of the ice object most recently placed while the button is held down.
     void ScaleIce()
     {
+        if (obj == null) return;
         Transform currTrans = obj.transform;
         currTrans.localScale = new Vector3(currTrans.localScale.x * growthMulti, currTrans.localScale.y * growthMulti, currTrans.localScale.z * growthMulti);
         growTimer = growCooldown;
@@ -155,6 +156,16 @@ public class IceSpell : MonoBehaviour
                     my_flammableObj.IceHit();
                 }
                 return;
+            }
+
+            if (hit.transform.gameObject.CompareTag("Steam"))
+            {
+                FreezePipe steam = hit.transform.gameObject.GetComponent<FreezePipe>();
+
+                if (steam != null)
+                {
+                    steam.TurnOff();
+                }
             }
 
             //Default behavrior for placing down the block.
