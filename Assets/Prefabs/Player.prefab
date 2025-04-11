@@ -219,7 +219,7 @@ MonoBehaviour:
   range: 40
   ShotCooldown: 0.2
   growthMulti: 1.15
-  ice: {fileID: 8772016807079110888, guid: 84c2302a1ed0c03459536ef8987cf7af, type: 3}
+  ice: {fileID: 2630782301138756679, guid: 705fc2c92ff6dbf4eac9104456a9db6b, type: 3}
   iceParticles: {fileID: 5915842088772461579}
   player: {fileID: 5994108867783213719}
   ignoreTags: []
@@ -351,13 +351,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7365889649425958975}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0.0000007152555, y: 0, z: 6.4999995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7309099261133285382}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!136 &3536195657669714458
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -377,8 +377,8 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 3
+  m_Radius: 1.15
+  m_Height: 7
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 2}
 --- !u!1 &8595931252806645306
@@ -983,6 +983,34 @@ PrefabInstance:
     - target: {fileID: 2862162344808608546, guid: 9b6010f128cb8aa44b85e8bc96c5747c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5100642227948743489, guid: 9b6010f128cb8aa44b85e8bc96c5747c, type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5100642227948743489, guid: 9b6010f128cb8aa44b85e8bc96c5747c, type: 3}
+      propertyPath: LightsModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5100642227948743489, guid: 9b6010f128cb8aa44b85e8bc96c5747c, type: 3}
+      propertyPath: LightsModule.maxLights
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5100642227948743489, guid: 9b6010f128cb8aa44b85e8bc96c5747c, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5100642227948743489, guid: 9b6010f128cb8aa44b85e8bc96c5747c, type: 3}
+      propertyPath: CollisionModule.m_Dampen.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5100642227948743489, guid: 9b6010f128cb8aa44b85e8bc96c5747c, type: 3}
+      propertyPath: CollisionModule.maxCollisionShapes
+      value: 1227
+      objectReference: {fileID: 0}
+    - target: {fileID: 5100642227948743489, guid: 9b6010f128cb8aa44b85e8bc96c5747c, type: 3}
+      propertyPath: CollisionModule.m_Planes.Array.size
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

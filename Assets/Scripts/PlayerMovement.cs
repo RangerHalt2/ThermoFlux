@@ -123,7 +123,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         Debug.Log(pcAnim.GetParameter(0).name);
-        Debug.Log("isRunning is " + pcAnim.GetBool(0));
+        //Debug.Log("isRunning is " + pcAnim.GetBool(0));
         Debug.Log("Walk Input should be" + walkInput);
 
         //Sets the bool for the parameters to tell the animator the player is walking
