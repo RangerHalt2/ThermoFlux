@@ -58,6 +58,13 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("Tutorial");
     }
 
+    // Loads the Options Scene
+    public void Options()
+    {
+        EnableCursor();
+        SceneManager.LoadScene("Options");
+    }
+
     // Loads the Win Screen
     public void Win()
     {
