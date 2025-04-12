@@ -24,7 +24,7 @@ public class SceneController : MonoBehaviour
     // Loads the Hub Level
     public void GoToHubLevel()
     {
-        SceneManager.LoadScene("HubLevel");
+        SceneManager.LoadScene("HomeLevel");
     }
 
     // Loads the First Level
