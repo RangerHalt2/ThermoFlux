@@ -2,6 +2,7 @@
 // Author: Ryan Lupoli
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -16,6 +17,14 @@ public class FireSpell : MonoBehaviour
     private PlayerInput playerControls; // Reference to the player's controls
     private InputAction castFire;
 
+    [Header("Sound Settings")]
+    private SpellSounds sound;
+    private float timer;
+    private float audioCoodlown = 2;
+    
+    [SerializeField] private float animTimer; // How much time has passed since spell activation, used to enable the animation
+    [SerializeField] private float animCooldown; // How much time the script should wait before activating the visual for the fire spell
+
     [Header("References")]
     [SerializeField] private Transform cameraTransform; // Reference to the camera's Transform to determine the pitch of the flames
     [Space]
@@ -25,6 +34,10 @@ public class FireSpell : MonoBehaviour
     // Attack Radius Toggle
     private float toggleInterval = 0.1f; // Interval in seconds between togles for the attack radius
     private float lastToggleTime; // How much time has passed since the attack radius was last toggled
+
+
+
+    
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +57,11 @@ public class FireSpell : MonoBehaviour
         // Initialize the last toggle time
         lastToggleTime = 0f; 
         lastToggleTime = 0f; // Initialize the last toggle time
+
+        sound = GameObject.FindAnyObjectByType<SpellSounds>();
+
+        animTimer = animCooldown;
+       
     }
 
     // Update is called once per frame
@@ -52,12 +70,22 @@ public class FireSpell : MonoBehaviour
         // Check if the fire button is being held down
         if (castFire.IsPressed())
         {
-            if (!_fireParticles.isPlaying)
+            animTimer -= Time.deltaTime;
+
+            if (!_fireParticles.isPlaying && animTimer <= 0)
             {
                 // Start emitting particles
                 _fireParticles.Play(); 
                 // Enable Fire Spell Hitbox
                 attackRadius.SetActive(true);
+                if(timer < 0)
+                {
+                    if(sound != null)
+                    {
+                        sound.FireSound();
+                        timer = audioCoodlown;
+                    }            
+                }
             }
 
             // Toggle attack radius every 'toggleInterval' seconds
@@ -71,18 +99,22 @@ public class FireSpell : MonoBehaviour
         }
         else
         {
+            animTimer = animCooldown;
+
+            // Discable Fire Spell Hitbox
+            attackRadius.SetActive(false);
+
+            // Stop emitting particles
             if (_fireParticles.isPlaying)
             {
-                // Stop emitting particles
                 _fireParticles.Stop(); 
-                // Discable Fire Spell Hitbox
-                attackRadius.SetActive(false);
             }
         }
         // Adjust current angle of particle system
         AdjustParticleAngle();
         // Adjust current angle of attack radius
         AdjustAttackRadiusAngle();
+        timer -= Time.deltaTime;
     }
 
     // Adjusts the angle of the particle system to align with the player and camera

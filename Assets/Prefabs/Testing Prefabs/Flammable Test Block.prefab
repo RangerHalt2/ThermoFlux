@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4644236456524111861}
   - component: {fileID: 4121249994424921956}
   - component: {fileID: 1556338642456472253}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Flammable Test Block
   m_TagString: Flammable Object
   m_Icon: {fileID: 0}
@@ -154,3 +154,5 @@ MonoBehaviour:
   canSpread: 1
   fireSpreadRadius: 3
   fireSpreadInterval: 2
+  iceBuffer: 0
+  iceTimer: 2

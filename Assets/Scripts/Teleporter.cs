@@ -22,7 +22,8 @@ public class Teleporter : MonoBehaviour
         LevelOne,
         LevelTwo,
         LevelThree,
-        LevelTest
+        LevelTest,
+        Win
     }
 
     // Start is called before the first frame update
@@ -101,6 +102,11 @@ public class Teleporter : MonoBehaviour
                 case LevelDestination.LevelTest:
                     Debug.Log("Player teleported to the Test Level!");
                     sceneController.GoToTestLevel();
+                    break; 
+                // Win Screen
+                case LevelDestination.Win:
+                    Debug.Log("Player taken to win screen");
+                    sceneController.Win();
                     break; 
                 default:
                     Debug.LogError("Improper Location Set. Cannot Teleport Player!");

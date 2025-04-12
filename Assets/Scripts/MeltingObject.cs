@@ -11,6 +11,8 @@ public class MeltingObject : MonoBehaviour
     [SerializeField] private bool fireColliding;
     [SerializeField] private float meltSpeed; // Determines how quickly the object melts. Functions as a reduction in size per second
     [SerializeField] private Vector3 minScale = new Vector3(0f, 0f, 0f);  // The scale at which the object will be destroyed
+    [SerializeField] private float vaporizationTime; // How long fire needs to make contact with an object before it vaporizes
+    private float vaporizationTimer = 0f; // How long fire has made contact with an object. Used for vaporization
 
     [Header("Particle Settings")]
     public bool emitsParticles; // Determines whether or not the object emits particles while melting
@@ -27,6 +29,9 @@ public class MeltingObject : MonoBehaviour
     [SerializeField] private float meltingDelay; // Determines how long before the object will begin to naturally melt
     private float naturalMeltTimer = 0f; // Timer to track time before the object starts melting naturally
 
+    [Header("Misc")]
+    public bool canBePushed; // Determines if the object can be pushed by a push trigger
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -121,6 +126,13 @@ public class MeltingObject : MonoBehaviour
                 meltingParticles = null;
             }
         }
+
+        // If enough time has passed to vaporize the object
+        if (vaporizationTimer >= vaporizationTime)
+        {
+            // Destroy the object
+            Destroy(gameObject);
+        }
     }
 
     private void Melt()
@@ -150,6 +162,16 @@ public class MeltingObject : MonoBehaviour
             fireColliding = true;
             // Reset Melt Timer
             meltTimer = 0;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        // Check if the object that stays in the collider has the "Fire" tag
+        if (other.CompareTag("Fire"))
+        {
+            // Increment vaporizationTimer
+            vaporizationTimer += Time.fixedDeltaTime;
         }
     }
 }

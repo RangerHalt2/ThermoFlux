@@ -26,5 +26,45 @@ public class PushTrigger : MonoBehaviour
                 playerRb.AddForce(pushDirection.normalized * pushForce, ForceMode.Force);
             }
         }
+
+        // If the object entering the trigger is an ice block
+        if (other.CompareTag("Ice"))
+        {
+            MeltingObject meltingObject = other.GetComponent<MeltingObject>();
+
+            if (meltingObject != null && meltingObject.canBePushed)
+            {
+                // Attempt to get the Rigidbody component of the player
+                Rigidbody iceRb = other.GetComponent<Rigidbody>();
+            
+                // If the player has a rigidbody
+                if (iceRb != null)
+                {
+                    // Apply constant force to the object in the pushDirection
+                    iceRb.AddForce(pushDirection.normalized * pushForce, ForceMode.Force);
+                }
+            }
+        }
+    }
+
+    // When an object exits the trigger
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Ice"))
+        {
+            MeltingObject meltingObject = other.GetComponent<MeltingObject>();
+
+            if (meltingObject != null && meltingObject.canBePushed)
+            {
+                Rigidbody iceRb = other.GetComponent<Rigidbody>();
+
+                if (iceRb != null)
+                {
+                    // Stop movement of ice block
+                    iceRb.velocity = Vector3.zero;
+                    iceRb.angularVelocity = Vector3.zero; 
+                }
+            }
+        }
     }
 }
