@@ -66,4 +66,22 @@ public class PushTrigger : MonoBehaviour
         }
 
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        for (int i = 0; i < tagsToPush.Length; i++)
+        {
+            if (other.CompareTag(tagsToPush[i]))
+            {
+                //If it matches, it's an object that should be pushed
+                Rigidbody objRb = other.GetComponent<Rigidbody>();
+
+                if (objRb != null)
+                {
+                    objRb.velocity = Vector3.zero;
+                    objRb.angularVelocity = Vector3.zero;
+                }
+            }
+        }
+    }
 }
