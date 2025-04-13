@@ -224,6 +224,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pushForce: 30
   pushDirection: {x: 0, y: 0, z: -1}
+  tagsToPush: []
+  isOn: 0
   cooldown: 0.5
 --- !u!65 &23896658
 BoxCollider:
@@ -2395,6 +2397,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pushForce: 50
   pushDirection: {x: 0, y: 0, z: 1}
+  tagsToPush: []
+  isOn: 0
   cooldown: 0.5
 --- !u!1 &552635841
 GameObject:
@@ -4953,8 +4957,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f0fe63e910ca1748a6e7c3a1259ef49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelDestination: 5
-  SetCompletionFlag: 0
+  levelDestination: 0
+  SetCompletionFlag: 1
 --- !u!1001 &1169322444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5645,6 +5649,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7c2b35cc689e2584d932f141846439fa, type: 3}
       propertyPath: m_Name
       value: Furnace
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7c2b35cc689e2584d932f141846439fa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1570034430011630549, guid: 7c2b35cc689e2584d932f141846439fa, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6487,7 +6495,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 50
   ShotCooldown: 0.2
+  growthMulti: 1.1
   ice: {fileID: 0}
+  iceParticles: {fileID: 0}
   player: {fileID: 1587389054}
   ignoreTags: []
 --- !u!114 &1587389052
@@ -6507,6 +6517,8 @@ MonoBehaviour:
   cameraTransform: {fileID: 963194228}
   playerObj: {fileID: 1587389045}
   attackRadius: {fileID: 1065557329}
+  animTimer: 0
+  animCooldown: 0
 --- !u!114 &1587389053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6992,6 +7004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBob: {fileID: 360872484}
+  obj: {fileID: 0}
   orientation: {fileID: 47443859}
 --- !u!1001 &1707430892
 PrefabInstance:

@@ -30,19 +30,19 @@ public class SceneController : MonoBehaviour
     // Loads the First Level
     public void GoToLevelOne()
     {
-        SceneManager.LoadScene("LevelOne");
+        SceneManager.LoadScene("Himeys Level");
     }
 
     // Loads the Second Level
     public void GoToLevelTwo()
     {
-        SceneManager.LoadScene("LevelTwo");
+        SceneManager.LoadScene("BeltLevel");
     }
 
     // Loads the Third Level
     public void GoToLevelThree()
     {
-        SceneManager.LoadScene("LevelThree");
+        SceneManager.LoadScene("SteamLevel");
     }
 
     // Loads the Test Level Scene

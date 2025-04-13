@@ -38,6 +38,9 @@ public class BootstrappedData : MonoBehaviour
     [SerializeField] private bool levelTwoComplete; // Determines whether level two was completed
     [SerializeField] private bool levelThreeComplete; // Determines whether level three was completed
 
+    public int levelsCompleted;
+    public bool gameBeatable;
+
     public static BootstrappedData Instance {get; private set; } = null;
     
     public bool LevelOneComplete
@@ -58,6 +61,20 @@ public class BootstrappedData : MonoBehaviour
         set { levelThreeComplete = value; }
     }
 
+    [SerializeField] private float _reqLevels; // Serialize the private field!
+    public float reqLevels
+    {
+        get => _reqLevels;
+        set
+        {
+            _reqLevels = value;
+            //Debug.Log($"GameManager: SliderValue set to {_sliderValue}");
+        }
+    }
+
+    //[Header("Settings in Options Menu")]
+    //public int reqLevels;
+    
     void Awake()
     {
         // Check if an instance already exists
