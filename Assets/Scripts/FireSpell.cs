@@ -31,6 +31,9 @@ public class FireSpell : MonoBehaviour
     private float timer;
     private float audioCoodlown = 2;
 
+    public float animTimer;
+    public float animCooldown;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +54,8 @@ public class FireSpell : MonoBehaviour
         lastToggleTime = 0f; // Initialize the last toggle time
 
         sound = GameObject.FindAnyObjectByType<SpellSounds>();
+
+        animTimer = animCooldown;
        
     }
 
@@ -60,7 +65,10 @@ public class FireSpell : MonoBehaviour
         // Check if the fire button is being held down
         if (castFire.IsPressed())
         {
-            if (!_fireParticles.isPlaying)
+
+            animTimer -= Time.deltaTime;
+
+            if (!_fireParticles.isPlaying && animTimer <= 0)
             {
                 // Start emitting particles
                 _fireParticles.Play(); 
@@ -84,12 +92,15 @@ public class FireSpell : MonoBehaviour
         }
         else
         {
+            animTimer = animCooldown;
+
+            // Discable Fire Spell Hitbox
+                attackRadius.SetActive(false);
+
             if (_fireParticles.isPlaying)
             {
                 // Stop emitting particles
                 _fireParticles.Stop(); 
-                // Discable Fire Spell Hitbox
-                attackRadius.SetActive(false);
             }
         }
         // Adjust current angle of particle system

@@ -16,6 +16,9 @@ public class FlammableObject : MonoBehaviour
     public bool emitsParticles; // Determines whether or not the object emits particles while on fire
     [SerializeField] private ParticleSystem fireParticlePrefab; // Fire particle prefab to instantiate
     private ParticleSystem fireParticles; // Instance of the fire particles
+
+    [Header("Light Settings")]
+    [SerializeField] private GameObject lightSource; // Reference to the light source the object will activate while on fire.
     
     [Header("Fire Spread Settings")]
     public bool canSpread; // Determines if the fire is allowed to spread to other flammable objects
@@ -30,6 +33,11 @@ public class FlammableObject : MonoBehaviour
     {
         // Start fireSpreadTimer at the set interval
         fireSpreadTimer = fireSpreadInterval;
+        // Start with light source disabled
+        if (lightSource != null)
+        {
+            lightSource.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -103,6 +111,12 @@ public class FlammableObject : MonoBehaviour
         // Play the fire particles
         fireParticles.Play(); 
 
+        // Activate Light source
+        if (lightSource != null)
+        {
+            lightSource.SetActive(true);
+        }
+
         Debug.Log(gameObject.name + " has been lit on fire!");
     }
 
@@ -128,6 +142,12 @@ public class FlammableObject : MonoBehaviour
         {
             // Reset the timer manually
             fireSpreadTimer = fireSpreadInterval;
+        }
+
+        // Deactivate Light source
+        if (lightSource != null)
+        {
+            lightSource.SetActive(false);
         }
 
         iceBuffer = iceTimer;
