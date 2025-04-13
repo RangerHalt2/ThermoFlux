@@ -74,7 +74,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 96dbed1a7d1376949b65fcbccc2371f3, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 96dbed1a7d1376949b65fcbccc2371f3, type: 3}
       propertyPath: m_TagString
@@ -144,9 +144,9 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &218147502656095664
 MonoBehaviour:
   m_ObjectHideFlags: 0
