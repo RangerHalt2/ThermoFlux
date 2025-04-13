@@ -107,9 +107,9 @@ public class FlammableObject : MonoBehaviour
             fireParticles.transform.SetParent(transform);
             // Update the scale of the fire particles to match the parent
             fireParticles.transform.localScale = transform.localScale;
+            fireParticles.Play();
         }
-        // Play the fire particles
-        fireParticles.Play(); 
+
 
         // Activate Light source
         if (lightSource != null)
