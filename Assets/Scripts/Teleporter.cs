@@ -46,7 +46,7 @@ public class Teleporter : MonoBehaviour
             string currentSceneName = SceneManager.GetActiveScene().name;
             switch (currentSceneName)
             {
-                case "Himeys Level":
+                case "WindLevel":
                     Debug.Log("Level 1: Completed!");
                     if(BootstrappedData.Instance.LevelOneComplete == false) // Checks if level has already been beaten
                     {
@@ -108,7 +108,8 @@ public class Teleporter : MonoBehaviour
                     SetLevelCompletionFlag(levelDestination);
                 }
                 // Teleport player to the destination determineed by LevelDestination
-                
+                am.StopBGM();
+                ss.Stop();
                 switch (levelDestination)
                 {
                     // Hub Level

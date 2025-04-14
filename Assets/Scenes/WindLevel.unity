@@ -9011,8 +9011,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f0fe63e910ca1748a6e7c3a1259ef49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelDestination: 5
-  SetCompletionFlag: 0
+  levelDestination: 0
+  locked: 0
+  SetCompletionFlag: 1
 --- !u!1001 &1175483611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10419,6 +10420,8 @@ MonoBehaviour:
   cameraTransform: {fileID: 963194228}
   playerObj: {fileID: 1587389045}
   attackRadius: {fileID: 1065557329}
+  animTimer: 0
+  animCooldown: 0
 --- !u!114 &1587389053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11817,6 +11820,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b59a45457c8a6a546bb8bfb2c19cf9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cheatsJump: 0
+  cheatsSpeed: 0
 --- !u!4 &2048822840
 Transform:
   m_ObjectHideFlags: 0

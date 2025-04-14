@@ -29,11 +29,12 @@ public class SliderScript : MonoBehaviour // Renamed to avoid ambiguity with Uni
             Debug.Log($"SliderScript: Saved SliderValue to BootstrappedData: {v}");
             //BootstrappedData.Instance.SliderValue = BootstrappedData.Instance.reqLevels;
         });
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        BootstrappedData.Instance.reqLevels = reqLevels;
     }
 }

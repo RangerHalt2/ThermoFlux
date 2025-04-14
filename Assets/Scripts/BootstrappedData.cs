@@ -40,9 +40,15 @@ public class BootstrappedData : MonoBehaviour
 
     private SceneController controller;
 
+    [HideInInspector] public bool cheatsJump;
+    [HideInInspector] public bool cheatsSpeed;
+
+    private bool gameWon;
+
     private void Start()
     {
         controller = GameObject.FindAnyObjectByType<SceneController>();
+        gameWon = false;
     }
 
     public int levelsCompleted;
@@ -81,9 +87,15 @@ public class BootstrappedData : MonoBehaviour
 
     private void Update()
     {
-        if (LevelOneComplete && levelTwoComplete && levelThreeComplete)
+        if (LevelOneComplete && levelTwoComplete && levelThreeComplete && !gameWon)
         {
             controller.Win();
+            gameWon = true;
+        }
+        if(levelsCompleted == reqLevels && !gameWon)
+        {
+            controller.Win();
+            gameWon = true;
         }
     }
 
@@ -100,7 +112,7 @@ public class BootstrappedData : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
+        //reqLevels = 3;
         // Prevent Data from being unloaded
         DontDestroyOnLoad(gameObject);
         Instance = this; // Assign the singleton instance

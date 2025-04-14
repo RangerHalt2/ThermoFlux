@@ -115,6 +115,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (sm != null)
+        {
+            cheatSpeed = sm.cheatsSpeed;
+            cheatJumps = sm.cheatsJump;
+        }
+
         // Checking if player is currently grounded
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
         // Getting Player Input

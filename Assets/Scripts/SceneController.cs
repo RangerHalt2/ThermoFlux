@@ -9,6 +9,22 @@ public class SceneController : MonoBehaviour
 {
     [HideInInspector] public bool cheatsJump;
     [HideInInspector] public bool cheatsSpeed;
+
+    private BootstrappedData boot;
+
+    private AudioManager am;
+    private SpellSounds ss;
+
+    private void Start()
+    {
+        boot = GameObject.FindAnyObjectByType<BootstrappedData>();
+        cheatsJump = boot.cheatsJump;
+        cheatsSpeed = boot.cheatsSpeed;
+
+        am = GameObject.FindObjectOfType<AudioManager>();
+        ss = GameObject.FindObjectOfType<SpellSounds>();
+    }
+
     // Unlocks and renables the cursor for the purpose of menu navigation
     public void EnableCursor()
     {
@@ -19,6 +35,8 @@ public class SceneController : MonoBehaviour
     // Loads the Main Menu
     public void MainMenu ()
     {
+        am.StopBGM();
+        ss.Stop();
         EnableCursor();
         SceneManager.LoadScene("MainMenu");
     }
@@ -26,36 +44,48 @@ public class SceneController : MonoBehaviour
     // Loads the Hub Level
     public void GoToHubLevel()
     {
+        am.StopBGM();
+        ss.Stop();
         SceneManager.LoadScene("HomeLevel");
     }
 
     // Loads the First Level
     public void GoToLevelOne()
     {
-        SceneManager.LoadScene("Himeys Level");
+        am.StopBGM();
+        ss.Stop();
+        SceneManager.LoadScene("WindLevel");
     }
 
     // Loads the Second Level
     public void GoToLevelTwo()
     {
+        am.StopBGM();
+        ss.Stop();
         SceneManager.LoadScene("BeltLevel");
     }
 
     // Loads the Third Level
     public void GoToLevelThree()
     {
+        am.StopBGM();
+        ss.Stop();
         SceneManager.LoadScene("SteamLevel");
     }
 
     // Loads the Test Level Scene
     public void GoToTestLevel()
     {
+        am.StopBGM();
+        ss.Stop();
         SceneManager.LoadScene("TestLevel");
     }
 
     // Loads the Tutorial Scene
     public void Tutorial()
     {
+        am.StopBGM();
+        ss.Stop();
         EnableCursor();
         SceneManager.LoadScene("Tutorial");
     }
@@ -63,6 +93,8 @@ public class SceneController : MonoBehaviour
     // Loads the Options Scene
     public void Options()
     {
+        am.StopBGM();
+        ss.Stop();
         EnableCursor();
         SceneManager.LoadScene("Options");
     }
@@ -70,6 +102,8 @@ public class SceneController : MonoBehaviour
     // Loads the Win Screen
     public void Win()
     {
+        am.StopBGM();
+        ss.Stop();
         EnableCursor();
         SceneManager.LoadScene("WinScreen");
     }
@@ -77,6 +111,8 @@ public class SceneController : MonoBehaviour
     // Loads the Game Over Screen
     public void GameOver()
     {
+        am.StopBGM();
+        ss.Stop();
         EnableCursor();
         SceneManager.LoadScene("LoseScreen");
     }
@@ -84,6 +120,8 @@ public class SceneController : MonoBehaviour
     // Loads the Beta Level
     public void BetaLevel()
     {
+        am.StopBGM();
+        ss.Stop();
         EnableCursor();
         SceneManager.LoadScene("Himeys Level");
     }
@@ -91,6 +129,8 @@ public class SceneController : MonoBehaviour
     // Restarts the current scene (used for respawning)
     public void RestartCurrentScene()
     {
+        am.StopBGM();
+        ss.Stop();
         string currentSceneName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(currentSceneName);
     }
@@ -105,10 +145,12 @@ public class SceneController : MonoBehaviour
     public void cheatsToggleSpeed()
     {
         cheatsSpeed = !cheatsSpeed;
+        boot.cheatsSpeed = cheatsSpeed;
     }
 
     public void cheatsToggleJump()
     {
         cheatsJump = !cheatsJump;
+        boot.cheatsJump = cheatsJump;
     }
 }
