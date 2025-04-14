@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
+    [HideInInspector] public bool cheatsJump;
+    [HideInInspector] public bool cheatsSpeed;
     // Unlocks and renables the cursor for the purpose of menu navigation
     public void EnableCursor()
     {
@@ -98,5 +100,15 @@ public class SceneController : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void cheatsToggleSpeed()
+    {
+        cheatsSpeed = !cheatsSpeed;
+    }
+
+    public void cheatsToggleJump()
+    {
+        cheatsJump = !cheatsJump;
     }
 }

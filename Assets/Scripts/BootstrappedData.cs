@@ -38,6 +38,13 @@ public class BootstrappedData : MonoBehaviour
     [SerializeField] private bool levelTwoComplete; // Determines whether level two was completed
     [SerializeField] private bool levelThreeComplete; // Determines whether level three was completed
 
+    private SceneController controller;
+
+    private void Start()
+    {
+        controller = GameObject.FindAnyObjectByType<SceneController>();
+    }
+
     public int levelsCompleted;
     public bool gameBeatable;
 
@@ -72,9 +79,17 @@ public class BootstrappedData : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (LevelOneComplete && levelTwoComplete && levelThreeComplete)
+        {
+            controller.Win();
+        }
+    }
+
     //[Header("Settings in Options Menu")]
     //public int reqLevels;
-    
+
     void Awake()
     {
         // Check if an instance already exists

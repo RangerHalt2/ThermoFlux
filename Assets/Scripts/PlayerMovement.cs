@@ -47,6 +47,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform orientation; // Handles the player's current orientation
     [SerializeField] private float iceSpeed; // Handles speed when touching ice
     
+    private bool cheatJumps;
+    private bool cheatSpeed;
+    private SceneController sm;
 
     Vector3 moveDirection; // Determines the direction the player is moving in
 
@@ -99,6 +102,14 @@ public class PlayerMovement : MonoBehaviour
 
         // Set the player's ability to jump to true
         canJump = true;
+
+        sm = GameObject.FindAnyObjectByType<SceneController>();
+        if (sm != null)
+        {
+            cheatSpeed = sm.cheatsSpeed;
+            cheatJumps = sm.cheatsJump;
+        }
+
     }
 
     // Update is called once per frame
@@ -150,11 +161,14 @@ public class PlayerMovement : MonoBehaviour
         verticalInput = moveAction.ReadValue<Vector2>().y;
 
         // Determines when the player jumps
-        if(jumpAction.triggered && canJump && grounded)
+        if (jumpAction.triggered && canJump && (grounded || cheatJumps ))
         {
-            // Disable the player's ability to jump
-            canJump = false;
-
+            //If cheat mode is enabled then don't set it to false
+            if (!cheatJumps)
+            {
+                // Disable the player's ability to jump
+                canJump = false;
+            }
             Jump();
 
             // Re-enable the ability to jump after jumpCooldown
@@ -214,12 +228,15 @@ public class PlayerMovement : MonoBehaviour
         {
             moveDirection.Normalize();
         }
-        
+
+        iceMod = touchingIce ? iceSpeed : 1f;
+        float cheatsSpeedMod = cheatSpeed ? 3f : 1f;
+
         // If the player is moving on a Slope
-        if(OnSlope() && !exitingSlope)
+        if (OnSlope() && !exitingSlope)
         {
             // Add force in the direction of the slope
-            rb.AddForce(GetSlopeMoveDirection() * moveSpeed * 20f, ForceMode.Force);
+            rb.AddForce(GetSlopeMoveDirection() * moveSpeed * 20f * cheatsSpeedMod * iceMod, ForceMode.Force);
             // Add downward force to prevent "bumpiness"
             if(rb.velocity.y > 0)
             {
@@ -227,18 +244,15 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        iceMod = touchingIce ? iceSpeed:1f;
-
-
         // If the player is grounded
         if(grounded)
         {
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * iceMod, ForceMode.Force);
+            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * iceMod * cheatsSpeedMod, ForceMode.Force);
         }
         // If the player is airborne
         else if(!grounded)
         {
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier * iceMod, ForceMode.Force);
+            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier * iceMod * cheatsSpeedMod, ForceMode.Force);
         }
 
         // Disable Gravity whilst on Slope

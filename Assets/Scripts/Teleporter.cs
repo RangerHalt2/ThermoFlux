@@ -12,8 +12,9 @@ public class Teleporter : MonoBehaviour
     [Space]
     [SerializeField] private bool locked; // Determines whether or not the teleporter is locked A locked teleporter is non functional.
     [SerializeField] private bool SetCompletionFlag; // Determines whether or not using the teleporter should set a flag for completing the given level.
-    
 
+    private AudioManager am;
+    private SpellSounds ss;
     private SceneController sceneController; // Reference to the scene controller script
 
     // Potential Destinations for the Teleporter
@@ -31,6 +32,8 @@ public class Teleporter : MonoBehaviour
     void Start()
     {
         sceneController = GameObject.FindObjectOfType<SceneController>();
+        am = GameObject.FindObjectOfType<AudioManager>();
+        ss = GameObject.FindObjectOfType<SpellSounds>();
     }
 
     // Sets the level completion flag for the current level
@@ -38,6 +41,8 @@ public class Teleporter : MonoBehaviour
     {
         if (BootstrappedData.Instance != null)
         {
+            am.StopBGM();
+            ss.Stop();
             string currentSceneName = SceneManager.GetActiveScene().name;
             switch (currentSceneName)
             {
@@ -103,6 +108,7 @@ public class Teleporter : MonoBehaviour
                     SetLevelCompletionFlag(levelDestination);
                 }
                 // Teleport player to the destination determineed by LevelDestination
+                
                 switch (levelDestination)
                 {
                     // Hub Level
