@@ -10,7 +10,7 @@ public class MeltingObject : MonoBehaviour
     public bool isMelting = false; // Tracks if the object is currently melting
     [SerializeField] private bool fireColliding;
     [SerializeField] private float meltSpeed; // Determines how quickly the object melts. Functions as a reduction in size per second
-    [SerializeField] private Vector3 minScale = new Vector3(0f, 0f, 0f);  // The scale at which the object will be destroyed
+    [SerializeField] private Vector3 minScale = new Vector3(30f, 30f, 30f);  // The scale at which the object will be destroyed
     [SerializeField] private float vaporizationTime; // How long fire needs to make contact with an object before it vaporizes
     private float vaporizationTimer = 0f; // How long fire has made contact with an object. Used for vaporization
 
@@ -31,10 +31,17 @@ public class MeltingObject : MonoBehaviour
 
     [Header("Misc")]
     public bool canBePushed; // Determines if the object can be pushed by a push trigger
+
+    private Rigidbody rb;
+
+    private float meltingTimer;
+    private float meltCooldown = 0.035f;
     
     // Start is called before the first frame update
     void Start()
     {
+
+        rb = GetComponentInChildren<Rigidbody>();
         // If an object is set to melt naturally
         if (meltsNaturally)
         {
@@ -97,7 +104,7 @@ public class MeltingObject : MonoBehaviour
         }
 
         // If object is Melting
-        if (isMelting || naturalMeltTimer <= 0f)
+        if ((isMelting || naturalMeltTimer <= 0f) && meltingTimer <= 0)
         {
             // Melt the object
             Melt();
@@ -135,18 +142,24 @@ public class MeltingObject : MonoBehaviour
             RestartPipes();
             Destroy(gameObject);
         }
+
+        meltingTimer -= Time.deltaTime;
+
+
     }
 
     private void Melt()
     {
         // If the object's current scale is above the minimum, decrease its scale
-        if (transform.localScale.x > minScale.x && transform.localScale.y > minScale.y && transform.localScale.z > minScale.z)
+        if (rb.transform.localScale.x > minScale.x && rb.transform.localScale.y > minScale.y && rb.transform.localScale.z > minScale.z)
         {
+            Transform currTransform = rb.gameObject.transform;
             // Gradually reduce the scale of the object
-            transform.localScale -= new Vector3(meltSpeed, meltSpeed, meltSpeed) * Time.deltaTime;
+            rb.transform.localScale = new Vector3(currTransform.localScale.x * meltSpeed, currTransform.localScale.y * meltSpeed, currTransform.localScale.z * meltSpeed);
+            meltingTimer = meltCooldown;
         }
         // Else, if the object has reached the minimum acceptable scale
-        else if (transform.localScale.x <= minScale.x || transform.localScale.y <= minScale.y || transform.localScale.z <= minScale.z)
+        else if (rb.transform.localScale.x <= minScale.x || rb.transform.localScale.y <= minScale.y || rb.transform.localScale.z <= minScale.z)
         {
             // Destroy the object
             RestartPipes();

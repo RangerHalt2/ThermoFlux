@@ -34,11 +34,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 96dbed1a7d1376949b65fcbccc2371f3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 96dbed1a7d1376949b65fcbccc2371f3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 96dbed1a7d1376949b65fcbccc2371f3, type: 3}
       propertyPath: m_LocalRotation.y
@@ -46,7 +46,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 96dbed1a7d1376949b65fcbccc2371f3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 96dbed1a7d1376949b65fcbccc2371f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -163,7 +163,8 @@ MonoBehaviour:
   isDestructable: 1
   burningTime: 5
   emitsParticles: 1
-  fireParticlePrefab: {fileID: 6470081322731554543, guid: 5d8f9020f07e65a4e8ab0ebf876d4e3d, type: 3}
+  fireParticlePrefab: {fileID: 2304361465832325043, guid: aa377ddc168cba7409cff2ce6ba07960, type: 3}
+  lightSource: {fileID: 0}
   canSpread: 1
   fireSpreadRadius: 3
   fireSpreadInterval: 3
