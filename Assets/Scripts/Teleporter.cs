@@ -17,6 +17,9 @@ public class Teleporter : MonoBehaviour
     private SpellSounds ss;
     private SceneController sceneController; // Reference to the scene controller script
 
+    public Animator transition;
+    public float transitionTime = 1f;
+
     // Potential Destinations for the Teleporter
     private enum LevelDestination
     {
@@ -101,13 +104,33 @@ public class Teleporter : MonoBehaviour
             // If Player enters collision for the teleporter
             if (collision.gameObject.CompareTag("Player"))
             {
-                Debug.Log("Player has entered a teleporter!");
+                StartCoroutine(ScreenTransition());
+            }
+        }
+        else
+        {
+            if(BootstrappedData.Instance.gameBeatable == true) // checks to see if game is beatable
+            {
+                locked = false; // if so, teleporter is active
+            }
+        }
+    }
+
+    private IEnumerator ScreenTransition()
+    {
+        Debug.Log("Player has entered a teleporter!");
                 // Set the completion flag for the current level
+
                 if (SetCompletionFlag)
                 {
                     SetLevelCompletionFlag(levelDestination);
                 }
                 // Teleport player to the destination determineed by LevelDestination
+
+                transition.SetTrigger("Start");
+
+                yield return new WaitForSeconds(transitionTime);
+
                 am.StopBGM();
                 ss.Stop();
                 switch (levelDestination)
@@ -146,14 +169,5 @@ public class Teleporter : MonoBehaviour
                         Debug.LogError("Improper Location Set. Cannot Teleport Player!");
                         break;
                 }
-            }
-        }
-        else
-        {
-            if(BootstrappedData.Instance.gameBeatable == true) // checks to see if game is beatable
-            {
-                locked = false; // if so, teleporter is active
-            }
-        }
     }    
 }
