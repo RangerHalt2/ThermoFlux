@@ -8,7 +8,7 @@ public class FreezePipe : MonoBehaviour
 
     private ParticleSystem particles;
 
-    private void Start()
+    private void Awake()
     {
         pushTrigger = GetComponentInChildren<PushTrigger>();
         particles = GetComponentInChildren<ParticleSystem>();

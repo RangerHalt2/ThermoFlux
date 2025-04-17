@@ -19,6 +19,7 @@ public class IceSpell : MonoBehaviour
     [Header("Ice to Place")]
     [SerializeField] private GameObject ice;
     [SerializeField] private ParticleSystem iceParticles;
+    [SerializeField] private Vector3 maxSize;
 
     [Header("Misc Assignments")]
     [SerializeField] private Transform player; //LB: Not currently used, but probably will be used to shoot the laser from the player
@@ -43,6 +44,7 @@ public class IceSpell : MonoBehaviour
     private Animator pcAnim;
 
     private GameObject obj;
+    private MeltingObject MeltingObject;
 
     private bool canPlaceIce;
 
@@ -115,9 +117,15 @@ public class IceSpell : MonoBehaviour
     void ScaleIce()
     {
         if (obj == null) return;
+        MeltingObject.ResetMelting();
         Transform currTrans = obj.transform;
+
+        if (currTrans.localScale.x > maxSize.x || currTrans.localScale.y > maxSize.y || currTrans.localScale.z > maxSize.z)
+            return;
+
         currTrans.localScale = new Vector3(currTrans.localScale.x * growthMulti, currTrans.localScale.y * growthMulti, currTrans.localScale.z * growthMulti);
         growTimer = growCooldown;
+        
     }
 
 
@@ -174,6 +182,7 @@ public class IceSpell : MonoBehaviour
                 if (Array.IndexOf(ignoreTags, hit.collider.gameObject.tag) != -1) return;
                 Debug.Log("Ice Fire did hit");
                 obj = Instantiate(ice, hit.point, ice.transform.rotation);
+                MeltingObject = obj.GetComponentInChildren<MeltingObject>();
                 Collider[] cols = Physics.OverlapSphere(obj.transform.position, 1f);
                 for (int i = 0; i < cols.Length; i++)
                 {

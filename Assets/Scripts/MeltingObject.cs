@@ -191,6 +191,12 @@ public class MeltingObject : MonoBehaviour
         }
     }
 
+    public void ResetMelting()
+    {
+        meltTimer = 0;
+        naturalMeltTimer = meltingDelay;
+    }
+
     //Very simply this creates a small collider checker and grabs all the colliders in it's area, checking if it's touching a pipe that it needs to turn back on.
     private void RestartPipes()
     {
