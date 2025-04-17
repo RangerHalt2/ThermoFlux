@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    [HideInInspector] public bool cheatsJump;
-    [HideInInspector] public bool cheatsSpeed;
+    public bool cheatsJump;
+    public bool cheatsSpeed;
 
     private BootstrappedData boot;
 
@@ -144,7 +144,7 @@ public class SceneController : MonoBehaviour
 
     public void cheatsToggleSpeed()
     {
-        cheatsSpeed = !cheatsSpeed;
+        cheatsSpeed = !cheatsSpeed; //Changes on to off, off to on
         boot.cheatsSpeed = cheatsSpeed;
     }
 
