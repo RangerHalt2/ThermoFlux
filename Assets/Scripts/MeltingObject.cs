@@ -64,6 +64,10 @@ public class MeltingObject : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        if(rb == null)
+        {
+            Destroy(gameObject);
+        }
         Debug.Log("vaporization timer: " + vaporizationTimer);
         // If the object can melt naturally, and the natural melt timer is not 0
         if (meltsNaturally && naturalMeltTimer > 0f)

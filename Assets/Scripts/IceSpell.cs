@@ -48,6 +48,8 @@ public class IceSpell : MonoBehaviour
 
     private bool canPlaceIce;
 
+    private int layerMask;
+
     //Gets the inputs and the camera
     private void Start()
     {
@@ -55,6 +57,7 @@ public class IceSpell : MonoBehaviour
         cam = GameObject.FindAnyObjectByType<ThirdPersonCam>();
         sound = GameObject.FindAnyObjectByType<SpellSounds>();
         pcAnim = GetComponentInChildren<Animator>();
+        layerMask = LayerMask.GetMask("Player", "Ignore Raycast");
     }
 
     //If the trigger is pressed it calls the place ice fire.
@@ -141,7 +144,7 @@ public class IceSpell : MonoBehaviour
         
         Debug.Log("Ice Fire check #1");
         //if the Raycast hits something and that something is not in the ignoreTags array
-        if (Physics.Raycast(cam.transform.position, cam.transform.forward * range, out hit, Mathf.Infinity))
+        if (Physics.Raycast(cam.transform.position, cam.transform.forward * range, out hit, Mathf.Infinity, ~layerMask))
         {
             Debug.DrawRay(cam.transform.position, cam.transform.forward * range, Color.yellow, 50f);
             //If the raycast hit a "Hazard" check if it's one marked with health and destructible and then do damage if so
@@ -174,6 +177,21 @@ public class IceSpell : MonoBehaviour
                 {
                     steam.TurnOff();
                 }
+
+                obj = Instantiate(ice, hit.transform.position, ice.transform.rotation);
+                MeltingObject = obj.GetComponentInChildren<MeltingObject>();
+                Collider[] cols = Physics.OverlapSphere(obj.transform.position, 1f);
+                for (int i = 0; i < cols.Length; i++)
+                {
+                    if (Array.IndexOf(ignoreTags, cols[i].tag) != -1)
+                    {
+                        //Destroy(obj);
+                        return;
+                    }
+                }
+                timer = ShotCooldown;
+                canPlaceIce = false;
+                return;
             }
 
             //Default behavrior for placing down the block.

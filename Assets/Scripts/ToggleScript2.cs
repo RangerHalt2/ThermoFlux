@@ -16,12 +16,17 @@ public class ToggleScript2 : MonoBehaviour
         
         toggle = GetComponent<Toggle>();
 
-        toggle.isOn = bootstrappedData.cheatsSpeed;
+        if(bootstrappedData != null)
+        {
+            toggle.isOn = bootstrappedData.cheatsSpeed;
+            toggle.onValueChanged.AddListener(OnToggleSpeed);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+
+    void OnToggleSpeed(bool value)
     {
-        
+        bootstrappedData.cheatsSpeed = value;
     }
+
 }

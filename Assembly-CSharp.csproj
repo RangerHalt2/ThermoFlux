@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4BBE20D0-FC1A-0C1A-ADF8-9C45AF34A466}</ProjectGuid>
+    <ProjectGuid>{960AE7F7-1FF5-BD48-EF9C-F1004EEBBF39}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -60,13 +60,17 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.56f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BootToMainMenu.cs" />
     <Compile Include="Assets\Art Assets\Dutkus_props\scroll texture.cs" />
     <Compile Include="Assets\Scripts\InputHandler.cs" />
+    <Compile Include="Assets\Scripts\ToggleScript.cs" />
     <Compile Include="Assets\Art Assets\ThermoFlux-Machine_Art\Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
     <Compile Include="Assets\Scripts\IceSpell.cs" />
+    <Compile Include="Assets\Scripts\ToggleScript2.cs" />
     <Compile Include="Assets\Scripts\MeltingObject.cs" />
     <Compile Include="Assets\Scripts\FreezePipe.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonCam.cs" />
+    <Compile Include="Assets\Scripts\ConveyorTrigger.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Art Assets\ThermoFlux-Machine_Art\Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
@@ -89,13 +93,17 @@
     <Compile Include="Assets\Scripts\SpellSounds.cs" />
     <Compile Include="Assets\Scripts\HeatPipe.cs" />
     <Compile Include="Assets\Art Assets\ThermoFlux-Machine_Art\Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
+    <Compile Include="Assets\Scripts\BurntCrate.cs" />
     <Compile Include="Assets\Scripts\IceLine.cs" />
     <Compile Include="Assets\Scripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\FlammableObject.cs" />
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\BootstrappedData.cs" />
     <Compile Include="Assets\Art Assets\ThermoFlux-Machine_Art\Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
+    <Compile Include="Assets\Scripts\GravityHandler.cs" />
+    <Compile Include="Assets\Scripts\FanPush.cs" />
     <Compile Include="Assets\Art Assets\ThermoFlux-Machine_Art\Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
+    <Compile Include="Assets\Scripts\TextChanger.cs" />
     <Compile Include="Assets\Art Assets\ThermoFlux-Machine_Art\Assets\TutorialInfo\Scripts\Readme.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -103,6 +111,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\Materials\Blackened.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />

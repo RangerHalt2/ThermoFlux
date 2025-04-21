@@ -13,6 +13,8 @@ public class Steam : MonoBehaviour
 
     [SerializeField] private float yToDespawn;
 
+    [SerializeField] private Transform goHere;
+
     private Rigidbody rb;
 
     private float timer;
@@ -24,7 +26,7 @@ public class Steam : MonoBehaviour
 
         for(int i = 0; i < layersToIgnore.Length; i++)
         {
-            Physics.IgnoreLayerCollision(layersToIgnore[i], steamLayer);
+            //Physics.IgnoreLayerCollision(layersToIgnore[i], steamLayer);
         }
         if(steamParticles != null)
             steamParticles.Play(); //they should never stop playing.
@@ -32,7 +34,8 @@ public class Steam : MonoBehaviour
 
     private void Update()
     {
-        rb.AddForce(gameObject.transform.up *  speedMulti, ForceMode.Force);
+        Vector3 direction = -(gameObject.transform.position - goHere.position);
+        rb.AddForce(direction * speedMulti, ForceMode.Force);
         timer -= Time.deltaTime;
 
 
@@ -43,11 +46,12 @@ public class Steam : MonoBehaviour
     //There's some gravity shenanigans that require the object being pushed by steam to have a little boost
     private void OnCollisionEnter(Collision collision)
     {
+        Vector3 direction = -(gameObject.transform.position - goHere.position);
         Rigidbody collRb = collision.collider.gameObject.GetComponent<Rigidbody>();
         if (collRb != null)
         {
             if (timer > 0) return;
-            collRb.AddForce(gameObject.transform.up * speedMulti/2, ForceMode.Force);
+            collRb.AddForce(direction * speedMulti/2, ForceMode.Force);
             timer = cooldown;
         }
     }

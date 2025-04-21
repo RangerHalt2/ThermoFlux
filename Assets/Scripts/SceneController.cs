@@ -15,14 +15,23 @@ public class SceneController : MonoBehaviour
     private AudioManager am;
     private SpellSounds ss;
 
+    private float timer;
+    private float cooldown = 2;
+
     private void Start()
     {
+        timer = cooldown;
         boot = GameObject.FindAnyObjectByType<BootstrappedData>();
         cheatsJump = boot.cheatsJump;
         cheatsSpeed = boot.cheatsSpeed;
 
         am = GameObject.FindObjectOfType<AudioManager>();
         ss = GameObject.FindObjectOfType<SpellSounds>();
+    }
+
+    private void Update()
+    {
+        timer -= Time.deltaTime;
     }
 
     // Unlocks and renables the cursor for the purpose of menu navigation
@@ -144,12 +153,16 @@ public class SceneController : MonoBehaviour
 
     public void cheatsToggleSpeed()
     {
+        if (timer > 0) return;
+        Debug.Log("Toggling Cheats Speed");
         cheatsSpeed = !cheatsSpeed; //Changes on to off, off to on
         boot.cheatsSpeed = cheatsSpeed;
     }
 
     public void cheatsToggleJump()
     {
+        if(timer > 0) return;
+        Debug.Log("Toggling Cheats Jump");
         cheatsJump = !cheatsJump;
         boot.cheatsJump = cheatsJump;
     }

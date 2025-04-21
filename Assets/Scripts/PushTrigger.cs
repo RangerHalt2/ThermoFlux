@@ -57,10 +57,15 @@ public class PushTrigger : MonoBehaviour
             {
                 //If it matches, it's an object that should be pushed
                 Rigidbody objRb = other.GetComponent<Rigidbody>();
-
+                if (objRb == null) other.GetComponentInParent<Rigidbody>();
                 if (objRb != null)
                 {
+                    Debug.Log("I'm hitting something with a rigidbody");
                     objRb.AddForce(pushDirection.normalized * pushForce, ForceMode.Force);
+                }
+                else
+                {
+                    Debug.Log("I could not find the object rb");
                 }
             }
         }

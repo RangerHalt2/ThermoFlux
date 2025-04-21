@@ -15,13 +15,15 @@ public class ToggleScript : MonoBehaviour
         bootstrappedData = GameObject.FindAnyObjectByType<BootstrappedData>();
         
         toggle = GetComponent<Toggle>();
-
-        toggle.isOn = bootstrappedData.cheatsJump;
+        if (bootstrappedData != null)
+        {
+            toggle.isOn = bootstrappedData.cheatsJump;
+            toggle.onValueChanged.AddListener(OnToggleChanged);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnToggleChanged(bool value)
     {
-        
+        bootstrappedData.cheatsJump = value;
     }
 }

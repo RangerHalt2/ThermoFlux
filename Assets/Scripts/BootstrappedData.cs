@@ -40,8 +40,8 @@ public class BootstrappedData : MonoBehaviour
 
     private SceneController controller;
 
-    [HideInInspector] public bool cheatsJump;
-    [HideInInspector] public bool cheatsSpeed;
+     public bool cheatsJump;
+     public bool cheatsSpeed;
 
     private bool gameWon;
 
@@ -105,7 +105,7 @@ public class BootstrappedData : MonoBehaviour
     void Awake()
     {
         // Check if an instance already exists
-        if(Instance != null)
+        if(Instance != null && Instance != this)
         {
             // If another instance exists, destroy it
             Debug.LogError("Found another instance of BootstrappedData on " + gameObject.name);
@@ -114,7 +114,7 @@ public class BootstrappedData : MonoBehaviour
         }
         //reqLevels = 3;
         // Prevent Data from being unloaded
-        DontDestroyOnLoad(gameObject);
         Instance = this; // Assign the singleton instance
+        DontDestroyOnLoad(gameObject);
     }
 }

@@ -11,6 +11,7 @@ public class PauseMenu : MonoBehaviour
     [Header("References")]
     [SerializeField] private GameObject pausePanel; // Reference to the he pause menu UI asset
     [SerializeField] private GameObject player; // Reference to the player in order to access the player's inputs
+    [SerializeField] private GameObject cursor;
 
     [Header("Keybind Settings")]
     [SerializeField] private PlayerInput playerControls; // Reference to the player's Input Manager
@@ -64,6 +65,7 @@ public class PauseMenu : MonoBehaviour
     {
         // Un-hides the pause panel
         pausePanel.SetActive(true);
+        cursor.SetActive(false);
         // Sets timescale to 0 to prevent gameplay
         Time.timeScale = 0f;
         // Update isPaused to show game is paused
@@ -75,6 +77,7 @@ public class PauseMenu : MonoBehaviour
     {
         // Hides the pause panel
         pausePanel.SetActive(false);
+        cursor.SetActive(true);
         // Sets timescale to return speed to normal
         Time.timeScale = 1f;
         // Update isPaused to show game is not paused
