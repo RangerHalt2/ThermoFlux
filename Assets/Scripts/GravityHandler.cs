@@ -37,7 +37,7 @@ public class GravityHandler : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Steam") || other.CompareTag("Hazard")) return;
-        if (other.CompareTag("Ice") || other.CompareTag("Player")) return;
+        if (other.CompareTag("Ice") || other.CompareTag("Player") || other.CompareTag("Kill Plane")) return;
         if (other.CompareTag("Push"))
         {
             rb.isKinematic = false;
