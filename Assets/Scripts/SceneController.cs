@@ -99,6 +99,15 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("Tutorial");
     }
 
+    // Loads the Credits Scene
+    public void Credits()
+    {
+        am.StopBGM();
+        ss.Stop();
+        EnableCursor();
+        SceneManager.LoadScene("Credits");
+    }
+
     // Loads the Options Scene
     public void Options()
     {

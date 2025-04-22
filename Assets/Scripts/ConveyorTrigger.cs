@@ -8,6 +8,7 @@ public class ConveyorTrigger : MonoBehaviour
     [SerializeField] private float pushForce; // The amount of force applied to an object which enters a push trigger
     [SerializeField] private Vector3 pushDirection; // Determines the direction force will be applied. Put a positive or negative 1 for the respecrive axis you would like to push along
     [SerializeField] private float maxVelocity = 7;
+    public float playerPush = 10.5f;
 
     [SerializeField] private string[] tagsToPush;
 
@@ -42,7 +43,7 @@ public class ConveyorTrigger : MonoBehaviour
             if (playerRb != null)
             {
                 // Apply constant force to the object in the pushDirection
-                playerRb.AddForce(pushDirection.normalized * pushForce*6.5f, ForceMode.Force);
+                playerRb.AddForce(pushDirection.normalized * pushForce*playerPush, ForceMode.Force);
                 timer = cooldown;
                 Debug.Log("Added force");
             }
