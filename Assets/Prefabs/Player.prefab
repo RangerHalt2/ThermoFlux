@@ -161,9 +161,6 @@ MonoBehaviour:
     m_SingletonActionBindings: []
     m_Flags: 0
   playerHeight: 2
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 256
   maxSlopeAngle: 50
   orientation: {fileID: 3512943507278437941}
   iceSpeed: 3
@@ -223,7 +220,7 @@ MonoBehaviour:
   growthMulti: 1.15
   ice: {fileID: 2630782301138756679, guid: 705fc2c92ff6dbf4eac9104456a9db6b, type: 3}
   iceParticles: {fileID: 5915842088772461579}
-  maxSize: {x: 2, y: 2, z: 2}
+  maxSize: {x: 2.5, y: 2.5, z: 2.5}
   player: {fileID: 5994108867783213719}
   ignoreTags: []
 --- !u!136 &1262716502962784266

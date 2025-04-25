@@ -28,6 +28,8 @@ public class FlammableObject : MonoBehaviour
     [HideInInspector] public float iceBuffer; //Timer will prevent it from being lit if it has recently been extinguished
     [SerializeField] private float iceTimer = 2;
 
+    [SerializeField] private GameObject brokenParticles;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -56,6 +58,8 @@ public class FlammableObject : MonoBehaviour
                 if(isDestructable)
                 {
                     Debug.Log(gameObject.name + " has been burnt up and destroyed!");
+                    if(brokenParticles != null)
+                        Instantiate(brokenParticles, gameObject.transform.position, gameObject.transform.rotation);
                     Destroy(this.gameObject);
                 }
                 // Else automatically extinguish the object

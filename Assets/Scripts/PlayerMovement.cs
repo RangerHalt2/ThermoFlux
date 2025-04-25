@@ -35,8 +35,8 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Ground Check")]
     [SerializeField] private float playerHeight; // Stores the player's height
-    [SerializeField] private LayerMask whatIsGround; // Determines what surfaces are the ground
-    bool grounded; // Determines if the player is currently in a grounded state
+    private LayerMask whatIsGround; // Determines what surfaces are the ground
+    private bool grounded; // Determines if the player is currently in a grounded state
 
     [Header("Slope Handling")]
     [SerializeField] private float maxSlopeAngle; // The maximum angle a surface can be at before a player ceases being able to move up it
@@ -92,6 +92,8 @@ public class PlayerMovement : MonoBehaviour
         moveAction.performed += context => walkInput = true;
         moveAction.canceled += context => walkInput = false;
 
+        whatIsGround = LayerMask.GetMask("Ground", "Puzzle Objects");
+
         // Enable input actions
         moveAction.Enable();
         jumpAction.Enable();
@@ -123,6 +125,7 @@ public class PlayerMovement : MonoBehaviour
 
         // Checking if player is currently grounded
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
+        pcAnim.SetBool("isInAir", !grounded);
         // Getting Player Input
         MyInput();
         // Limit Player's Max Speed

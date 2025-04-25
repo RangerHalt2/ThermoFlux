@@ -117,4 +117,13 @@ public class BootstrappedData : MonoBehaviour
         Instance = this; // Assign the singleton instance
         DontDestroyOnLoad(gameObject);
     }
+
+    public void ClearBoot()
+    {
+        if(Instance != null)
+        {
+            Destroy(Instance.gameObject);
+            Instance = null;
+        }
+    }
 }

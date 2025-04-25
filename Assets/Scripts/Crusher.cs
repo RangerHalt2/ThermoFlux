@@ -112,6 +112,10 @@ public class Crusher : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
+        else if (other.CompareTag("Player"))
+        {
+            other.gameObject.transform.localScale = new Vector3(other.gameObject.transform.localScale.x, 0.2f, other.gameObject.transform.localScale.z);
+        }
         // If the object is on a collision layer
         else if (((1 << other.gameObject.layer) & collisionLayers) != 0)
         {
