@@ -120,8 +120,10 @@ public class SceneController : MonoBehaviour
     // Loads the Win Screen
     public void Win()
     {
-        am.StopBGM();
-        ss.Stop();
+        if(am != null)
+            am.StopBGM();
+        if(ss != null)
+            ss.Stop();
         EnableCursor();
         SceneManager.LoadScene("WinScreen");
     }

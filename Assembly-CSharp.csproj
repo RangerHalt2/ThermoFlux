@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{960AE7F7-1FF5-BD48-EF9C-F1004EEBBF39}</ProjectGuid>
+    <ProjectGuid>{9C5C9C90-4B3D-E193-D4C7-61E3359BE952}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\MeltingObject.cs" />
     <Compile Include="Assets\Scripts\FreezePipe.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonCam.cs" />
+    <Compile Include="Assets\Scripts\UnPauseUILevels.cs" />
     <Compile Include="Assets\Scripts\ConveyorTrigger.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
@@ -82,17 +83,20 @@
     <Compile Include="Assets\Scripts\CrateSpawner.cs" />
     <Compile Include="Assets\Scripts\SpinningObject.cs" />
     <Compile Include="Assets\Art Assets\ThermoFlux-Machine_Art\Assets\StarterAssets\ThirdPersonController\Scripts\BasicRigidBodyPush.cs" />
+    <Compile Include="Assets\Scripts\SpinningObject2.cs" />
     <Compile Include="Assets\Scripts\CrusherTrigger.cs" />
     <Compile Include="Assets\Scripts\SliderScript.cs" />
     <Compile Include="Assets\Scripts\Teleporter.cs" />
     <Compile Include="Assets\Art Assets\ThermoFlux-Machine_Art\Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
     <Compile Include="Assets\Scripts\PlayerCameraSync.cs" />
     <Compile Include="Assets\Scripts\EnemyHealth.cs" />
+    <Compile Include="Assets\Scripts\ClearBoot.cs" />
     <Compile Include="Assets\Scripts\Crusher.cs" />
     <Compile Include="Assets\Scripts\Steam.cs" />
     <Compile Include="Assets\Scripts\SpellSounds.cs" />
     <Compile Include="Assets\Scripts\HeatPipe.cs" />
     <Compile Include="Assets\Art Assets\ThermoFlux-Machine_Art\Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
+    <Compile Include="Assets\Scripts\CheatsDisplayHandler.cs" />
     <Compile Include="Assets\Scripts\BurntCrate.cs" />
     <Compile Include="Assets\Scripts\IceLine.cs" />
     <Compile Include="Assets\Scripts\SceneController.cs" />
