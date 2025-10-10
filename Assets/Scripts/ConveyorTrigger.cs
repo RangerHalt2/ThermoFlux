@@ -61,7 +61,7 @@ public class ConveyorTrigger : MonoBehaviour
 
                 if (objRb != null)
                 {
-                    objRb.velocity = new Vector3(pushDirection.x * pushForce, pushDirection.y * pushForce, pushDirection.z * pushForce);
+                    objRb.linearVelocity = new Vector3(pushDirection.x * pushForce, pushDirection.y * pushForce, pushDirection.z * pushForce);
                 }
             }
         }
@@ -79,7 +79,7 @@ public class ConveyorTrigger : MonoBehaviour
 
                 if (objRb != null)
                 {
-                    objRb.velocity = Vector3.zero;
+                    objRb.linearVelocity = Vector3.zero;
                     objRb.angularVelocity = Vector3.zero;
                 }
             }

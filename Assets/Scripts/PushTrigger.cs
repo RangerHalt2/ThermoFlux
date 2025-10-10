@@ -83,7 +83,7 @@ public class PushTrigger : MonoBehaviour
 
                 if (objRb != null)
                 {
-                    objRb.velocity = Vector3.zero;
+                    objRb.linearVelocity = Vector3.zero;
                     objRb.angularVelocity = Vector3.zero;
                 }
             }

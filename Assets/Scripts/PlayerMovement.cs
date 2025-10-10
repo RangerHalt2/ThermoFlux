@@ -135,11 +135,11 @@ public class PlayerMovement : MonoBehaviour
         // Apply Drag
         if(grounded)
         {
-            rb.drag = groundDrag;
+            rb.linearDamping = groundDrag;
         }
         else
         {
-            rb.drag = 0;
+            rb.linearDamping = 0;
         }
 
         Debug.Log(pcAnim.GetParameter(0).name);
@@ -247,7 +247,7 @@ public class PlayerMovement : MonoBehaviour
             // Add force in the direction of the slope
             rb.AddForce(GetSlopeMoveDirection() * moveSpeed * 20f * cheatsSpeedMod * iceMod, ForceMode.Force);
             // Add downward force to prevent "bumpiness"
-            if(rb.velocity.y > 0)
+            if(rb.linearVelocity.y > 0)
             {
                 rb.AddForce(Vector3.down * 80f, ForceMode.Force);
             }
@@ -274,22 +274,22 @@ public class PlayerMovement : MonoBehaviour
         // Limit Speed on Slope
         if(OnSlope() && !exitingSlope)
         {
-            if(rb.velocity.magnitude > moveSpeed)
+            if(rb.linearVelocity.magnitude > moveSpeed)
             {
-                rb.velocity = rb.velocity.normalized * moveSpeed;
+                rb.linearVelocity = rb.linearVelocity.normalized * moveSpeed;
             }
         }
         // Limiting Speed on ground or in air
         else
         {
             // Getting the flat velocity of the rigidbody
-            Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+            Vector3 flatVel = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
 
             // If this velocity exceeds the moveSpeed, limit the speed
             if(flatVel.magnitude > moveSpeed)
             {
                 Vector3 limitedVel = flatVel.normalized * moveSpeed;
-                rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
+                rb.linearVelocity = new Vector3(limitedVel.x, rb.linearVelocity.y, limitedVel.z);
             }
         }
     }
@@ -300,7 +300,7 @@ public class PlayerMovement : MonoBehaviour
         exitingSlope = true;
 
         // Reset the player's Y Velocity
-        rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+        rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
 
         // Add jumpForce Once
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
