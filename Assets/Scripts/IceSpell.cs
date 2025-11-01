@@ -111,7 +111,7 @@ public class IceSpell : MonoBehaviour
             if (iceParticles.isPlaying)
             {
                 iceParticles.Stop();
-                Debug.Log("Stop Playing Ice Particles");
+                //Debug.Log("Stop Playing Ice Particles");
             }
         }
     }

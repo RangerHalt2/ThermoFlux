@@ -29,42 +29,53 @@ public class ConveyorTrigger : MonoBehaviour
     }
 
     // While an object is in the trigger
-    private void OnCollisionStay(Collision other)
+    private void OnTriggerStay(Collider other)
     {
         if (!isOn) return;
 
         // If the object entering the trigger is the player
-        if (other.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
+            Debug.Log("I did touch the player");
             // Attempt to get the Rigidbody component of the player
             Rigidbody playerRb = other.gameObject.GetComponent<Rigidbody>();
+            PlayerController playerController = other.gameObject.GetComponent<PlayerController>();
 
+            if (playerController != null)
+            {
+                playerController.pushMovement = pushDirection.normalized * playerPush * pushForce;
+            }
+            else Debug.Log("Not pushing!");
             // If the player has a rigidbody
             if (playerRb != null)
             {
                 // Apply constant force to the object in the pushDirection
-                playerRb.AddForce(pushDirection.normalized * pushForce*playerPush, ForceMode.Force);
+                playerRb.AddForce(pushDirection.normalized * pushForce * playerPush, ForceMode.Force);
                 timer = cooldown;
                 Debug.Log("Added force");
             }
             return;
         }
-
-        //Check for each tag in the array if the object matches
-        //This code is essentially the same as the player, but it's seperated from the player push triggers
-        for (int i = 0; i < tagsToPush.Length; i++)
+        else
         {
-            if (other.gameObject.CompareTag(tagsToPush[i]))
-            {
-                //If it matches, it's an object that should be pushed
-                Rigidbody objRb = other.gameObject.GetComponentInParent<Rigidbody>();
+            Debug.Log("Printing other tag: " + other.gameObject.tag);
+        }
 
-                if (objRb != null)
+            //Check for each tag in the array if the object matches
+            //This code is essentially the same as the player, but it's seperated from the player push triggers
+            for (int i = 0; i < tagsToPush.Length; i++)
+            {
+                if (other.gameObject.CompareTag(tagsToPush[i]))
                 {
-                    objRb.linearVelocity = new Vector3(pushDirection.x * pushForce, pushDirection.y * pushForce, pushDirection.z * pushForce);
+                    //If it matches, it's an object that should be pushed
+                    Rigidbody objRb = other.gameObject.GetComponentInParent<Rigidbody>();
+
+                    if (objRb != null)
+                    {
+                        objRb.linearVelocity = new Vector3(pushDirection.x * pushForce, pushDirection.y * pushForce, pushDirection.z * pushForce);
+                    }
                 }
             }
-        }
 
     }
 
@@ -72,10 +83,20 @@ public class ConveyorTrigger : MonoBehaviour
     {
         for (int i = 0; i < tagsToPush.Length; i++)
         {
+            PlayerController playerController = other.GetComponent<PlayerController>();
+
+            if (playerController != null)
+            {
+                playerController.isDecay = true;
+                return;
+            }
+
             if (other.CompareTag(tagsToPush[i]))
             {
                 //If it matches, it's an object that should be pushed
                 Rigidbody objRb = other.GetComponent<Rigidbody>();
+
+              
 
                 if (objRb != null)
                 {

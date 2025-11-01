@@ -49,7 +49,7 @@ public class InputManager : MonoBehaviour
     public bool ReloadInput { get; private set; }
     public float NextInput { get; private set; }
     public bool InteractInput { get; private set; }
-    public bool PauseInput { get; private set; }
+    public bool PauseInput { get; set; }
 
     //LB: Instance Handler
     public static InputManager Instance { get; private set; }

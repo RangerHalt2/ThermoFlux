@@ -32,6 +32,7 @@ public class PauseMenu : MonoBehaviour
     {
         if(inputManager.PauseInput)
         {
+            inputManager.PauseInput = false;
             // If the game is currently paused...
             if(isPaused)
             {

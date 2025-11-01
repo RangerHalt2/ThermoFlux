@@ -68,7 +68,7 @@ public class MeltingObject : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        Debug.Log("vaporization timer: " + vaporizationTimer);
+        //Debug.Log("vaporization timer: " + vaporizationTimer);
         // If the object can melt naturally, and the natural melt timer is not 0
         if (meltsNaturally && naturalMeltTimer > 0f)
         {

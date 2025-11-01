@@ -41,7 +41,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5994108867783213719}
   - component: {fileID: 4038096907280934482}
-  - component: {fileID: 1746946160560529913}
   - component: {fileID: 1445420434820229407}
   - component: {fileID: 6587558023330527523}
   - component: {fileID: 4634283589822027099}
@@ -104,41 +103,6 @@ MonoBehaviour:
   m_DefaultActionMap: Gameplay
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &1746946160560529913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2598065427603708525}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82b7a22272442704795f28779f1bdfe1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkSpeed: 5
-  sprintSpeed: 6
-  groundDrag: 2
-  jumpForce: 18
-  jumpCooldown: 0.25
-  airMultiplier: 0.4
-  crouchSpeed: 2
-  crouchYScale: 0.5
-  playerControls: {fileID: 4038096907280934482}
-  moveAction:
-    m_Name: Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 02692ae0-8996-4486-9dc7-7de01e97bf9a
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  playerHeight: 2
-  maxSlopeAngle: 50
-  orientation: {fileID: 3512943507278437941}
-  iceSpeed: 3
-  state: 0
 --- !u!114 &1445420434820229407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,6 +220,8 @@ MonoBehaviour:
   jumpForce: 5
   gravity: -30
   terminalVelocity: -60
+  pushMovement: {x: 0, y: 0, z: 0}
+  isDecay: 0
 --- !u!1 &4632849622624837105
 GameObject:
   m_ObjectHideFlags: 0

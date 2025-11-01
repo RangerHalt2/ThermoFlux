@@ -37,7 +37,13 @@ public class PushTrigger : MonoBehaviour
         {
             // Attempt to get the Rigidbody component of the player
             Rigidbody playerRb = other.GetComponent<Rigidbody>();
-            
+            PlayerController playerController = other.GetComponent<PlayerController>();
+
+            if (playerController != null)
+            {
+                playerController.pushMovement = pushDirection.normalized * pushForce;
+            }
+
             // If the player has a rigidbody
             if (playerRb != null)
             {
@@ -48,7 +54,7 @@ public class PushTrigger : MonoBehaviour
             }
             return;
         }
-
+            
         //Check for each tag in the array if the object matches
         //This code is essentially the same as the player, but it's seperated from the player push triggers
         for(int i = 0; i < tagsToPush.Length; i++)
@@ -80,6 +86,12 @@ public class PushTrigger : MonoBehaviour
             {
                 //If it matches, it's an object that should be pushed
                 Rigidbody objRb = other.GetComponent<Rigidbody>();
+                PlayerController playerController = other.GetComponent<PlayerController>();
+
+                if (playerController != null)
+                {
+                    playerController.isDecay = true;
+                }
 
                 if (objRb != null)
                 {
