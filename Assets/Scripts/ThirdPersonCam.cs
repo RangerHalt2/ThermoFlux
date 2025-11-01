@@ -13,7 +13,6 @@ public class ThirdPersonCam : MonoBehaviour
     [SerializeField] private Transform playerObj; // Reference to the player object. Link to the player's model 
     [SerializeField] private Rigidbody rb; // Reference to the player's rigidbody
 
-    [SerializeField] private PlayerInput playerControls; // Reference to the player's Input Manager
     private PlayerMovement playerMovement; // Reference to the player movement script
     
     [Header("Settings")]
@@ -39,7 +38,6 @@ public class ThirdPersonCam : MonoBehaviour
         orientation.forward = viewDir.normalized;
 
         // Get the movement input
-         moveInput = playerMovement.moveAction.ReadValue<Vector2>(); 
 
         // Handle movement if there is input
         if (moveInput != Vector2.zero)

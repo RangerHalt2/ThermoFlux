@@ -26,7 +26,7 @@ public class IceSpell : MonoBehaviour
     [SerializeField] private string[] ignoreTags;
 
     //Varibles that tech's will not see.
-    private InputHandler my_inputs;
+    private InputManager my_inputs;
     private ThirdPersonCam cam; //This actually gets the entire game object but mostly cares about the "ThirdPersonCam" feature.
 
     private EnemyHealth my_enemy;
@@ -53,7 +53,7 @@ public class IceSpell : MonoBehaviour
     //Gets the inputs and the camera
     private void Start()
     {
-        my_inputs = GameObject.FindAnyObjectByType<InputHandler>();
+        my_inputs = GameObject.FindAnyObjectByType<InputManager>();
         cam = GameObject.FindAnyObjectByType<ThirdPersonCam>();
         sound = GameObject.FindAnyObjectByType<SpellSounds>();
         pcAnim = GetComponentInChildren<Animator>();
@@ -65,7 +65,7 @@ public class IceSpell : MonoBehaviour
     {
         timer -= Time.deltaTime;
         growTimer -= Time.deltaTime;
-        if (my_inputs.altFireTriggered && timer <= 0)
+        if (my_inputs.AltFireInput && timer <= 0)
         {
             if(canPlaceIce)
                 ShootIce();
@@ -79,7 +79,7 @@ public class IceSpell : MonoBehaviour
             }
         }
 
-        if(my_inputs.altFireTriggered && !canPlaceIce)
+        if(my_inputs.AltFireInput && !canPlaceIce)
         {
             if(growTimer <= 0)
                 ScaleIce();
@@ -87,7 +87,7 @@ public class IceSpell : MonoBehaviour
 
         audioTimer -= Time.deltaTime;
 
-        if (my_inputs.altFireTriggered)
+        if (my_inputs.AltFireInput)
         {
             if (!iceParticles.isPlaying)
             {
@@ -101,7 +101,7 @@ public class IceSpell : MonoBehaviour
         }
 
         //tells the animator if the trigger is pressed.
-        if(my_inputs.altFireTriggered || my_inputs.fireTriggered)
+        if(my_inputs.AltFireInput || my_inputs.FireInput)
         {
             pcAnim.SetBool("isCasting", true);
         }

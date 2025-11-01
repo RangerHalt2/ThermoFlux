@@ -38,7 +38,12 @@ public class FanPush : MonoBehaviour
             if (playerRb != null && canSeePlayer(playerRb))
             {
                 // Apply constant force to the object in the pushDirection
-                playerRb.AddForce(pushDirection.normalized * pushForce, ForceMode.Force);
+                PlayerController playerController = playerRb.GetComponent<PlayerController>();
+                if (playerController != null)
+                {
+                    playerController.pushMovement = pushDirection.normalized * pushForce;
+
+                }
                 Debug.Log("Added force");
             }
             return;
@@ -73,6 +78,11 @@ public class FanPush : MonoBehaviour
 
                 if (objRb != null)
                 {
+                    PlayerController playerController = objRb.GetComponent<PlayerController>();
+                    if(playerController != null)
+                    {
+                        playerController.isDecay = true;
+                    }
                     objRb.linearVelocity = Vector3.zero;
                     objRb.angularVelocity = Vector3.zero;
                 }

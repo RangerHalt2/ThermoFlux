@@ -13,17 +13,14 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private GameObject player; // Reference to the player in order to access the player's inputs
     [SerializeField] private GameObject cursor;
 
-    [Header("Keybind Settings")]
-    [SerializeField] private PlayerInput playerControls; // Reference to the player's Input Manager
-    private InputAction pause;
+    private InputManager inputManager;
 
     public static bool isPaused = false; // Determines whether or not the game is currently paused
 
     // Start is called before the first frame update
     void Start()
     {
-        // Initialize actions from PlayerControls assets
-        pause = playerControls.actions["Gameplay/Pause"];
+        inputManager = GameObject.FindAnyObjectByType<InputManager>();
         // Disables pause screen
         pausePanel.SetActive(false);
         // Ensure the scene does not start paused
@@ -33,7 +30,7 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(pause.triggered)
+        if(inputManager.PauseInput)
         {
             // If the game is currently paused...
             if(isPaused)

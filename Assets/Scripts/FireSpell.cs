@@ -13,10 +13,6 @@ public class FireSpell : MonoBehaviour
     [SerializeField] private float angleAdjustment; // Adds a flat amount of pitch (x rotation) to better fine tune how the fire spell is shot. Negative values cause particles to fired at an upward angle, and positive at a downward
     private ParticleSystem.MainModule fireMainModule;
 
-    [Header("Keybind Settings")]
-    private PlayerInput playerControls; // Reference to the player's controls
-    private InputAction castFire;
-
     [Header("References")]
     [SerializeField] private Transform cameraTransform; // Reference to the camera's Transform to determine the pitch of the flames
     [Space]
@@ -26,6 +22,8 @@ public class FireSpell : MonoBehaviour
     // Attack Radius Toggle
     private float toggleInterval = 0.1f; // Interval in seconds between togles for the attack radius
     private float lastToggleTime; // How much time has passed since the attack radius was last toggled
+
+    private InputManager inputManager;
 
     private SpellSounds sound;
     private float timer;
@@ -37,12 +35,7 @@ public class FireSpell : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Get the PlayerInput component attached to this GameObject
-        playerControls = GetComponent<PlayerInput>();
-
-        // Enable the Fire Spell
-        castFire = playerControls.actions["Gameplay/Fire"];
-        castFire.Enable();
+        inputManager = GameObject.FindAnyObjectByType<InputManager>();
 
         // Cache the MainModule of the particle system for quick access
         fireMainModule = _fireParticles.main;
@@ -63,7 +56,7 @@ public class FireSpell : MonoBehaviour
     void Update()
     {
         // Check if the fire button is being held down
-        if (castFire.IsPressed())
+        if (inputManager.FireInput)
         {
 
             animTimer -= Time.deltaTime;
