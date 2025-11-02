@@ -34,9 +34,9 @@ public class Teleporter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sceneController = GameObject.FindObjectOfType<SceneController>();
-        am = GameObject.FindObjectOfType<AudioManager>();
-        ss = GameObject.FindObjectOfType<SpellSounds>();
+        sceneController = GameObject.FindAnyObjectByType<SceneController>();
+        am = GameObject.FindAnyObjectByType<AudioManager>();
+        ss = GameObject.FindAnyObjectByType<SpellSounds>();
     }
 
     // Sets the level completion flag for the current level
@@ -97,12 +97,12 @@ public class Teleporter : MonoBehaviour
     }
 
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collision)
     {
         if(!locked)
         {
             // If Player enters collision for the teleporter
-            if (collision.gameObject.CompareTag("Player"))
+            if (collision.CompareTag("Player"))
             {
                 StartCoroutine(ScreenTransition());
             }

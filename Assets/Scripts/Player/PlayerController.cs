@@ -41,16 +41,7 @@ public class PlayerController : MonoBehaviour
 
     void Awake() 
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            Instance = this;
-        }
-
-        DontDestroyOnLoad(gameObject);
+  
     }
 
 
@@ -76,7 +67,7 @@ public class PlayerController : MonoBehaviour
 
         move += (pushMovement * Time.deltaTime);
 
-        move.y = verticalForce * Time.deltaTime;
+        move.y = (verticalForce + pushMovement.y) * Time.deltaTime;
 
         characterController.Move(move);
         if (characterController.isGrounded){ 
@@ -116,10 +107,13 @@ public class PlayerController : MonoBehaviour
     {
         if (isDecay)
         {
-            pushMovement.x = pushMovement.x - ((pushMovement.x < 0) ? -0.05f : 0.05f);
-            pushMovement.z = pushMovement.z - ((pushMovement.z < 0) ? -0.05f : 0.05f);
+            pushMovement.x = pushMovement.x - ((pushMovement.x < 0) ? -0.1f : 0.1f);
+            pushMovement.z = pushMovement.z - ((pushMovement.z < 0) ? -0.1f : 0.1f);
+            pushMovement.y = pushMovement.y - ((pushMovement.y < 0) ? -0.1f : 0.1f);
             if (Mathf.Abs(pushMovement.x) < 0) pushMovement.x = 0;
             if (Mathf.Abs(pushMovement.z) < 0) pushMovement.z = 0;
+            if (Mathf.Abs(pushMovement.y) < 0) pushMovement.y = 0;
+
 
             if (pushMovement == Vector3.zero) isDecay = false;
         }

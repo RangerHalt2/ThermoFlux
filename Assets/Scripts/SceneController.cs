@@ -25,8 +25,8 @@ public class SceneController : MonoBehaviour
         cheatsJump = boot.cheatsJump;
         cheatsSpeed = boot.cheatsSpeed;
 
-        am = GameObject.FindObjectOfType<AudioManager>();
-        ss = GameObject.FindObjectOfType<SpellSounds>();
+        am = GameObject.FindAnyObjectByType<AudioManager>();
+        ss = GameObject.FindAnyObjectByType<SpellSounds>();
     }
 
     private void Update()

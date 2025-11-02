@@ -42,8 +42,9 @@ public class FanPush : MonoBehaviour
                 if (playerController != null)
                 {
                     playerController.pushMovement = pushDirection.normalized * pushForce;
-
                 }
+                else
+                    Debug.Log("Player Controller Null");
                 Debug.Log("Added force");
             }
             return;
