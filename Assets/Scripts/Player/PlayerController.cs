@@ -26,6 +26,12 @@ public class PlayerController : MonoBehaviour
     private float rotationY;
     private float verticalForce = 0;
 
+    [SerializeField] private LayerMask whatIsGround;
+    [SerializeField] private Transform groundPoint;
+    [SerializeField] private float groundDistance = 0.01f;
+
+    private Animator pcAnim;
+
     public static PlayerController Instance;
 
     #endregion
@@ -35,7 +41,7 @@ public class PlayerController : MonoBehaviour
     //Jitters the player down miniscually to confirm their grounded state.
     public void JitterDown()
     {
-        characterController.Move(new Vector3(0f, -0.05f, 0f));
+        characterController.Move(new Vector3(0f, -0.01f, 0f));
     }
     #endregion
 
@@ -51,7 +57,16 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked; //This might better belong on a different script? Unsure
         characterController = GetComponent<CharacterController>();
         inputs = GameObject.FindAnyObjectByType<InputManager>();
+        pcAnim = GetComponentInChildren<Animator>();
         if (terminalVelocity > 0) terminalVelocity = -terminalVelocity; //Just makes it negative
+        JitterDown();
+    }
+
+    private bool IsGrounded()
+    {
+        bool ret = false;
+        ret = Physics.Raycast(groundPoint.position, Vector3.down, groundDistance, whatIsGround);
+        return ret;
     }
 
     private void Move(Vector2 MovementVector)
@@ -59,6 +74,14 @@ public class PlayerController : MonoBehaviour
         //Default Base Case
         Vector3 move = transform.forward * MovementVector.y + transform.right * MovementVector.x;
         move = movementSpeed * (inputs.SprintInput? sprintMultiplier : 1) * Time.deltaTime * move;
+
+        //If the move is greater than 0 after reading the inputs, then we're moving!
+        if(move.magnitude > 0)
+        {
+            pcAnim.SetBool("isRunning", true);
+        }
+        else
+            pcAnim.SetBool("isRunning", false);
 
         //Debug.Log("Move: " + move);
 
@@ -70,8 +93,14 @@ public class PlayerController : MonoBehaviour
         move.y = (verticalForce + pushMovement.y) * Time.deltaTime;
 
         characterController.Move(move);
-        if (characterController.isGrounded){ 
-            verticalForce = -0.01f; //Vertical Force must always be slightly negative to double check grounded.
+        if (characterController.isGrounded){
+            pcAnim.SetBool("isInAir", false);
+            verticalForce = -0.1f; //Vertical Force must always be slightly negative to double check grounded.
+        }
+        else
+        {
+            if(!IsGrounded())
+                pcAnim.SetBool("isInAir", true);
         }
 
         //Debug.Log("Momentum: " + momentum);
