@@ -173,6 +173,7 @@ MonoBehaviour:
   sensitivity: 15
   minPitch: -30
   maxPitch: 50
+  topOfHead: {fileID: 1024012682290059478}
 --- !u!1 &4039004155733735961
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,6 +681,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 392243592926366476}
   m_SourcePrefab: {fileID: 100100000, guid: 70e803da07e6c6542a0cab5d5f1591d7, type: 3}
+--- !u!4 &1024012682290059478 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7045715716426564194, guid: 70e803da07e6c6542a0cab5d5f1591d7, type: 3}
+  m_PrefabInstance: {fileID: 8066350482053585588}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3887660462827443520 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6485976835991785460, guid: 70e803da07e6c6542a0cab5d5f1591d7, type: 3}

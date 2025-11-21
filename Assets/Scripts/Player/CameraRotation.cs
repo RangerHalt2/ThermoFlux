@@ -1,6 +1,8 @@
 //Purpose: This script rotates the gun and camera up and down
 //Author: Logan Baysinger.
 
+using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CameraRotation : MonoBehaviour
@@ -10,6 +12,8 @@ public class CameraRotation : MonoBehaviour
     [SerializeField] private float sensitivity = 150f;
     [SerializeField] private float minPitch = -30f;
     [SerializeField] private float maxPitch = 50f;
+
+    [SerializeField] private Transform topOfHead;
 
     private float yaw;
     private float pitch;
@@ -44,11 +48,20 @@ public class CameraRotation : MonoBehaviour
 
         // Compute camera position around player
         Vector3 desiredPosition = player.position + rotation * offset;
+        float distance = offset.magnitude;
+        float buffer = 0.2f; // keeps camera slightly off walls
+
+        if (Physics.Raycast(topOfHead.position, (desiredPosition - topOfHead.position).normalized, out RaycastHit hit, distance))
+        {
+            // place camera at hit point minus buffer
+            desiredPosition = hit.point - (desiredPosition - topOfHead.position).normalized * buffer;
+        }
+
         transform.position = desiredPosition;
 
         // --- STABLE LookAt ---
         // Compute look target (e.g. player’s head)
-        Vector3 lookTarget = player.position + Vector3.up * 1.5f;
+        Vector3 lookTarget = topOfHead.position;
 
         // Use player's up direction instead of world up to stabilize
         Vector3 upVector = player.up; // or Vector3.up if player doesn’t tilt
