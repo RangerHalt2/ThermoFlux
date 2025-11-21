@@ -30,6 +30,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform groundPoint;
     [SerializeField] private float groundDistance = 0.01f;
 
+    private bool cheatJumps;
+    private bool cheatSpeed;
+    private SceneController sm;
+
     private Animator pcAnim;
 
     public static PlayerController Instance;
@@ -57,6 +61,7 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked; //This might better belong on a different script? Unsure
         characterController = GetComponent<CharacterController>();
         inputs = GameObject.FindAnyObjectByType<InputManager>();
+
         pcAnim = GetComponentInChildren<Animator>();
         if (terminalVelocity > 0) terminalVelocity = -terminalVelocity; //Just makes it negative
         JitterDown();
@@ -73,7 +78,7 @@ public class PlayerController : MonoBehaviour
     {
         //Default Base Case
         Vector3 move = transform.forward * MovementVector.y + transform.right * MovementVector.x;
-        move = movementSpeed * (inputs.SprintInput? sprintMultiplier : 1) * Time.deltaTime * move;
+        move = movementSpeed * (inputs.SprintInput? sprintMultiplier : 1) * (cheatSpeed ? 2 : 1) * Time.deltaTime * move;
 
         //If the move is greater than 0 after reading the inputs, then we're moving!
         if(move.magnitude > 0)
@@ -116,11 +121,18 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        sm = GameObject.FindAnyObjectByType<SceneController>();
+        if (sm != null)
+        {
+            cheatSpeed = sm.cheatsSpeed;
+            cheatJumps = sm.cheatsJump;
+        }
+
         CheckHeadBump();
 
         DecayMomentum();
 
-        if (inputs.JumpInput == true && characterController.isGrounded)
+        if (inputs.JumpInput == true && (characterController.isGrounded || cheatJumps))
         {
             //Debug.Log("Attempting Jump");
             verticalForce = jumpForce; //The Jump itself is handled in the Move() method handling gravity, making use of CharacterController instead of RigidBody
