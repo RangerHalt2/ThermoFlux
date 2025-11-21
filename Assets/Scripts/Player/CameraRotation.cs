@@ -13,6 +13,7 @@ public class CameraRotation : MonoBehaviour
     [SerializeField] private float minPitch = -30f;
     [SerializeField] private float maxPitch = 50f;
 
+    [SerializeField] private LayerMask cameraCollisionMask;
     [SerializeField] private Transform topOfHead;
 
     private float yaw;
@@ -51,7 +52,7 @@ public class CameraRotation : MonoBehaviour
         float distance = offset.magnitude;
         float buffer = 0.2f; // keeps camera slightly off walls
 
-        if (Physics.Raycast(topOfHead.position, (desiredPosition - topOfHead.position).normalized, out RaycastHit hit, distance))
+        if (Physics.Raycast(topOfHead.position, (desiredPosition - topOfHead.position).normalized, out RaycastHit hit, distance, ~cameraCollisionMask, QueryTriggerInteraction.Ignore))
         {
             // place camera at hit point minus buffer
             desiredPosition = hit.point - (desiredPosition - topOfHead.position).normalized * buffer;
